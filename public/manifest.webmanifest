@@ -1,0 +1,13 @@
+{
+  "name": "ランダム名鑑【MEIMEI】",
+  "short_name": "MEIMEI",
+  "description": "創作向け名字・名前ランダム生成",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f1e7",
+  "theme_color": "#1f4054",
+  "lang": "ja",
+  "icons": [
+    { "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
