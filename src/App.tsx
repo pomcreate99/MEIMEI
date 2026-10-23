@@ -12,6 +12,7 @@ type Candidate = {
   gender?: 'male' | 'female'
   rank?: number
   population?: number | null
+  commonality?: 1 | 2 | 3
 }
 type GeneratedName = {
   surname: Candidate
@@ -81,11 +82,16 @@ function createName(surnameMood: Mood, givenMood: Mood, gender: Gender, history:
   const safeGivenPool = givenPool.length ? givenPool : givenCandidates
   const recentPairs = new Set(history.map((item) => `${item.surname.kanji}|${item.given.kanji}`))
 
-  let surname = fixedSurname ?? weightedPick(safeSurnamePool, recentSurnames)
-  let given = fixedGiven ?? weightedPick(safeGivenPool, recentGiven)
+  const matchingSurnamePool = fixedGiven ? safeSurnamePool.filter((candidate) => Math.abs((candidate.commonality ?? 2) - (fixedGiven.commonality ?? 2)) <= 1) : safeSurnamePool
+  const safeMatchingSurnamePool = matchingSurnamePool.length ? matchingSurnamePool : safeSurnamePool
+  let surname = fixedSurname ?? weightedPick(safeMatchingSurnamePool, recentSurnames)
+  const matchingGivenPool = fixedGiven ? safeGivenPool : safeGivenPool.filter((candidate) => Math.abs((candidate.commonality ?? 2) - (surname?.commonality ?? 2)) <= 1)
+  const safeMatchingGivenPool = matchingGivenPool.length ? matchingGivenPool : safeGivenPool
+  let given = fixedGiven ?? weightedPick(safeMatchingGivenPool, recentGiven)
   for (let attempt = 0; attempt < 100; attempt += 1) {
-    const nextSurname = fixedSurname ?? weightedPick(safeSurnamePool, recentSurnames)
-    const nextGiven = fixedGiven ?? weightedPick(safeGivenPool, recentGiven, surname?.kanji)
+    const nextSurname = fixedSurname ?? weightedPick(safeMatchingSurnamePool, recentSurnames)
+    const nextGivenPool = fixedGiven ? safeGivenPool : safeGivenPool.filter((candidate) => Math.abs((candidate.commonality ?? 2) - (nextSurname?.commonality ?? 2)) <= 1)
+    const nextGiven = fixedGiven ?? weightedPick(nextGivenPool.length ? nextGivenPool : safeGivenPool, recentGiven, nextSurname?.kanji)
     if (nextSurname && nextGiven && !recentPairs.has(`${nextSurname.kanji}|${nextGiven.kanji}`)) {
       surname = nextSurname
       given = nextGiven
@@ -246,7 +252,7 @@ function InfoPanel({ panel, history, favorites, onCopy, onFavorite }: { panel: E
   if (panel === 'help') return <><p className="section-kicker"><span />GUIDE</p><h2>使い方</h2><div className="guide-list"><div><b>01</b><p><strong>雰囲気を選ぶ</strong><br />名字と名前は別々に雰囲気を選べます。「おまかせ」ならデータ全体から組み合わせます。</p></div><div><b>02</b><p><strong>4・6・8・10個から選ぶ</strong><br />一度に生成する数を選び、まとめて候補を見比べられます。</p></div><div><b>03</b><p><strong>名字・名前を固定する</strong><br />候補カードの「名字固定」「名前固定」を押すと、次回から片方だけを変えて生成できます。</p></div><div><b>04</b><p><strong>気に入ったら保存</strong><br />お気に入りとコピーは、ログインなしでこの端末に保存されます。</p></div></div><div className="panel-note">？ボタンからいつでもこの説明を開けます。創作上の人物名を考えるための補助ツールです。</div></>
   if (panel === 'history') return <ListPanel title="生成履歴" subtitle="直近10回まで保存" items={history} empty="まだ生成履歴がありません。" onCopy={onCopy} onFavorite={onFavorite} />
   if (panel === 'favorites') return <ListPanel title="お気に入り" subtitle={`${favorites.length}件をこの端末に保存中`} items={favorites} empty="お気に入りに保存した名前がここに並びます。" onCopy={onCopy} onFavorite={onFavorite} />
-  if (panel === 'updates') return <><p className="section-kicker"><span />CHANGELOG</p><h2>更新履歴</h2><div className="changelog"><div><time>2026.10.22</time><strong>初回公開版を制作</strong><p>ランダム名鑑【MEIMEI】を新規構成。雰囲気選択、重複抑制、履歴、お気に入り、PWAアイコンを追加。</p></div></div></>
+  if (panel === 'updates') return <><p className="section-kicker"><span />CHANGELOG</p><h2>更新履歴</h2><div className="changelog"><div><time>2026.10.23</time><strong>雰囲気に合う候補選定を改善</strong><p>候補に一般性レベルを付け、雰囲気と名字・名前のバランスを見ながら組み合わせるようにしました。</p></div><div><time>2026.10.22</time><strong>初回公開版を制作</strong><p>ランダム名鑑【MEIMEI】を新規構成。雰囲気選択、重複抑制、履歴、お気に入り、PWAアイコンを追加。</p></div></div></>
   return <><p className="section-kicker"><span />SOURCES</p><h2>データの出典</h2><div className="source-copy"><p>名字は、名字由来netを出典とする公開データセットの上位候補と、公開共有されているJapaneseNamesDatabaseから抽出した読み付き候補を組み合わせ、10,000件以上に拡張しています。名字由来net由来データはREADMEの「商用利用不可・帰属表示必須」に従います。</p><p>名前は、MIT LicenseのJapanese Personal Name Datasetと、公開共有されているJapaneseNamesDatabaseから読みと漢字表記を抽出し、10,000件以上に拡張しています。後者は公開元READMEに明示された利用条件がないため、公開元の最新条件を確認したうえで利用してください。</p><p>トレンドの参考情報として、2025年たまひよ赤ちゃんの名前ランキングと、2026年全国名字ランキングの記事を確認しています。ランキング値をそのまま再配布するものではありません。</p><div className="source-links"><a href="https://github.com/siikamiika/japanese-family-names" target="_blank" rel="noreferrer">名字データセット（GitHub） <Icon name="arrow" size={15} /></a><a href="https://github.com/jackdeguest/JapaneseNamesDatabase" target="_blank" rel="noreferrer">JapaneseNamesDatabase（GitHub） <Icon name="arrow" size={15} /></a><a href="https://github.com/shuheilocale/japanese-personal-name-dataset" target="_blank" rel="noreferrer">日本人姓名データセット（GitHub） <Icon name="arrow" size={15} /></a><a href="https://gakumado.mynavi.jp/freshers/articles/92511" target="_blank" rel="noreferrer">2026年全国名字ランキング <Icon name="arrow" size={15} /></a></div></div></>
 }
 

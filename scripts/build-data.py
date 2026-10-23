@@ -27,7 +27,7 @@ def read_csv(path: Path) -> Iterable[list[str]]:
         yield from csv.reader(f)
 
 
-def score_moods(text: str, *, rare: bool = False) -> list[str]:
+def score_moods(text: str, *, rare: bool = False, commonality: int = 2, kind: str = 'given') -> list[str]:
     scores = {mood: 0 for mood in MOODS}
     for mood, vocab in {
         'modern': MODERN,
@@ -38,7 +38,21 @@ def score_moods(text: str, *, rare: bool = False) -> list[str]:
         'mysterious': MYSTERIOUS,
     }.items():
         scores[mood] = sum(1 for token in vocab.split() if token in text)
-    if len(text) >= 4:
+    if kind == 'surname':
+        if commonality >= 3:
+            scores['modern'] += 2
+            scores['bright'] += 1
+        elif commonality == 2:
+            scores['elegant'] += 1
+        else:
+            scores['unique'] += 2
+            scores['mysterious'] += 1
+    elif commonality >= 3:
+        scores['modern'] += 2
+        scores['bright'] += 1
+    elif commonality == 2:
+        scores['elegant'] += 1
+    if len(text) >= 4 and commonality <= 1:
         scores['unique'] += 1
     if rare:
         scores['unique'] += 2
@@ -67,7 +81,8 @@ def build_surnames() -> list[dict]:
                 'kanji': kanji,
                 'reading': reading,
                 'rank': rank,
-                'moods': score_moods(kanji + reading, rare=rank > 2500),
+        'moods': score_moods(kanji + reading, rare=rank > 5000, commonality=3 if rank <= 500 else 2 if rank <= 3000 else 1, kind='surname'),
+        'commonality': 3 if rank <= 500 else 2 if rank <= 3000 else 1,
                 'population': int(float(population)) if population else None,
             })
     if len(rows) < 10000 and SQLITE_FILE.exists():
@@ -77,7 +92,8 @@ def build_surnames() -> list[dict]:
             if not kanji or not reading or key in seen:
                 continue
             seen.add(key)
-            rows.append({'id': f'surname-db-{noid}', 'kanji': kanji, 'reading': reading, 'rank': len(rows) + 1, 'moods': score_moods(kanji + reading, rare=True), 'population': None})
+            commonality = 2 if len(rows) < 8500 else 1
+            rows.append({'id': f'surname-db-{noid}', 'kanji': kanji, 'reading': reading, 'rank': len(rows) + 1, 'moods': score_moods(kanji + reading, rare=commonality == 1, commonality=commonality, kind='surname'), 'commonality': commonality, 'population': None})
             if len(rows) >= 10000:
                 break
         connection.close()
@@ -108,7 +124,8 @@ def build_given_names() -> list[dict]:
                     'kanji': kanji,
                     'reading': reading,
                     'gender': gender,
-                    'moods': score_moods(kanji + reading, rare=source_rank > 1500),
+                    'moods': score_moods(kanji + reading, rare=source_rank > 4000, commonality=3 if source_rank <= 1000 else 2 if source_rank <= 4000 else 1),
+                    'commonality': 3 if source_rank <= 1000 else 2 if source_rank <= 4000 else 1,
                 })
                 if sum(1 for item in rows if item['gender'] == gender) >= cap:
                     break
@@ -122,7 +139,8 @@ def build_given_names() -> list[dict]:
             if not kanji or not reading or key in seen:
                 continue
             seen.add(key)
-            rows.append({'id': f'given-db-{foid}', 'kanji': kanji, 'reading': reading, 'gender': gender, 'moods': score_moods(kanji + reading, rare=True)})
+            commonality = 2 if len(rows) < 15000 else 1
+            rows.append({'id': f'given-db-{foid}', 'kanji': kanji, 'reading': reading, 'gender': gender, 'moods': score_moods(kanji + reading, rare=commonality == 1, commonality=commonality), 'commonality': commonality})
             if len(rows) >= 20000:
                 break
         connection.close()
