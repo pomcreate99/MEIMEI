@@ -123,7 +123,7 @@ function App() {
   const [fixedGiven, setFixedGiven] = useState<Candidate | undefined>()
   const [history, setHistory] = useState<GeneratedName[]>(() => readStorage(storageKeys.history, []))
   const [favorites, setFavorites] = useState<GeneratedName[]>(() => readStorage(storageKeys.favorites, []))
-  const [results, setResults] = useState<GeneratedName[]>(() => [createName('all', 'all', 'any', [])])
+  const [results, setResults] = useState<GeneratedName[]>(() => Array.from({ length: 4 }, () => createName('all', 'all', 'any', [])))
   const [menuOpen, setMenuOpen] = useState(false)
   const [panel, setPanel] = useState<Panel>(null)
   const [toast, setToast] = useState('')
@@ -198,7 +198,7 @@ function App() {
         </section>
 
         <section className="generator-card" aria-labelledby="generator-title">
-          <div className="card-heading"><div><p className="section-kicker"><span />GENERATE</p><h2 id="generator-title">生成条件を選ぶ</h2></div><div className="counter-chip"><span>{stats.surnames.toLocaleString()}件</span>の名字データ</div></div>
+          <div className="card-heading"><div><p className="section-kicker"><span />GENERATE</p><h2 id="generator-title">生成条件を選ぶ</h2></div><div className="counter-chip"><span>{stats.surnames.toLocaleString()}件</span>の名字 ／ <span>{stats.given.toLocaleString()}件</span>の名前</div></div>
           <div className="choice-grid">
             <MoodSelect label="名字の雰囲気" value={surnameMood} onChange={setSurnameMood} />
             <MoodSelect label="名前の雰囲気" value={givenMood} onChange={setGivenMood} />
