@@ -3,6 +3,7 @@ import data from './data/names.json'
 
 type Mood = 'all' | 'modern' | 'classic' | 'elegant' | 'bright' | 'strong' | 'mysterious' | 'unique'
 type Gender = 'any' | 'male' | 'female'
+type GenerateCount = 4 | 6 | 8 | 10
 type Candidate = {
   id: string
   kanji: string
@@ -71,7 +72,7 @@ function weightedPick(pool: Candidate[], recent: Candidate[], avoidPair?: string
   return source[randomIndex(Math.min(source.length, 20))]?.candidate ?? ranked[0]?.candidate
 }
 
-function createName(surnameMood: Mood, givenMood: Mood, gender: Gender, history: GeneratedName[]): GeneratedName {
+function createName(surnameMood: Mood, givenMood: Mood, gender: Gender, history: GeneratedName[], fixedSurname?: Candidate, fixedGiven?: Candidate): GeneratedName {
   const recentSurnames = history.map((item) => item.surname)
   const recentGiven = history.map((item) => item.given)
   const surnamePool = poolFor(surnameCandidates, surnameMood)
@@ -80,11 +81,11 @@ function createName(surnameMood: Mood, givenMood: Mood, gender: Gender, history:
   const safeGivenPool = givenPool.length ? givenPool : givenCandidates
   const recentPairs = new Set(history.map((item) => `${item.surname.kanji}|${item.given.kanji}`))
 
-  let surname = weightedPick(safeSurnamePool, recentSurnames)
-  let given = weightedPick(safeGivenPool, recentGiven)
+  let surname = fixedSurname ?? weightedPick(safeSurnamePool, recentSurnames)
+  let given = fixedGiven ?? weightedPick(safeGivenPool, recentGiven)
   for (let attempt = 0; attempt < 100; attempt += 1) {
-    const nextSurname = weightedPick(safeSurnamePool, recentSurnames)
-    const nextGiven = weightedPick(safeGivenPool, recentGiven, surname?.kanji)
+    const nextSurname = fixedSurname ?? weightedPick(safeSurnamePool, recentSurnames)
+    const nextGiven = fixedGiven ?? weightedPick(safeGivenPool, recentGiven, surname?.kanji)
     if (nextSurname && nextGiven && !recentPairs.has(`${nextSurname.kanji}|${nextGiven.kanji}`)) {
       surname = nextSurname
       given = nextGiven
@@ -117,16 +118,19 @@ function App() {
   const [surnameMood, setSurnameMood] = useState<Mood>('all')
   const [givenMood, setGivenMood] = useState<Mood>('all')
   const [gender, setGender] = useState<Gender>('any')
+  const [generateCount, setGenerateCount] = useState<GenerateCount>(4)
+  const [fixedSurname, setFixedSurname] = useState<Candidate | undefined>()
+  const [fixedGiven, setFixedGiven] = useState<Candidate | undefined>()
   const [history, setHistory] = useState<GeneratedName[]>(() => readStorage(storageKeys.history, []))
   const [favorites, setFavorites] = useState<GeneratedName[]>(() => readStorage(storageKeys.favorites, []))
-  const [result, setResult] = useState<GeneratedName>(() => createName('all', 'all', 'any', []))
+  const [results, setResults] = useState<GeneratedName[]>(() => [createName('all', 'all', 'any', [])])
   const [menuOpen, setMenuOpen] = useState(false)
   const [panel, setPanel] = useState<Panel>(null)
   const [toast, setToast] = useState('')
 
   const stats = useMemo(() => ({ surnames: surnameCandidates.length, given: givenCandidates.length }), [])
-  const resultKey = `${result.surname.kanji}|${result.given.kanji}|${result.createdAt}`
-  const isFavorite = favorites.some((item) => item.surname.kanji === result.surname.kanji && item.given.kanji === result.given.kanji)
+  const result = results[0]
+  const resultKey = results.map((item) => `${item.surname.kanji}|${item.given.kanji}|${item.createdAt}`).join(',')
 
   useEffect(() => { localStorage.setItem(storageKeys.history, JSON.stringify(history.slice(0, 10))) }, [history])
   useEffect(() => { localStorage.setItem(storageKeys.favorites, JSON.stringify(favorites)) }, [favorites])
@@ -137,9 +141,12 @@ function App() {
   }, [toast])
 
   const generate = () => {
-    const next = createName(surnameMood, givenMood, gender, [result, ...history].slice(0, 10))
-    setResult(next)
-    setHistory((current) => [next, ...current.filter((item) => item.createdAt !== result.createdAt)].slice(0, 10))
+    const nextResults: GeneratedName[] = []
+    for (let index = 0; index < generateCount; index += 1) {
+      nextResults.push(createName(surnameMood, givenMood, gender, [...results, ...nextResults, ...history].slice(0, 10), fixedSurname, fixedGiven))
+    }
+    setResults(nextResults)
+    setHistory((current) => [...nextResults, ...current].slice(0, 10))
   }
 
   const copyResult = async (item = result) => {
@@ -152,12 +159,16 @@ function App() {
   }
 
   const toggleFavorite = (item = result) => {
+    if (!item) return
     const exists = favorites.some((favorite) => favorite.surname.kanji === item.surname.kanji && favorite.given.kanji === item.given.kanji)
     setFavorites((current) => exists
       ? current.filter((favorite) => !(favorite.surname.kanji === item.surname.kanji && favorite.given.kanji === item.given.kanji))
       : [{ ...item }, ...current])
     setToast(exists ? 'お気に入りから外しました' : 'お気に入りに保存しました')
   }
+
+  const toggleFixedSurname = (item: GeneratedName) => setFixedSurname((current) => current?.kanji === item.surname.kanji ? undefined : item.surname)
+  const toggleFixedGiven = (item: GeneratedName) => setFixedGiven((current) => current?.kanji === item.given.kanji ? undefined : item.given)
 
   const openPanel = (next: Panel) => {
     setMenuOpen(false)
@@ -172,7 +183,7 @@ function App() {
           <div className="brand-seal">名</div>
           <div><p className="eyebrow">創作向け名字・名前メーカー</p><div className="brand-name">ランダム名鑑<span>【MEIMEI】</span></div></div>
         </div>
-        <div className="topbar-count"><span className="live-dot" />ログイン不要・端末内保存</div>
+        <button className="help-button" onClick={() => openPanel('help')} aria-label="使い方を表示">?</button><div className="topbar-count"><span className="live-dot" />ログイン不要・端末内保存</div>
       </header>
 
       <main className="main-content">
@@ -181,7 +192,7 @@ function App() {
           <div>
             <p className="section-kicker"><span />創作の登場人物に、ひとつの響きを</p>
             <h1>雰囲気を選んで、<br /><em>名前をひらく。</em></h1>
-            <p className="hero-copy">名字と名前の印象をそれぞれ選ぶと、物語に似合う日本人名をランダムに組み合わせます。</p>
+            <p className="hero-copy">名字と名前の印象をそれぞれ選ぶと、物語に似合う日本人名をランダムに組み合わせます。</p><button className="hero-help" onClick={() => openPanel('help')}><span>?</span> まずは使い方を見る</button>
           </div>
           <div className="hero-mark" aria-hidden="true"><span>MEI</span><strong>名</strong><span>MEI</span></div>
         </section>
@@ -193,19 +204,23 @@ function App() {
             <MoodSelect label="名前の雰囲気" value={givenMood} onChange={setGivenMood} />
           </div>
           <div className="gender-row"><span className="field-label">名前の性別傾向</span><div className="segmented-control">{([['any', '男女どちらも'], ['male', '男性寄り'], ['female', '女性寄り']] as [Gender, string][]).map(([value, label]) => <button key={value} className={gender === value ? 'active' : ''} onClick={() => setGender(value)}>{label}</button>)}</div></div>
+          <div className="gender-row"><span className="field-label">一度に生成する数</span><div className="segmented-control">{([4, 6, 8, 10] as GenerateCount[]).map((value) => <button key={value} className={generateCount === value ? 'active' : ''} onClick={() => setGenerateCount(value)}>{value}個</button>)}</div></div>
+          {(fixedSurname || fixedGiven) && <div className="fixed-note">固定中：{fixedSurname && `名字「${fixedSurname.kanji}」`}{fixedSurname && fixedGiven && ' ／ '}{fixedGiven && `名前「${fixedGiven.kanji}」`}　<button onClick={() => { setFixedSurname(undefined); setFixedGiven(undefined) }}>解除</button></div>}
           <button className="generate-button" onClick={generate}><Icon name="spark" size={22} /><span>この条件で名前をつくる</span><Icon name="arrow" size={18} /></button>
           <p className="privacy-note"><Icon name="info" size={15} />生成履歴はこの端末にだけ保存されます。直近10回の重複を自動で抑えています。</p>
         </section>
 
         <section className="result-section" aria-live="polite">
           <div className="result-header"><div><p className="section-kicker"><span />YOUR NAME</p><h2>今回の名まえ</h2></div><button className="small-action" onClick={generate}><Icon name="spark" size={16} />もう一度つくる</button></div>
-          <div className="name-card">
+          <div className="result-grid">{results.map((item, index) => {
+            const itemFavorite = favorites.some((favorite) => favorite.surname.kanji === item.surname.kanji && favorite.given.kanji === item.given.kanji)
+            return <div className="name-card" key={`${item.createdAt}-${index}`}>
             <div className="name-ornament ornament-left">「</div>
-            <div className="name-main"><div className="full-name"><span>{result.surname.kanji}</span><span>{result.given.kanji}</span></div><div className="reading">{result.surname.reading}　{result.given.reading}</div><div className="name-tags"><span>{moodOptions.find((item) => item.value === surnameMood)?.label ?? 'おまかせ'}の名字</span><span>{moodOptions.find((item) => item.value === givenMood)?.label ?? 'おまかせ'}の名前</span></div></div>
+            <div className="name-main"><div className="full-name"><span>{item.surname.kanji}</span><span>{item.given.kanji}</span></div><div className="reading">{item.surname.reading}　{item.given.reading}</div><div className="name-tags"><span>{moodOptions.find((option) => option.value === surnameMood)?.label ?? 'おまかせ'}の名字</span><span>{moodOptions.find((option) => option.value === givenMood)?.label ?? 'おまかせ'}の名前</span></div></div>
             <div className="name-ornament ornament-right">」</div>
-            <div className="name-actions"><button className={isFavorite ? 'icon-action favorite active' : 'icon-action favorite'} onClick={() => toggleFavorite()} aria-label={isFavorite ? 'お気に入りから外す' : 'お気に入りに保存'}><Icon name="heart" size={20} /><span>{isFavorite ? '保存済み' : 'お気に入り'}</span></button><button className="icon-action" onClick={() => copyResult()}><Icon name="copy" size={19} /><span>コピー</span></button></div>
-          </div>
-          {result.surname.population && <p className="population-note">名字「{result.surname.kanji}」は全国に{formatPopulation(result.surname.population)}（参考値）</p>}
+            <div className="name-actions"><button className={itemFavorite ? 'icon-action favorite active' : 'icon-action favorite'} onClick={() => toggleFavorite(item)} aria-label={itemFavorite ? 'お気に入りから外す' : 'お気に入りに保存'}><Icon name="heart" size={20} /><span>{itemFavorite ? '保存済み' : 'お気に入り'}</span></button><button className="icon-action" onClick={() => copyResult(item)}><Icon name="copy" size={19} /><span>コピー</span></button><button className={fixedSurname?.kanji === item.surname.kanji ? 'icon-action active' : 'icon-action'} onClick={() => toggleFixedSurname(item)}><span>名字固定</span></button><button className={fixedGiven?.kanji === item.given.kanji ? 'icon-action active' : 'icon-action'} onClick={() => toggleFixedGiven(item)}><span>名前固定</span></button></div>
+          </div>})}</div>
+          {result?.surname.population && <p className="population-note">名字「{result.surname.kanji}」は全国に{formatPopulation(result.surname.population)}（参考値）</p>}
         </section>
 
         <section className="quick-links"><button onClick={() => openPanel('history')}><span className="quick-icon"><Icon name="history" /></span><span><b>生成履歴</b><small>直近{history.length}件を確認</small></span><Icon name="arrow" size={17} /></button><button onClick={() => openPanel('favorites')}><span className="quick-icon"><Icon name="heart" /></span><span><b>お気に入り</b><small>{favorites.length}件を保存中</small></span><Icon name="arrow" size={17} /></button><button onClick={() => openPanel('help')}><span className="quick-icon"><Icon name="book" /></span><span><b>使い方を見る</b><small>創作に使うヒント</small></span><Icon name="arrow" size={17} /></button></section>
@@ -228,11 +243,11 @@ function MoodSelect({ label, value, onChange }: { label: string; value: Mood; on
 }
 
 function InfoPanel({ panel, history, favorites, onCopy, onFavorite }: { panel: Exclude<Panel, null>; history: GeneratedName[]; favorites: GeneratedName[]; onCopy: (item: GeneratedName) => void; onFavorite: (item: GeneratedName) => void }) {
-  if (panel === 'help') return <><p className="section-kicker"><span />GUIDE</p><h2>使い方</h2><div className="guide-list"><div><b>01</b><p><strong>雰囲気を選ぶ</strong><br />名字と名前は別々に雰囲気を選べます。「おまかせ」ならデータ全体から組み合わせます。</p></div><div><b>02</b><p><strong>名前をつくる</strong><br />生成ボタンを押すと、直近10回の履歴を見ながら同じ表記が続かない名前を選びます。</p></div><div><b>03</b><p><strong>気に入ったら保存</strong><br />お気に入りとコピーは、ログインなしでこの端末に保存されます。</p></div></div><div className="panel-note">創作上の人物名を考えるための補助ツールです。実在の人物や団体との関係を示すものではありません。</div></>
+  if (panel === 'help') return <><p className="section-kicker"><span />GUIDE</p><h2>使い方</h2><div className="guide-list"><div><b>01</b><p><strong>雰囲気を選ぶ</strong><br />名字と名前は別々に雰囲気を選べます。「おまかせ」ならデータ全体から組み合わせます。</p></div><div><b>02</b><p><strong>4・6・8・10個から選ぶ</strong><br />一度に生成する数を選び、まとめて候補を見比べられます。</p></div><div><b>03</b><p><strong>名字・名前を固定する</strong><br />候補カードの「名字固定」「名前固定」を押すと、次回から片方だけを変えて生成できます。</p></div><div><b>04</b><p><strong>気に入ったら保存</strong><br />お気に入りとコピーは、ログインなしでこの端末に保存されます。</p></div></div><div className="panel-note">？ボタンからいつでもこの説明を開けます。創作上の人物名を考えるための補助ツールです。</div></>
   if (panel === 'history') return <ListPanel title="生成履歴" subtitle="直近10回まで保存" items={history} empty="まだ生成履歴がありません。" onCopy={onCopy} onFavorite={onFavorite} />
   if (panel === 'favorites') return <ListPanel title="お気に入り" subtitle={`${favorites.length}件をこの端末に保存中`} items={favorites} empty="お気に入りに保存した名前がここに並びます。" onCopy={onCopy} onFavorite={onFavorite} />
   if (panel === 'updates') return <><p className="section-kicker"><span />CHANGELOG</p><h2>更新履歴</h2><div className="changelog"><div><time>2026.10.22</time><strong>初回公開版を制作</strong><p>ランダム名鑑【MEIMEI】を新規構成。雰囲気選択、重複抑制、履歴、お気に入り、PWAアイコンを追加。</p></div></div></>
-  return <><p className="section-kicker"><span />SOURCES</p><h2>データの出典</h2><div className="source-copy"><p>名字は、名字由来netを出典とする公開データセット「japanese-family-names」の上位5,000件を利用しています。データセットのREADMEに記載された「商用利用不可・帰属表示必須」の条件に従い、商用利用を想定しない個人向けの公開版として掲載しています。</p><p>名前は、MIT Licenseで公開されている「Japanese Personal Name Dataset」をもとに、読みと漢字表記を別候補として整形しています。</p><p>トレンドの参考情報として、2025年たまひよ赤ちゃんの名前ランキングと、2026年全国名字ランキングの記事を確認しています。ランキング値をそのまま再配布するものではありません。</p><div className="source-links"><a href="https://github.com/siikamiika/japanese-family-names" target="_blank" rel="noreferrer">名字データセット（GitHub） <Icon name="arrow" size={15} /></a><a href="https://github.com/shuheilocale/japanese-personal-name-dataset" target="_blank" rel="noreferrer">日本人姓名データセット（GitHub） <Icon name="arrow" size={15} /></a><a href="https://st.benesse.ne.jp/ninshin/name/" target="_blank" rel="noreferrer">たまひよ 名前ランキング <Icon name="arrow" size={15} /></a></div></div></>
+  return <><p className="section-kicker"><span />SOURCES</p><h2>データの出典</h2><div className="source-copy"><p>名字は、名字由来netを出典とする公開データセットの上位候補と、公開共有されているJapaneseNamesDatabaseから抽出した読み付き候補を組み合わせ、10,000件以上に拡張しています。名字由来net由来データはREADMEの「商用利用不可・帰属表示必須」に従います。</p><p>名前は、MIT LicenseのJapanese Personal Name Datasetと、公開共有されているJapaneseNamesDatabaseから読みと漢字表記を抽出し、10,000件以上に拡張しています。後者は公開元READMEに明示された利用条件がないため、公開元の最新条件を確認したうえで利用してください。</p><p>トレンドの参考情報として、2025年たまひよ赤ちゃんの名前ランキングと、2026年全国名字ランキングの記事を確認しています。ランキング値をそのまま再配布するものではありません。</p><div className="source-links"><a href="https://github.com/siikamiika/japanese-family-names" target="_blank" rel="noreferrer">名字データセット（GitHub） <Icon name="arrow" size={15} /></a><a href="https://github.com/jackdeguest/JapaneseNamesDatabase" target="_blank" rel="noreferrer">JapaneseNamesDatabase（GitHub） <Icon name="arrow" size={15} /></a><a href="https://github.com/shuheilocale/japanese-personal-name-dataset" target="_blank" rel="noreferrer">日本人姓名データセット（GitHub） <Icon name="arrow" size={15} /></a><a href="https://gakumado.mynavi.jp/freshers/articles/92511" target="_blank" rel="noreferrer">2026年全国名字ランキング <Icon name="arrow" size={15} /></a></div></div></>
 }
 
 function ListPanel({ title, subtitle, items, empty, onCopy, onFavorite }: { title: string; subtitle: string; items: GeneratedName[]; empty: string; onCopy: (item: GeneratedName) => void; onFavorite: (item: GeneratedName) => void }) {

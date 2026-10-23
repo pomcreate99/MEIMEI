@@ -2,12 +2,14 @@ from __future__ import annotations
 
 import csv
 import json
+import sqlite3
 from pathlib import Path
 from typing import Iterable
 
 ROOT = Path(__file__).resolve().parents[1]
 SURNAME_FILE = ROOT / 'data/source/family-names/myoji-yurai-readings.csv'
 PERSONAL_DIR = ROOT / 'data/source/personal-names/japanese_personal_name_dataset/dataset'
+SQLITE_FILE = ROOT / 'data/source/japanese-names-db/names.sqlite'
 OUT = ROOT / 'src/data/names.json'
 
 MOODS = ['modern', 'classic', 'elegant', 'bright', 'strong', 'mysterious', 'unique']
@@ -68,6 +70,17 @@ def build_surnames() -> list[dict]:
                 'moods': score_moods(kanji + reading, rare=rank > 2500),
                 'population': int(float(population)) if population else None,
             })
+    if len(rows) < 10000 and SQLITE_FILE.exists():
+        connection = sqlite3.connect(SQLITE_FILE)
+        for noid, kanji, alt, reading, country in connection.execute("SELECT noid, name, alt, reading, country FROM last_names WHERE country = 'jp' ORDER BY noid"):
+            key = (kanji, reading)
+            if not kanji or not reading or key in seen:
+                continue
+            seen.add(key)
+            rows.append({'id': f'surname-db-{noid}', 'kanji': kanji, 'reading': reading, 'rank': len(rows) + 1, 'moods': score_moods(kanji + reading, rare=True), 'population': None})
+            if len(rows) >= 10000:
+                break
+        connection.close()
     return rows
 
 
@@ -101,18 +114,36 @@ def build_given_names() -> list[dict]:
                     break
             if sum(1 for item in rows if item['gender'] == gender) >= cap:
                 break
+    if len(rows) < 20000 and SQLITE_FILE.exists():
+        connection = sqlite3.connect(SQLITE_FILE)
+        for foid, kanji, reading, sex, country, popularity in connection.execute("SELECT foid, name, reading, sex, country, popularity FROM first_names WHERE country = 'jp' ORDER BY foid"):
+            gender = 'male' if sex == 'M' else 'female' if sex == 'F' else 'female'
+            key = (gender, kanji, reading)
+            if not kanji or not reading or key in seen:
+                continue
+            seen.add(key)
+            rows.append({'id': f'given-db-{foid}', 'kanji': kanji, 'reading': reading, 'gender': gender, 'moods': score_moods(kanji + reading, rare=True)})
+            if len(rows) >= 20000:
+                break
+        connection.close()
     return rows
 
 
 def main() -> None:
+    # GitHub Pagesなどのクリーンビルドでは元SQLiteを取得しないため、
+    # 生成済みの同梱JSONをそのまま使って候補数を維持する。
+    if not SQLITE_FILE.exists() and OUT.exists():
+        payload = json.loads(OUT.read_text(encoding='utf-8'))
+        print(f"using bundled {len(payload['surnames'])} surnames and {len(payload['givenNames'])} given names -> {OUT}")
+        return
     surnames = build_surnames()
     given_names = build_given_names()
     OUT.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         'generatedAt': '2026-10-22',
         'sources': {
-            'surname': 'siikamiika/japanese-family-names（名字由来net由来・商用利用不可・帰属表示必須）',
-            'given': 'shuheilocale/japanese-personal-name-dataset（MIT License）',
+            'surname': 'siikamiika/japanese-family-names（名字由来net由来・商用利用不可・帰属表示必須）＋jackdeguest/JapaneseNamesDatabase（公開共有データ）',
+            'given': 'shuheilocale/japanese-personal-name-dataset（MIT License）＋jackdeguest/JapaneseNamesDatabase（公開共有データ）',
             'trend': 'たまひよ 赤ちゃんの名前ランキング2025 / 2026年全国名字ランキング',
         },
         'surnames': surnames,
