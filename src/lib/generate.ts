@@ -18,6 +18,7 @@ export interface Surname {
   reading: string
   tier: SurnameTier
   population?: number | null
+  rank?: number
 }
 
 export interface GivenName {

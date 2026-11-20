@@ -31,6 +31,6 @@ npm run dev
 
 ## データについて
 
-名字は [siikamiika/japanese-family-names](https://github.com/siikamiika/japanese-family-names)（名字由来netを出典とし、商用利用不可・帰属表示必須）と、公開共有されている [JapaneseNamesDatabase](https://github.com/jackdeguest/JapaneseNamesDatabase) をもとに、読み付き9,998件へ整形しています。傾向は収録人口と収録順位から付けています。
+名字は [siikamiika/japanese-family-names](https://github.com/siikamiika/japanese-family-names)（名字由来netを出典とし、商用利用不可・帰属表示必須）と、公開共有されている [JapaneseNamesDatabase](https://github.com/jackdeguest/JapaneseNamesDatabase) をもとに、読み付き9,998件へ整形しています。傾向は名字由来netの全国名字ランキングの順位で付けています（よくある＝上位300位／標準・やや珍しい＝301〜3,000位／珍しい＝3,001位以下・圏外）。
 
-名前は [shuheilocale/japanese-personal-name-dataset](https://github.com/shuheilocale/japanese-personal-name-dataset)（MIT License）をもとに、男女両方に同じ漢字・読みで現れる候補を「中性的」として統合した20,769件と、公開名ランキングで定番の現代的な名前を中心とした独自編集の補完候補です。雰囲気は漢字の印象に基づく創作向けの目安で、候補ごとに主分類1つ＋副分類最大1つを保持しています。利用条件が明示されていないデータベース由来の名前候補は、2026-11-20の改修で除外しました。詳しい出典・利用条件はアプリ内の「データの出典」を確認してください。
+名前は [shuheilocale/japanese-personal-name-dataset](https://github.com/shuheilocale/japanese-personal-name-dataset)（MIT License）をもとに、男女両方に同じ漢字・読みで現れる候補を「中性的」として統合した20,813件と、公開名ランキングで定番の現代的な名前を中心とした独自編集の補完候補です。「現代的」は明治安田生命・たまひよの2025年赤ちゃん名前ランキング上位の名前、「和風・古風」は昭和期の人気名前を基準に付け、その他の雰囲気は漢字の印象に基づく創作向けの目安です（候補ごとに主分類1つ＋副分類最大1つ）。利用条件が明示されていないデータベース由来の名前候補は、2026-11-20の改修で除外しました。詳しい出典・利用条件はアプリ内の「データの出典」を確認してください。

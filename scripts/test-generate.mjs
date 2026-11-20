@@ -146,3 +146,24 @@ console.log('== 6. コピー形式 ==')
 
 console.log(failures === 0 ? '\nALL TESTS PASSED' : `\n${failures} FAILURES`)
 process.exit(failures === 0 ? 0 : 1)
+
+console.log('== 7. 分類の根拠（ランキング基準） ==')
+{
+  const byRank = [...surnames].filter((s) => s.rank).sort((a, b) => a.rank - b.rank)
+  assert(byRank.length > 6000 && byRank[0].kanji === '佐藤' && byRank[0].tier === 'common', '名字ランキング1位は佐藤で「よくある」')
+  assert(byRank[299].tier === 'common' && byRank[300].tier === 'familiar', '300位までが「よくある」、301位から「標準・やや珍しい」')
+  assert(byRank[2999].tier === 'familiar' && byRank[3000].tier === 'rare', '3,000位までが「標準・やや珍しい」、3,001位から「珍しい」')
+  assert(surnames.filter((s) => !s.rank).every((s) => s.tier === 'rare'), 'ランキング圏外の名字はすべて「珍しい」')
+  const find = (k, r) => givenNames.find((g) => g.kanji === k && g.reading === r)
+  assert(find('湊', 'みなと')?.moods[0] === 'modern', '湊（みなと）は現代的が主分類（2025年ランキング1位）')
+  assert(find('凛', 'りん')?.moods[0] === 'modern', '凛（りん）は現代的が主分類（2025年ランキング上位）')
+  assert(find('紬', 'つむぎ')?.moods[0] === 'modern', '紬（つむぎ）は現代的が主分類')
+  assert(find('幸子', 'さちこ')?.moods[0] === 'classic', '幸子（さちこ）は和風・古風が主分類（昭和の人気名）')
+  assert(find('誠', 'まこと')?.moods[0] === 'classic', '誠（まこと）は和風・古風が主分類（昭和の人気名）')
+  assert(find('清', 'きよし')?.moods[0] === 'classic', '清（きよし）は和風・古風が主分類')
+  const modernPool = givenNames.filter((g) => g.moods.includes('modern'))
+  const koRatio = modernPool.filter((g) => g.kanji.endsWith('子')).length / modernPool.length
+  assert(koRatio < 0.05, '現代的プールに「〜子」で終わる名前は5%未満', `ratio=${koRatio.toFixed(3)}`)
+  const modernMale = givenNames.filter((g) => g.moods.includes('modern') && g.gender === 'male')
+  assert(modernMale.length >= 50, '現代的・男性寄りの候補が50件以上ある', `n=${modernMale.length}`)
+}

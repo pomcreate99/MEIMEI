@@ -63,3 +63,15 @@
 .name-main{flex:1;display:flex;flex-direction:column;justify-content:center}
 .population-line{position:static;max-width:100%;text-align:center;margin-top:10px}
 .name-actions{position:static;justify-content:center;margin:12px auto 2px;max-width:100%}
+
+/* --- v3 tag colors by category --- */
+.name-tags span.tag-tier-common{border-color:rgba(126,211,160,.65);color:#a9e5c0;background:rgba(126,211,160,.12)}
+.name-tags span.tag-tier-familiar{border-color:rgba(140,180,224,.6);color:#bcd6f2;background:rgba(140,180,224,.1)}
+.name-tags span.tag-tier-rare{border-color:rgba(206,150,226,.6);color:#e3bdf2;background:rgba(206,150,226,.1)}
+.name-tags span.tag-mood-modern{border-color:rgba(110,205,230,.65);color:#a5e3f2;background:rgba(110,205,230,.12)}
+.name-tags span.tag-mood-classic{border-color:rgba(224,186,110,.65);color:#f0d49a;background:rgba(224,186,110,.12)}
+.name-tags span.tag-mood-elegant{border-color:rgba(186,150,235,.6);color:#d6bdf5;background:rgba(186,150,235,.1)}
+.name-tags span.tag-mood-bright{border-color:rgba(245,205,95,.7);color:#fbe3a1;background:rgba(245,205,95,.12)}
+.name-tags span.tag-mood-strong{border-color:rgba(240,140,120,.65);color:#f7bcae;background:rgba(240,140,120,.12)}
+.name-tags span.tag-mood-mysterious{border-color:rgba(140,155,235,.65);color:#bcc6f7;background:rgba(140,155,235,.12)}
+.name-tags span.tag-mood-unique{border-color:rgba(240,150,205,.6);color:#f8c2e2;background:rgba(240,150,205,.1)}
