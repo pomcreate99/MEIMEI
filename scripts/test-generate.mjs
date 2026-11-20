@@ -137,8 +137,12 @@ console.log('== 5. 偏り防止（直近10バッチで同一候補は4回まで�
     counts.forEach((v) => { if (v > 4) violations += 1 })
   }
   assert(violations === 0, 'どの10バッチ窓でも同じ名前が5回以上出ない', `violations=${violations}`)
-  const distinct = new Set(batchList.flat().map((i) => gen.givenKey(i.given))).size
-  assert(distinct >= 150, '60バッチで多様な名前が出る', `distinct=${distinct}/240`)
+  // 多様性チェックは大きなプール（おまかせ）で見る。古風プールは v4 で
+  // ランキング掲載分のみ（男性約60件）に絞られたため、240回抽選の distinct は
+  // プール上限に張り付くのが正しい挙動。
+  const { batchList: allBatches } = simulate({ surnameTier: 'all', givenMood: 'all', gender: 'male', count: 4 }, 60, 39)
+  const distinct = new Set(allBatches.flat().map((i) => gen.givenKey(i.given))).size
+  assert(distinct >= 150, '60バッチで多様な名前が出る（おまかせ）', `distinct=${distinct}/240`)
 }
 
 console.log('== 6. コピー形式 ==')
@@ -169,6 +173,14 @@ console.log('== 7. 分類の根拠（ランキング基準） ==')
   assert(koRatio < 0.05, '現代的プールに「〜子」で終わる名前は5%未満', `ratio=${koRatio.toFixed(3)}`)
   const modernMale = givenNames.filter((g) => g.moods.includes('modern') && g.gender === 'male')
   assert(modernMale.length >= 50, '現代的・男性寄りの候補が50件以上ある', `n=${modernMale.length}`)
+  // v4（2026-11-21）: 現代的・古風はランキング掲載ペアだけに付く
+  assert(modernPool.length >= 150 && modernPool.length <= 300, '現代的プールはランキング掲載分のみ（150〜300件）', `n=${modernPool.length}`)
+  const classicPool = givenNames.filter((g) => g.moods.includes('classic'))
+  assert(classicPool.length >= 80 && classicPool.length <= 250, '古風プールは昭和期の人気名のみ（80〜250件）', `n=${classicPool.length}`)
+  assert(!find('莉', 'り')?.moods.includes('modern'), '莉（り）は現代的ではない（ランキング未掲載）')
+  assert(!find('翔太', 'しょうた')?.moods.includes('classic'), '翔太（しょうた）は古風ではない（1980年代の人気名）')
+  assert(!givenNames.some((g) => g.kanji === '似莉奈' && g.reading === 'にれな'), '読みが不自然な候補（似莉奈にれな）は除外されている')
+  assert(!givenNames.some((g) => g.kanji === '聖衣納'), '読みが不自然な候補（聖衣納せいな）は除外されている')
 }
 
 console.log(failures === 0 ? '\nALL TESTS PASSED' : `\n${failures} FAILURES`)
