@@ -109,6 +109,10 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [panel, setPanel] = useState<Panel>(null)
   const [toast, setToast] = useState('')
+  const [clock, setClock] = useState('')
+  const [lastGenAt, setLastGenAt] = useState(() => Date.now())
+  const [sessionLog, setSessionLog] = useState<string[]>([])
+  const generatorRef = useRef<HTMLElement>(null)
   const resultRef = useRef<HTMLElement>(null)
   const favoritesRef = useRef<HTMLElement>(null)
   const historyRef = useRef<HTMLElement>(null)
@@ -140,6 +144,13 @@ function App() {
     return () => window.clearTimeout(timer)
   }, [toast])
   useEffect(() => {
+    const fmt = () => new Date().toLocaleTimeString('ja-JP', { hour12: false })
+    setClock(fmt())
+    const timer = window.setInterval(() => setClock(fmt()), 1000)
+    setSessionLog([`[${fmt()}] SYS :: terminal boot -- dataset v3 loaded`, `[${fmt()}] DATA :: surnames ${surnameCandidates.length.toLocaleString()} / given ${givenCandidates.length.toLocaleString()}`])
+    return () => window.clearInterval(timer)
+  }, [])
+  useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape') { setPanel(null); setMenuOpen(false) }
     }
@@ -160,6 +171,16 @@ function App() {
       return
     }
     setResults(outcome.results)
+    setLastGenAt(Date.now())
+    {
+      const t = new Date().toLocaleTimeString('ja-JP', { hour12: false })
+      const cond = `${tierOptions.find((o) => o.value === surnameTier)?.label ?? ''} / ${moodOptions.find((o) => o.value === givenMood)?.label ?? ''} / ${genderOptions.find(([v]) => v === gender)?.[1] ?? ''}`
+      setSessionLog((current) => [
+        `[${t}] GEN :: ${cond} -> ${outcome.results.length} records`,
+        ...(outcome.shortageReason ? [`[${t}] NOTE :: ${outcome.shortageReason}`] : []),
+        ...current,
+      ].slice(0, 8))
+    }
     setBatches((current) => [batchKeys(outcome.results), ...current].slice(0, 10))
     setHistory((current) => {
       const seen = new Set<string>()
@@ -224,25 +245,38 @@ function App() {
         <button className="menu-button" onClick={() => setMenuOpen(true)} aria-label="メニューを開く"><Icon name="menu" /></button>
         <div className="brand-lockup">
           <div className="brand-seal">名</div>
-          <div><p className="eyebrow">創作向け名字・名前メーカー</p><div className="brand-name">{BRAND}</div></div>
+          <div><p className="eyebrow">NAME GENERATION TERMINAL // 創作向け</p><div className="brand-name">{BRAND}</div></div>
         </div>
         <button className="help-button" onClick={() => setPanel('help')} aria-label="使い方を表示">?</button>
-        <div className="topbar-count"><span className="live-dot" />ログイン不要・端末内保存</div>
+        <div className="sys-readout"><span className="live-dot" /><span>LOCAL ONLY</span><span className="sys-sep">|</span><span>DATA v3</span><span className="sys-sep">|</span><span className="sys-clock" aria-label="現在時刻">{clock}</span></div>
       </header>
 
+      <div className="terminal-layout">
+      <nav className="terminal-nav" aria-label="コマンド一覧">
+        <p className="nav-head">// COMMANDS</p>
+        <button onClick={() => scrollTo(generatorRef)}><span className="cmd">&gt; generate</span><span className="cmd-jp">条件と生成</span></button>
+        <button onClick={() => scrollTo(resultRef)}><span className="cmd">&gt; output</span><span className="cmd-jp">生成結果</span></button>
+        <button onClick={() => scrollTo(favoritesRef)}><span className="cmd">&gt; favorites</span><span className="cmd-jp">お気に入り</span><span className="cmd-count">{favorites.length}</span></button>
+        <button onClick={() => scrollTo(historyRef)}><span className="cmd">&gt; history</span><span className="cmd-jp">生成履歴</span><span className="cmd-count">{history.length}</span></button>
+        <button onClick={() => setPanel('help')}><span className="cmd">&gt; help</span><span className="cmd-jp">使い方</span></button>
+        <button onClick={() => setPanel('updates')}><span className="cmd">&gt; updates</span><span className="cmd-jp">更新履歴</span></button>
+        <button onClick={() => setPanel('sources')}><span className="cmd">&gt; sources</span><span className="cmd-jp">データの出典</span></button>
+        <p className="nav-foot">入力コマンドは不要です。<br />すべてクリック／タップで操作できます。</p>
+      </nav>
       <main className="main-content">
         <section className="hero-intro">
           <div className="vertical-label">名をつむぐ</div>
           <div>
-            <p className="section-kicker"><span />創作の登場人物に、ひとつの響きを</p>
+            <p className="section-kicker"><span />SYS.BOOT // 創作の登場人物に、ひとつの響きを</p>
             <h1>雰囲気を選んで、<br /><em>名前をひらく。</em></h1>
             <p className="hero-copy">名字の傾向と名前の雰囲気をそれぞれ選ぶと、物語に似合う日本人名をランダムに組み合わせます。開いた直後から、下の条件ですぐ作れます。</p>
+            <div className="boot-log" aria-hidden="true"><p>&gt; dataset.load("names_v3") ... OK</p><p>&gt; surnames {stats.surnames.toLocaleString()} / given {stats.given.toLocaleString()} records ready</p><p>&gt; awaiting input_</p></div>
           </div>
           <div className="hero-mark" aria-hidden="true"><span>MEI</span><strong>名</strong><span>MEI</span></div>
         </section>
 
-        <section className="generator-card" aria-labelledby="generator-title">
-          <div className="card-heading"><div><p className="section-kicker"><span />GENERATE</p><h2 id="generator-title">01 条件をえらぶ</h2></div><div className="counter-chip"><span>{stats.surnames.toLocaleString()}件</span>の名字 ／ <span>{stats.given.toLocaleString()}件</span>の名前</div></div>
+        <section className="generator-card" ref={generatorRef} aria-labelledby="generator-title">
+          <div className="card-heading"><div><p className="section-kicker"><span />01 // GENERATE</p><h2 id="generator-title">条件をえらぶ</h2></div><div className="counter-chip"><span>{stats.surnames.toLocaleString()}件</span>の名字 ／ <span>{stats.given.toLocaleString()}件</span>の名前</div></div>
 
           <div className="gender-row first"><span className="field-label" id="gender-label">名前の性別イメージ</span><div className="segmented-control" role="group" aria-labelledby="gender-label">{genderOptions.map(([value, label]) => <button key={value} className={gender === value ? 'active' : ''} onClick={() => setGender(value)} aria-pressed={gender === value}>{label}</button>)}</div></div>
 
@@ -265,7 +299,7 @@ function App() {
         </section>
 
         <section className="result-section" ref={resultRef} aria-live="polite">
-          <div className="result-header"><div><p className="section-kicker"><span />YOUR NAME</p><h2>できあがった {results.length}人 の候補</h2></div><div className="result-actions"><button className="small-action" onClick={copyAll}><Icon name="copy" size={16} />まとめてコピー</button><button className="small-action" onClick={generate}><Icon name="spark" size={16} />もう一度</button></div></div>
+          <div className="result-header"><div><p className="section-kicker"><span />02 // OUTPUT</p><h2>できあがった {results.length}人 の候補</h2><p className="log-line">[{new Date(lastGenAt).toLocaleTimeString('ja-JP', { hour12: false })}] GEN COMPLETE -- {results.length} RECORDS</p></div><div className="result-actions"><button className="small-action" onClick={copyAll}><Icon name="copy" size={16} />まとめてコピー</button><button className="small-action" onClick={generate}><Icon name="spark" size={16} />もう一度</button></div></div>
           {notice && <p className="shortage-note" role="status"><Icon name="info" size={15} />{notice}</p>}
           <div className="result-grid">{results.map((item, index) => {
             const itemFavorite = isFavorite(item)
@@ -275,7 +309,7 @@ function App() {
               <div className="name-card" key={`${item.createdAt}-${index}`} style={{ animationDelay: `${Math.min(index, 9) * 55}ms` }}>
                 <div className="name-ornament ornament-left">「</div>
                 <div className="name-main">
-                  <div className="card-meta"><span className="card-number">{String(index + 1).padStart(2, '0')}</span><span className="card-motif" aria-hidden="true">{MOTIFS[index % MOTIFS.length]}</span>{(surnameFixed || givenFixed) && <span className="fixed-badge">{surnameFixed && givenFixed ? '名字・名前固定中' : surnameFixed ? '名字固定中' : '名前固定中'}</span>}</div>
+                  <div className="card-meta"><span className="card-number">[{String(index + 1).padStart(3, '0')}]</span><span className="card-motif" aria-hidden="true">{MOTIFS[index % MOTIFS.length]}</span>{(surnameFixed || givenFixed) && <span className="fixed-badge">{surnameFixed && givenFixed ? '名字・名前固定中' : surnameFixed ? '名字固定中' : '名前固定中'}</span>}</div>
                   <div className="full-name"><span>{item.surname.kanji}</span><span>{item.given.kanji}</span></div>
                   <div className="reading">{item.surname.reading}　{item.given.reading}</div>
                   <div className="name-tags"><span className={`tag-tier tag-tier-${item.surname.tier}`}>{tierLabel(item.surname.tier)}</span>{item.given.moods.length > 0 ? item.given.moods.map((mood) => <span key={mood} className={`tag-mood tag-mood-${mood}`}>{moodLabel(mood)}</span>) : <span>おまかせ</span>}<span>{genderLabel(item.given.gender)}</span></div>
@@ -323,6 +357,26 @@ function App() {
 
         <footer className="site-footer"><div className="footer-brand"><div className="brand-seal small">名</div><div><strong>{BRAND}</strong><span>創作のための名前生成帳</span></div></div><div className="footer-links"><button onClick={() => setPanel('updates')}>更新履歴</button><button onClick={() => setPanel('sources')}>データの出典</button></div><p>© 2026 MEIMEI. 名字・名前データは各出典の利用条件に従って掲載しています。</p></footer>
       </main>
+      <aside className="status-rail" aria-label="状態表示">
+        <div className="rail-block">
+          <h3>// STATUS</h3>
+          <dl className="status-list">
+            <div><dt>MODE</dt><dd>LOCAL / NO LOGIN</dd></div>
+            <div><dt>SURNAMES</dt><dd>{stats.surnames.toLocaleString()} RECORDS</dd></div>
+            <div><dt>GIVEN</dt><dd>{stats.given.toLocaleString()} RECORDS</dd></div>
+            <div><dt>COND</dt><dd>{tierOptions.find((o) => o.value === surnameTier)?.label} / {moodOptions.find((o) => o.value === givenMood)?.label} / {genderOptions.find(([v]) => v === gender)?.[1]}</dd></div>
+            <div><dt>COMBOS</dt><dd>約{combos.toLocaleString()}通り</dd></div>
+            <div><dt>FIXED</dt><dd>{fixedSurname || fixedGiven ? `${fixedSurname ? `名字「${fixedSurname.kanji}」` : ''}${fixedSurname && fixedGiven ? ' + ' : ''}${fixedGiven ? `名前「${fixedGiven.kanji}」` : ''}` : 'NONE'}</dd></div>
+            <div><dt>STOCK</dt><dd>FAV {favorites.length} / HIST {history.length}</dd></div>
+          </dl>
+        </div>
+        <div className="rail-block">
+          <h3>// SESSION LOG</h3>
+          <div className="session-log">{sessionLog.length === 0 ? <p>-- no events --</p> : sessionLog.map((line, i) => <p key={i}>{line}</p>)}</div>
+        </div>
+        <div className="rail-block rail-note">保存はこの端末の中だけです。入力や生成結果がサーバーへ送信されることはありません。</div>
+      </aside>
+      </div>
 
       {menuOpen && (
         <>
@@ -339,7 +393,7 @@ function App() {
 
 function InfoPanel({ panel }: { panel: Exclude<Panel, null> }) {
   if (panel === 'help') return <><p className="section-kicker"><span />GUIDE</p><h2>使い方</h2><div className="guide-list"><div><b>01</b><p><strong>条件を選ぶ</strong><br />苗字は「傾向（よくある／やや珍しい／珍しい）」、名前は「雰囲気」と「性別イメージ」で絞り込めます。各選択肢には候補件数が出ます。</p></div><div><b>02</b><p><strong>1〜10人の候補をつくる</strong><br />同じ生成の中では名字・名前が重複しません。直近10回でよく出た候補は出にくくなっています。候補が足りない条件では、理由を表示して件数を減らします。</p></div><div><b>03</b><p><strong>名字・名前を固定する</strong><br />候補カードの「名字固定」「名前固定」で片方だけを変えて作り直せます。固定は条件欄のチップから個別に外せます。両方固定すると1件だけ表示します。</p></div><div><b>04</b><p><strong>気に入ったら保存</strong><br />お気に入りは最大{FAVORITES_LIMIT}件、履歴は最大{HISTORY_LIMIT}件まで、この端末に保存されます。一覧をクリックすると結果欄に再表示できます。</p></div></div><div className="panel-note">雰囲気の分類は、漢字の印象に基づく創作向けの目安です。実在人物の性別・年代・人格を断定するものではありません。</div></>
-  if (panel === 'updates') return <><p className="section-kicker"><span />CHANGELOG</p><h2>更新履歴</h2><div className="changelog"><div><time>2026.11.20</time><strong>分類をランキング実データに基づいて付け直し</strong><p>名字の傾向を、名字由来netの全国ランキングの順位（上位300位＝よくある／301〜3,000位＝標準・やや珍しい／3,001位以下・圏外＝珍しい）で判定するよう変更。名前の「現代的」は2025年の赤ちゃん名前ランキング（明治安田生命・たまひよ）上位の名前、「和風・古風」は昭和期の人気名前を基準に付け直し、漢字の印象だけでは現代的に分類しないようにしました。結果カードのタグをカテゴリごとに色分けしました。</p></div><div><time>2026.11.20</time><strong>生成の偏りと条件の反映を全面修正</strong><p>ランダム抽選をプール全体からの重み付き抽選に書き換え、読みの頭文字などへの偏りを解消。苗字の絞り込みを「雰囲気」から「傾向（よくある／やや珍しい／珍しい）」に変更し、中性的を追加。候補が足りない条件では無言で条件を変えず、理由を表示するようになりました。お気に入り（最大24件）と履歴（最大40件）をページ内に移し、削除・再表示・まとめてコピーに対応。保存形式の更新に伴い、以前のお気に入り・履歴は引き継がれません。</p></div><div><time>2026.10.23</time><strong>雰囲気に合う候補選定を改善</strong><p>候補に一般性レベルを付け、雰囲気と名字・名前のバランスを見ながら組み合わせるようにしました。</p></div><div><time>2026.10.22</time><strong>初回公開版を制作</strong><p>{BRAND}を新規構成。雰囲気選択、重複抑制、履歴、お気に入り、PWAアイコンを追加。</p></div></div></>
+  if (panel === 'updates') return <><p className="section-kicker"><span />CHANGELOG</p><h2>更新履歴</h2><div className="changelog"><div><time>2026.11.21</time><strong>UIを「電子名簿帳」のデザインへ変更</strong><p>台帳・名簿帳の紙の質感に、サイバーの情報設計を重ねた意匠に変更しました。明るい紙色の地に方眼と罫線、見出しタブの目次、朱印のようなお気に入りスタンプ、押し心地のある大きなボタンを備え、視認性と操作性を優先しています。生成の仕組み・データ・分類に変更はありません。</p></div><div><time>2026.11.20</time><strong>UIを情報端末デザインへ全面変更</strong><p>画面全体を「暗い都市で使う情報端末」のデザインに変更しました。上部のシステム帯、左のコマンド一覧、右の状態欄（現在の条件とセッションログ）を追加し、生成結果はタイムスタンプ付きのログ形式で表示します。生成の仕組みやデータに変更はありません。</p></div><div><time>2026.11.20</time><strong>分類をランキング実データに基づいて付け直し</strong><p>名字の傾向を、名字由来netの全国ランキングの順位（上位300位＝よくある／301〜3,000位＝標準・やや珍しい／3,001位以下・圏外＝珍しい）で判定するよう変更。名前の「現代的」は2025年の赤ちゃん名前ランキング（明治安田生命・たまひよ）上位の名前、「和風・古風」は昭和期の人気名前を基準に付け直し、漢字の印象だけでは現代的に分類しないようにしました。結果カードのタグをカテゴリごとに色分けしました。</p></div><div><time>2026.11.20</time><strong>生成の偏りと条件の反映を全面修正</strong><p>ランダム抽選をプール全体からの重み付き抽選に書き換え、読みの頭文字などへの偏りを解消。苗字の絞り込みを「雰囲気」から「傾向（よくある／やや珍しい／珍しい）」に変更し、中性的を追加。候補が足りない条件では無言で条件を変えず、理由を表示するようになりました。お気に入り（最大24件）と履歴（最大40件）をページ内に移し、削除・再表示・まとめてコピーに対応。保存形式の更新に伴い、以前のお気に入り・履歴は引き継がれません。</p></div><div><time>2026.10.23</time><strong>雰囲気に合う候補選定を改善</strong><p>候補に一般性レベルを付け、雰囲気と名字・名前のバランスを見ながら組み合わせるようにしました。</p></div><div><time>2026.10.22</time><strong>初回公開版を制作</strong><p>{BRAND}を新規構成。雰囲気選択、重複抑制、履歴、お気に入り、PWAアイコンを追加。</p></div></div></>
   return <><p className="section-kicker"><span />SOURCES</p><h2>データの出典</h2><div className="source-copy"><p>名字は、名字由来netを出典とする公開データセット（siikamiika/japanese-family-names、商用利用不可・帰属表示必須）と、公開共有されている JapaneseNamesDatabase から抽出した読み付き候補を組み合わせた {surnameCandidates.length.toLocaleString()} 件です。傾向（よくある／標準・やや珍しい／珍しい）は、名字由来netの全国名字ランキングの順位で付けています（よくある＝上位300位、標準・やや珍しい＝301〜3,000位、珍しい＝3,001位以下とランキング圏外）。順位は2026年版ランキングで照合しました。</p><p>名前は、MIT License の Japanese Personal Name Dataset（shuheilocale）をもとに、男女両方に現れる候補を「中性的」として統合した {givenCandidates.length.toLocaleString()} 件です。分類のうち「現代的」は明治安田生命「2025年生まれの子供の名前調査」とベネッセ たまひよ「赤ちゃんの名前ランキング2025」の上位の名前、「和風・古風」は明治安田生命の生まれ年別調査に基づく昭和期の人気名前を基準に付けています。その他の雰囲気は漢字の印象に基づく創作向けの目安です。分類は候補ごとに保持し、結果カードに色分けして表示しています。</p><p>利用条件が明示されていないデータベース由来の名前候補は、今回の改修で除外しました。名字データの利用条件は、公開先や利用目的に応じて各出典の最新条件を確認してください。</p><div className="source-links"><a href="https://github.com/siikamiika/japanese-family-names" target="_blank" rel="noreferrer">名字データセット（GitHub） <Icon name="arrow" size={15} /></a><a href="https://github.com/jackdeguest/JapaneseNamesDatabase" target="_blank" rel="noreferrer">JapaneseNamesDatabase（GitHub） <Icon name="arrow" size={15} /></a><a href="https://github.com/shuheilocale/japanese-personal-name-dataset" target="_blank" rel="noreferrer">日本人姓名データセット（GitHub） <Icon name="arrow" size={15} /></a></div></div></>
 }
 
