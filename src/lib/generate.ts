@@ -3,6 +3,7 @@
 // 方針（旧サイト「なまえ帳」仕様書 v1.0 の核を採用）:
 // - 苗字は雰囲気ではなく頻度の傾向 tier で絞る。
 // - 同一生成内では苗字・名前・姓名の重複を「禁止」する（抑制止まりにしない）。
+//   ただし片側を固定した場合は、固定した側は全件で使い回す（固定の用途そのもののため）。
 // - 直近10バッチの出現回数で重みを下げ、4回以上出た候補は通常選択から外す。
 // - 候補が足りない場合は、条件を無言で捨てず、件数を減らして理由を表示する。
 // - 抽選はプール全体からの重み付き抽選。先頭N件だけに絞るような偏りを作らない。
@@ -152,8 +153,9 @@ export function generateBatch(
   for (let slot = 0; slot < target; slot += 1) {
     let surname: Surname | undefined
     if (conditions.fixedSurname) {
-      surname = slot === 0 ? conditions.fixedSurname : undefined
-      if (!surname) break
+      // 固定した名字は全スロットで使い回す（「この名字で何人か作る」が固定の用途のため）。
+      // 重複を避けるのは姓名の組み合わせ側で、名前が毎回変わるので同一姓名にはならない。
+      surname = conditions.fixedSurname
     } else {
       const { items, weights } = buildWeights(surnamePool, surnameKey, 's:', counts, lastBatch, usedSurnames)
       surname = weightedPick(items, weights, rng)
@@ -206,7 +208,12 @@ export function generateBatch(
   } else if (results.length === 0) {
     shortageReason = `条件に合う候補が見つかりませんでした（名字 ${surnamePoolSize.toLocaleString()} 件／名前 ${givenPoolSize.toLocaleString()} 件）。条件をゆるめてみてください。`
   } else if (results.length < conditions.count) {
-    shortageReason = `重複を避けながら作れる上限のため、${conditions.count}件ではなく ${results.length}件だけ表示しています（名字 ${surnamePoolSize.toLocaleString()} 件／名前 ${givenPoolSize.toLocaleString()} 件の候補から生成）。条件をゆるめると増やせます。`
+    const fixedNote = conditions.fixedSurname && !conditions.fixedGiven
+      ? '名字は固定したまま、名前だけを変えて作っています。'
+      : !conditions.fixedSurname && conditions.fixedGiven
+        ? '名前は固定したまま、名字だけを変えて作っています。'
+        : ''
+    shortageReason = `重複を避けながら作れる上限のため、${conditions.count}件ではなく ${results.length}件だけ表示しています（名字 ${surnamePoolSize.toLocaleString()} 件／名前 ${givenPoolSize.toLocaleString()} 件の候補から生成）。${fixedNote}条件をゆるめると増やせます。`
   }
 
   return { results, shortageReason, surnamePoolSize, givenPoolSize }

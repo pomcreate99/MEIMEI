@@ -36,7 +36,7 @@ svg{flex:none}
 .app-shell{min-height:100vh}
 
 /* ===== 表紙帯（ヘッダー） ===== */
-.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:16px;min-height:66px;padding:9px 22px;background:rgba(253,251,243,.94);border-bottom:2px solid var(--ink)}
+.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:16px;min-height:66px;padding:9px 22px;background:var(--paper);border-bottom:2px solid var(--ink)}
 .menu-button{display:none;place-items:center;width:42px;height:42px;border:2px solid var(--ink);border-radius:9px;background:var(--card);color:var(--ink);box-shadow:2px 2px 0 rgba(34,48,60,.9)}
 .brand-lockup{display:flex;align-items:center;gap:13px;min-width:0}
 .brand-seal{display:grid;place-items:center;width:44px;height:44px;flex:none;border:2px solid var(--coral-deep);border-radius:8px;color:#fff;font-family:"Shippori Mincho",serif;font-size:20px;font-weight:800;background:var(--coral);transform:rotate(-4deg);box-shadow:2px 2px 0 rgba(34,48,60,.35)}
@@ -54,7 +54,7 @@ svg{flex:none}
 /* ===== 3カラム構成 ===== */
 .terminal-layout{display:grid;grid-template-columns:184px minmax(0,1fr) 272px;gap:28px;max-width:1460px;margin:0 auto;padding:26px 28px 34px;align-items:start}
 .main-content{min-width:0}
-section{scroll-margin-top:96px}
+section{scroll-margin-top:112px}
 
 /* ===== 左：見出しタブの目次 ===== */
 .terminal-nav{position:sticky;top:96px;display:flex;flex-direction:column;gap:9px}
@@ -153,9 +153,9 @@ select:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(16,163,178,.2)}
 .name-card{position:relative;border:1.5px solid var(--line);border-radius:14px;background:var(--card);color:var(--ink);box-shadow:3px 3px 0 rgba(34,48,60,.22);animation:cardIn .45s ease both;overflow:hidden}
 .name-card:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(180deg, transparent 0 27px, rgba(14,124,134,.06) 27px 28px);pointer-events:none}
 .name-card:has(.icon-action.favorite.active):after{content:"済";position:absolute;top:14px;right:52px;display:grid;place-items:center;width:40px;height:40px;border:2.5px solid var(--coral);border-radius:50%;color:var(--coral);font-family:"Shippori Mincho",serif;font-size:19px;font-weight:800;background:rgba(255,255,255,.82);transform:rotate(-12deg);animation:stampIn .35s ease both;z-index:2}
-.name-ornament{position:absolute;top:16px;font-family:"Shippori Mincho",serif;font-size:19px;color:var(--teal);line-height:1;z-index:1}
-.ornament-left{left:15px}
-.ornament-right{right:15px}
+.name-ornament{position:absolute;top:14px;width:14px;height:14px;font-size:0;color:transparent;line-height:1;z-index:1}
+.ornament-left{left:14px;border-top:2px solid var(--teal);border-left:2px solid var(--teal)}
+.ornament-right{right:14px;border-top:2px solid var(--teal);border-right:2px solid var(--teal)}
 .name-main{position:relative;padding:24px 26px 18px}
 .card-meta{display:flex;align-items:center;gap:10px;margin-bottom:12px}
 .card-number{font-family:"M PLUS 1 Code",monospace;font-size:12.5px;font-weight:600;color:var(--coral);letter-spacing:.1em}
@@ -177,7 +177,7 @@ select:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(16,163,178,.2)}
 .name-tags .tag-mood-unique{background:#F9DCEC;color:#7C2856;border-color:#F0AECB}
 .population-line{margin:0;text-align:center;color:var(--muted);font-size:12.5px;line-height:1.8}
 .name-actions{position:relative;display:grid;grid-template-columns:repeat(4,1fr);border-top:1.5px dashed var(--rule);background:#FBF8EE}
-.name-actions .icon-action{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:52px;border:0;border-right:1px solid var(--line);background:transparent;color:var(--ink-soft);font-size:13px;font-weight:700;padding:8px 4px;transition:background .12s ease, color .12s ease}
+.name-actions .icon-action{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:52px;border:0;border-right:1px solid var(--line);background:transparent;color:var(--ink-soft);font-size:13px;font-weight:700;padding:8px 4px;white-space:nowrap;transition:background .12s ease, color .12s ease}
 .name-actions .icon-action:last-child{border-right:0}
 .name-actions .icon-action:hover{background:#EFFAFA;color:var(--teal-dark)}
 .name-actions .icon-action.active{color:var(--coral)}
@@ -273,7 +273,10 @@ select:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(16,163,178,.2)}
 }
 @media (max-width:720px){
   .topbar{padding:8px 14px;gap:10px}
-  .brand-name{font-size:16px}
+  .brand-lockup{flex:1 1 auto}
+  .brand-name{font-size:16px;overflow:hidden;text-overflow:ellipsis}
+  .sys-readout{flex:none}
+  .sys-clock{font-size:11.5px}
   .eyebrow{display:none}
   .help-button{display:none}
   .brand-seal{width:38px;height:38px;font-size:17px}
@@ -293,7 +296,7 @@ select:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(16,163,178,.2)}
   .result-header{align-items:flex-start;flex-direction:column}
   .library-grid{grid-template-columns:1fr}
   .status-rail{grid-template-columns:1fr}
-  .name-actions .icon-action{font-size:12px;gap:4px}
+  .name-actions .icon-action{font-size:11.5px;gap:3px;padding:8px 2px}
   .changelog>div{grid-template-columns:1fr}
   .changelog p{grid-column:1}
   .info-panel{padding:22px 18px}

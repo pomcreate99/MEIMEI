@@ -114,6 +114,12 @@ console.log('== 4. 苗字tier・候補不足・両固定 ==')
   const fixedG = givenNames[0]
   const both = gen.generateBatch(surnames, givenNames, { surnameTier: 'all', givenMood: 'all', gender: 'any', count: 6, fixedSurname: fixedS, fixedGiven: fixedG }, [], rng(31))
   assert(both.results.length === 1 && both.shortageReason !== null, '両方固定: 同一姓名を並べず1件だけ返す')
+  const onlyS = gen.generateBatch(surnames, givenNames, { surnameTier: 'all', givenMood: 'all', gender: 'any', count: 4, fixedSurname: fixedS }, [], rng(41))
+  assert(onlyS.results.length === 4 && onlyS.results.every((i) => gen.surnameKey(i.surname) === gen.surnameKey(fixedS)), '名字だけ固定: 固定した名字のまま指定件数ぶん作れる', `results=${onlyS.results.length}`)
+  assert(new Set(onlyS.results.map((i) => gen.givenKey(i.given))).size === 4, '名字だけ固定: 名前は全件異なる')
+  const onlyG = gen.generateBatch(surnames, givenNames, { surnameTier: 'all', givenMood: 'all', gender: 'any', count: 4, fixedGiven: fixedG }, [], rng(43))
+  assert(onlyG.results.length === 4 && onlyG.results.every((i) => gen.givenKey(i.given) === gen.givenKey(fixedG)), '名前だけ固定: 固定した名前のまま指定件数ぶん作れる', `results=${onlyG.results.length}`)
+  assert(new Set(onlyG.results.map((i) => gen.surnameKey(i.surname))).size === 4, '名前だけ固定: 名字は全件異なる')
   const combos = gen.combinationCount(surnames, givenNames, { surnameTier: 'all', givenMood: 'all', gender: 'any', count: 4 })
   assert(combos === surnames.length * givenNames.length, '組み合わせ数がプール積と一致する', `combos=${combos}`)
 }
@@ -144,9 +150,6 @@ console.log('== 6. コピー形式 ==')
   assert(bulk.split('\n').length === 2 && bulk.startsWith('1. '), 'まとめてコピー形式（番号付き）')
 }
 
-console.log(failures === 0 ? '\nALL TESTS PASSED' : `\n${failures} FAILURES`)
-process.exit(failures === 0 ? 0 : 1)
-
 console.log('== 7. 分類の根拠（ランキング基準） ==')
 {
   const byRank = [...surnames].filter((s) => s.rank).sort((a, b) => a.rank - b.rank)
@@ -167,3 +170,6 @@ console.log('== 7. 分類の根拠（ランキング基準） ==')
   const modernMale = givenNames.filter((g) => g.moods.includes('modern') && g.gender === 'male')
   assert(modernMale.length >= 50, '現代的・男性寄りの候補が50件以上ある', `n=${modernMale.length}`)
 }
+
+console.log(failures === 0 ? '\nALL TESTS PASSED' : `\n${failures} FAILURES`)
+process.exit(failures === 0 ? 0 : 1)
