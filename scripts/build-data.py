@@ -152,6 +152,12 @@ def main() -> None:
     # 生成済みの同梱JSONをそのまま使って候補数を維持する。
     if not SQLITE_FILE.exists() and OUT.exists():
         payload = json.loads(OUT.read_text(encoding='utf-8'))
+        if payload.get('version') != 2:
+            # 旧形式の同梱データが残っている場合は v2 へ再分類してから使う
+            import subprocess
+            import sys
+            subprocess.run([sys.executable, str(ROOT / 'scripts/reclassify.py')], check=True)
+            payload = json.loads(OUT.read_text(encoding='utf-8'))
         print(f"using bundled {len(payload['surnames'])} surnames and {len(payload['givenNames'])} given names -> {OUT}")
         return
     surnames = build_surnames()

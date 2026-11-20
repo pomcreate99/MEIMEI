@@ -1,6 +1,6 @@
 # ランダム名鑑【MEIMEI】
 
-創作活動向けの名字・名前ランダム生成ツールです。名字と名前の雰囲気を個別に選び、直近10回の重複を抑えながら日本人名を生成できます。
+創作活動向けの名字・名前ランダム生成ツールです。名字の傾向と名前の雰囲気を個別に選び、重複と偏りを抑えながら日本人名を生成できます。
 
 ## 開発
 
@@ -9,24 +9,28 @@ npm install
 npm run dev
 ```
 
-本番ビルドは `npm run build` です。ビルド時に `scripts/build-data.py` が公開データを `src/data/names.json` に変換します。
+本番ビルドは `npm run build` です。ビルド時に `scripts/build-data.py` が同梱データ（v2形式）を確認します。生成ロジックの自動テストは `npm test` で実行できます（偏り・重複・性別条件・候補不足の扱いを大量生成で検証します）。
+
+データの再分類が必要な場合は `python3 scripts/reclassify.py`（旧形式データからの変換用、冪等）を使います。
 
 ## 主な機能
 
-- 名字・名前の雰囲気選択
-- 男女傾向の選択
-- 4・6・8・10個のまとめ生成
-- 名字固定・名前固定による片側だけの再生成
-- 画面上部の「？」から開く使い方ダイアログ
-- 直近10回を参照した重複抑制
-- 生成履歴とお気に入りの端末内保存
+- 苗字の傾向（よくある／標準・やや珍しい／珍しい）と名前の雰囲気（7分類）の選択
+- 名前の性別イメージ（指定しない／男性寄り／女性寄り／中性的）の選択
+- 1〜10人のまとめ生成、条件の組み合わせ数のリアルタイム表示
+- 同じ生成内では名字・名前・姓名の重複を禁止
+- 直近10バッチの出現回数による偏り防止（4回以上出た候補は通常選択から除外）
+- 候補が足りない条件では、条件を無言で変えず、件数を減らして理由を表示
+- 名字固定・名前固定による片側だけの再生成（固定は個別に解除可能、両方固定時は1件だけ表示）
+- 結果カードには候補自身の分類タグ（苗字の傾向／名前の雰囲気／性別イメージ）を表示
+- 個別コピーと、番号付きの「まとめてコピー」
+- お気に入り（最大24件）と生成履歴（最大40件、同じ姓名は1件に集約）をページ内に表示し、個別削除・全消去・クリックで結果へ再表示
+- 生成履歴とお気に入りの端末内保存（ログイン不要）
 - favicon / Webアプリマニフェスト
 - GitHub Pagesなどへ移行しやすい静的Vite構成
 
 ## データについて
 
-名字は [siikamiika/japanese-family-names](https://github.com/siikamiika/japanese-family-names) と、公開共有されている [JapaneseNamesDatabase](https://github.com/jackdeguest/JapaneseNamesDatabase) をもとに、読み付き10,000件へ整形しています。前者はREADMEに記載されているとおり、名字由来netを出典とし、商用利用不可・帰属表示必須です。後者は公開元READMEに明示された利用条件がないため、公開元の最新条件を確認して利用してください。
+名字は [siikamiika/japanese-family-names](https://github.com/siikamiika/japanese-family-names)（名字由来netを出典とし、商用利用不可・帰属表示必須）と、公開共有されている [JapaneseNamesDatabase](https://github.com/jackdeguest/JapaneseNamesDatabase) をもとに、読み付き9,998件へ整形しています。傾向は収録人口と収録順位から付けています。
 
-名前は [shuheilocale/japanese-personal-name-dataset](https://github.com/shuheilocale/japanese-personal-name-dataset) とJapaneseNamesDatabaseをもとに、読みと漢字表記を別候補として20,000件へ整形しています。前者のリポジトリはMIT Licenseです。詳しい出典・利用条件はアプリ内の「データの出典」を確認してください。
-
-トレンドの参考として、[たまひよ 赤ちゃんの名前ランキング](https://st.benesse.ne.jp/ninshin/name/) と [2026年全国名字ランキング](https://gakumado.mynavi.jp/freshers/articles/92511) を確認しています。
+名前は [shuheilocale/japanese-personal-name-dataset](https://github.com/shuheilocale/japanese-personal-name-dataset)（MIT License）をもとに、男女両方に同じ漢字・読みで現れる候補を「中性的」として統合した20,769件と、公開名ランキングで定番の現代的な名前を中心とした独自編集の補完候補です。雰囲気は漢字の印象に基づく創作向けの目安で、候補ごとに主分類1つ＋副分類最大1つを保持しています。利用条件が明示されていないデータベース由来の名前候補は、2026-11-20の改修で除外しました。詳しい出典・利用条件はアプリ内の「データの出典」を確認してください。
