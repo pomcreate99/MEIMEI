@@ -408,6 +408,38 @@ def apply_joint_review(given: list[dict]) -> list[dict]:
     return [g for g in given if (g['kanji'], g['reading']) not in excluded]
 
 
+# ChatGPT（GPT-6）による2,000件の一括診断（2026-11-21、博士の提案で実施）。
+# 印象分類つきの名前から5分類×400件を無作為抽出し、現在の分類を伏せた状態で
+# ChatGPTに分類させた。結果は scripts/bulk-review-2026-11-21.json に保存。
+# コード: E/B/S/M/U=印象5分類の主分類に付け替え、N=印象タグを外す、
+# X=読みが不自然として生成候補から除外する。
+BULK_REVIEW_PATH = Path(__file__).with_name('bulk-review-2026-11-21.json')
+BULK_CODE_TO_MOOD = {'E': 'elegant', 'B': 'bright', 'S': 'strong', 'M': 'mysterious', 'U': 'unique'}
+
+
+def apply_bulk_review(given: list[dict]) -> list[dict]:
+    if not BULK_REVIEW_PATH.exists():
+        return given
+    bulk = json.loads(BULK_REVIEW_PATH.read_text(encoding='utf-8'))['results']
+    verdicts = {(r['kanji'], r['reading']): r['code'] for r in bulk}
+    kept = []
+    for g in given:
+        code = verdicts.get((g['kanji'], g['reading']))
+        if code is None or 'modern' in g['moods'] or 'classic' in g['moods']:
+            kept.append(g)
+            continue
+        if code == 'X':
+            continue
+        if code == 'N':
+            g['moods'] = []
+        else:
+            primary = BULK_CODE_TO_MOOD[code]
+            rest = [m for m in g['moods'] if m != primary]
+            g['moods'] = [primary] + rest[:1]
+        kept.append(g)
+    return kept
+
+
 def stride_sample(variants: list[str], cap: int) -> list[str]:
     """バリエーションを先頭・中間・末尾から均等に間引く（決定的サンプリング）。"""
     if len(variants) <= cap:
@@ -509,18 +541,19 @@ def main() -> None:
     given = merge_ranked(given)
     given = sanitize_ranked(given)
     given = apply_joint_review(given)
+    given = apply_bulk_review(given)
     # 生成プールの並び順が結果に影響しないよう、読み順で安定ソートしておく
     given.sort(key=lambda r: (r['reading'], r['kanji']))
 
     out = {
-        'version': 4,
+        'version': 5,
         'generatedAt': '2026-11-21',
         'sources': payload.get('sources', {}),
         'surnames': surnames,
         'givenNames': given,
     }
     DATA.write_text(json.dumps(out, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
-    print(f'v4: {len(surnames)} surnames, {len(given)} given names -> {DATA}')
+    print(f'v5: {len(surnames)} surnames, {len(given)} given names -> {DATA}')
 
 
 if __name__ == '__main__':

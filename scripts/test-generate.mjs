@@ -109,7 +109,7 @@ console.log('== 4. 苗字tier・候補不足・両固定 ==')
   const rare = simulate({ surnameTier: 'rare', givenMood: 'all', gender: 'any', count: 4 }, 50, 23)
   assert(rare.all.every((i) => i.surname.tier === 'rare'), '珍しい名字: tierが一致する')
   const outcome = gen.generateBatch(surnames, givenNames, { surnameTier: 'all', givenMood: 'unique', gender: 'unisex', count: 10 }, [], rng(29))
-  assert(outcome.results.length <= 2 && outcome.shortageReason !== null, '中性的+個性的（候補2件）: 件数を減らして理由が出る', `results=${outcome.results.length}`)
+  assert(outcome.results.length === 4 && outcome.shortageReason !== null, '中性的+個性的（候補4件）: 件数を減らして理由が出る', `results=${outcome.results.length}`)
   const fixedS = surnames[0]
   const fixedG = givenNames[0]
   const both = gen.generateBatch(surnames, givenNames, { surnameTier: 'all', givenMood: 'all', gender: 'any', count: 6, fixedSurname: fixedS, fixedGiven: fixedG }, [], rng(31))

@@ -1,0 +1,10014 @@
+{
+ "source": "ChatGPT (GPT-6) bulk review 2026-11-21, blind classification of 2000 sampled names (400 per impression category)",
+ "codes": {
+  "E": "elegant",
+  "B": "bright",
+  "S": "strong",
+  "M": "mysterious",
+  "U": "unique",
+  "N": "none",
+  "X": "exclude"
+ },
+ "results": [
+  {
+   "kanji": "徹次郎",
+   "reading": "てつじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "瑠璃",
+   "reading": "るり",
+   "code": "E"
+  },
+  {
+   "kanji": "美律子",
+   "reading": "みつこ",
+   "code": "E"
+  },
+  {
+   "kanji": "真帆乃",
+   "reading": "まほの",
+   "code": "B"
+  },
+  {
+   "kanji": "岩松",
+   "reading": "いわまつ",
+   "code": "U"
+  },
+  {
+   "kanji": "文也",
+   "reading": "ぶんや",
+   "code": "N"
+  },
+  {
+   "kanji": "河浦子",
+   "reading": "かほこ",
+   "code": "U"
+  },
+  {
+   "kanji": "音海",
+   "reading": "おとみ",
+   "code": "E"
+  },
+  {
+   "kanji": "開夢",
+   "reading": "かいむ",
+   "code": "U"
+  },
+  {
+   "kanji": "夢二",
+   "reading": "ゆめじ",
+   "code": "U"
+  },
+  {
+   "kanji": "貴克",
+   "reading": "たかかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "勝永",
+   "reading": "かつなが",
+   "code": "S"
+  },
+  {
+   "kanji": "雪裕",
+   "reading": "ゆきひろ",
+   "code": "E"
+  },
+  {
+   "kanji": "幸奈栄",
+   "reading": "さなえ",
+   "code": "U"
+  },
+  {
+   "kanji": "周星",
+   "reading": "しゅうせい",
+   "code": "M"
+  },
+  {
+   "kanji": "利恵美",
+   "reading": "りえみ",
+   "code": "B"
+  },
+  {
+   "kanji": "王直",
+   "reading": "きみただ",
+   "code": "U"
+  },
+  {
+   "kanji": "玄三郎",
+   "reading": "げんざぶろう",
+   "code": "S"
+  },
+  {
+   "kanji": "美千穂",
+   "reading": "みちほ",
+   "code": "E"
+  },
+  {
+   "kanji": "静里奈",
+   "reading": "せりな",
+   "code": "E"
+  },
+  {
+   "kanji": "舞花",
+   "reading": "まいか",
+   "code": "B"
+  },
+  {
+   "kanji": "志能富",
+   "reading": "しのぶ",
+   "code": "U"
+  },
+  {
+   "kanji": "都代奈",
+   "reading": "とよな",
+   "code": "U"
+  },
+  {
+   "kanji": "賢吉朗",
+   "reading": "けんきちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "香夕",
+   "reading": "こゆう",
+   "code": "M"
+  },
+  {
+   "kanji": "星絵",
+   "reading": "ほしえ",
+   "code": "B"
+  },
+  {
+   "kanji": "碧空",
+   "reading": "そら",
+   "code": "M"
+  },
+  {
+   "kanji": "直司",
+   "reading": "なおし",
+   "code": "E"
+  },
+  {
+   "kanji": "潤美",
+   "reading": "うるみ",
+   "code": "E"
+  },
+  {
+   "kanji": "静麻",
+   "reading": "しずま",
+   "code": "M"
+  },
+  {
+   "kanji": "啓心",
+   "reading": "けいしん",
+   "code": "E"
+  },
+  {
+   "kanji": "真亜弥",
+   "reading": "まあや",
+   "code": "B"
+  },
+  {
+   "kanji": "佐亜子",
+   "reading": "さあこ",
+   "code": "U"
+  },
+  {
+   "kanji": "凛香",
+   "reading": "りんか",
+   "code": "E"
+  },
+  {
+   "kanji": "雪音",
+   "reading": "ゆきね",
+   "code": "M"
+  },
+  {
+   "kanji": "龍之進",
+   "reading": "たつのしん",
+   "code": "S"
+  },
+  {
+   "kanji": "功吉郎",
+   "reading": "こうきちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "冬美香",
+   "reading": "ふみか",
+   "code": "B"
+  },
+  {
+   "kanji": "通明",
+   "reading": "みちあき",
+   "code": "E"
+  },
+  {
+   "kanji": "大地郎",
+   "reading": "だいちろう",
+   "code": "U"
+  },
+  {
+   "kanji": "静波",
+   "reading": "しずは",
+   "code": "E"
+  },
+  {
+   "kanji": "銀次",
+   "reading": "ぎんじ",
+   "code": "S"
+  },
+  {
+   "kanji": "静純",
+   "reading": "せいじゅん",
+   "code": "E"
+  },
+  {
+   "kanji": "薫衣",
+   "reading": "くんえ",
+   "code": "U"
+  },
+  {
+   "kanji": "嗣明",
+   "reading": "つぎあき",
+   "code": "E"
+  },
+  {
+   "kanji": "亮毅",
+   "reading": "りょうき",
+   "code": "S"
+  },
+  {
+   "kanji": "冬音",
+   "reading": "ふゆね",
+   "code": "M"
+  },
+  {
+   "kanji": "紫生",
+   "reading": "しお",
+   "code": "M"
+  },
+  {
+   "kanji": "永美",
+   "reading": "ひさみ",
+   "code": "E"
+  },
+  {
+   "kanji": "直見",
+   "reading": "なおみ",
+   "code": "N"
+  },
+  {
+   "kanji": "玄任",
+   "reading": "はるひで",
+   "code": "X"
+  },
+  {
+   "kanji": "玲亜",
+   "reading": "れあ",
+   "code": "U"
+  },
+  {
+   "kanji": "錦四郎",
+   "reading": "きんしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "結衣香",
+   "reading": "ゆいか",
+   "code": "B"
+  },
+  {
+   "kanji": "真美々",
+   "reading": "まみみ",
+   "code": "U"
+  },
+  {
+   "kanji": "颯花",
+   "reading": "ふうか",
+   "code": "B"
+  },
+  {
+   "kanji": "彰己",
+   "reading": "しょうき",
+   "code": "S"
+  },
+  {
+   "kanji": "幹朗",
+   "reading": "みきろう",
+   "code": "E"
+  },
+  {
+   "kanji": "健一郎",
+   "reading": "けんいちろ",
+   "code": "X"
+  },
+  {
+   "kanji": "龍郎",
+   "reading": "たつろう",
+   "code": "S"
+  },
+  {
+   "kanji": "夏野登",
+   "reading": "かやと",
+   "code": "U"
+  },
+  {
+   "kanji": "允美",
+   "reading": "のぶみ",
+   "code": "E"
+  },
+  {
+   "kanji": "春野",
+   "reading": "はるの",
+   "code": "B"
+  },
+  {
+   "kanji": "緒萌",
+   "reading": "おもえ",
+   "code": "U"
+  },
+  {
+   "kanji": "颯流",
+   "reading": "そうる",
+   "code": "U"
+  },
+  {
+   "kanji": "小冬",
+   "reading": "こふゆ",
+   "code": "B"
+  },
+  {
+   "kanji": "音音",
+   "reading": "ねね",
+   "code": "B"
+  },
+  {
+   "kanji": "隼太",
+   "reading": "じゅんた",
+   "code": "U"
+  },
+  {
+   "kanji": "深思",
+   "reading": "ふかし",
+   "code": "M"
+  },
+  {
+   "kanji": "直彦",
+   "reading": "なおひこ",
+   "code": "E"
+  },
+  {
+   "kanji": "明日成",
+   "reading": "あすなり",
+   "code": "S"
+  },
+  {
+   "kanji": "宙菜",
+   "reading": "そらな",
+   "code": "M"
+  },
+  {
+   "kanji": "鉄之",
+   "reading": "てつゆき",
+   "code": "S"
+  },
+  {
+   "kanji": "華乃",
+   "reading": "あきの",
+   "code": "E"
+  },
+  {
+   "kanji": "武雅",
+   "reading": "むが",
+   "code": "S"
+  },
+  {
+   "kanji": "真希奈",
+   "reading": "まきな",
+   "code": "B"
+  },
+  {
+   "kanji": "佳寛",
+   "reading": "よしひろ",
+   "code": "E"
+  },
+  {
+   "kanji": "夏哉",
+   "reading": "なつや",
+   "code": "B"
+  },
+  {
+   "kanji": "依以子",
+   "reading": "えいこ",
+   "code": "U"
+  },
+  {
+   "kanji": "直春",
+   "reading": "なおはる",
+   "code": "E"
+  },
+  {
+   "kanji": "哲汰朗",
+   "reading": "てつたろう",
+   "code": "U"
+  },
+  {
+   "kanji": "誉二朗",
+   "reading": "たかじろう",
+   "code": "U"
+  },
+  {
+   "kanji": "静恵",
+   "reading": "しずとし",
+   "code": "X"
+  },
+  {
+   "kanji": "多美恵",
+   "reading": "たみえ",
+   "code": "B"
+  },
+  {
+   "kanji": "冬江",
+   "reading": "ふゆえ",
+   "code": "E"
+  },
+  {
+   "kanji": "音夢",
+   "reading": "ねむ",
+   "code": "M"
+  },
+  {
+   "kanji": "名美",
+   "reading": "なみ",
+   "code": "B"
+  },
+  {
+   "kanji": "沙明",
+   "reading": "さあき",
+   "code": "U"
+  },
+  {
+   "kanji": "雪矢",
+   "reading": "ゆきや",
+   "code": "S"
+  },
+  {
+   "kanji": "伽津士",
+   "reading": "かつし",
+   "code": "U"
+  },
+  {
+   "kanji": "太治郎",
+   "reading": "たじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "弥子",
+   "reading": "やこ",
+   "code": "U"
+  },
+  {
+   "kanji": "音樹",
+   "reading": "おとき",
+   "code": "M"
+  },
+  {
+   "kanji": "明須菜",
+   "reading": "あすな",
+   "code": "B"
+  },
+  {
+   "kanji": "由利美",
+   "reading": "ゆりみ",
+   "code": "E"
+  },
+  {
+   "kanji": "ゆり子",
+   "reading": "ゆりこ",
+   "code": "B"
+  },
+  {
+   "kanji": "長陽",
+   "reading": "ながあき",
+   "code": "E"
+  },
+  {
+   "kanji": "尚輝",
+   "reading": "なおてる",
+   "code": "S"
+  },
+  {
+   "kanji": "光季",
+   "reading": "みつき",
+   "code": "E"
+  },
+  {
+   "kanji": "玄昌",
+   "reading": "はるまさ",
+   "code": "X"
+  },
+  {
+   "kanji": "聖明",
+   "reading": "せいめい",
+   "code": "M"
+  },
+  {
+   "kanji": "友希乃",
+   "reading": "ゆきの",
+   "code": "B"
+  },
+  {
+   "kanji": "佳生",
+   "reading": "かおい",
+   "code": "X"
+  },
+  {
+   "kanji": "瀬里加",
+   "reading": "せりか",
+   "code": "B"
+  },
+  {
+   "kanji": "晃教",
+   "reading": "てるゆき",
+   "code": "E"
+  },
+  {
+   "kanji": "夕比奈",
+   "reading": "ゆいな",
+   "code": "B"
+  },
+  {
+   "kanji": "景雅",
+   "reading": "かげまさ",
+   "code": "S"
+  },
+  {
+   "kanji": "光貞",
+   "reading": "てるさだ",
+   "code": "S"
+  },
+  {
+   "kanji": "千夜江",
+   "reading": "ちやえ",
+   "code": "M"
+  },
+  {
+   "kanji": "紗来良",
+   "reading": "さくら",
+   "code": "U"
+  },
+  {
+   "kanji": "麗乃",
+   "reading": "れの",
+   "code": "E"
+  },
+  {
+   "kanji": "静枝",
+   "reading": "しづえ",
+   "code": "E"
+  },
+  {
+   "kanji": "愛一朗",
+   "reading": "あいいちろう",
+   "code": "U"
+  },
+  {
+   "kanji": "颯馬",
+   "reading": "そうま",
+   "code": "S"
+  },
+  {
+   "kanji": "弥六",
+   "reading": "やろく",
+   "code": "U"
+  },
+  {
+   "kanji": "麻衣",
+   "reading": "あさい",
+   "code": "X"
+  },
+  {
+   "kanji": "真貴美",
+   "reading": "まきみ",
+   "code": "E"
+  },
+  {
+   "kanji": "星砂美",
+   "reading": "せさみ",
+   "code": "U"
+  },
+  {
+   "kanji": "玄徳",
+   "reading": "はるのり",
+   "code": "X"
+  },
+  {
+   "kanji": "瑞姫",
+   "reading": "みづき",
+   "code": "E"
+  },
+  {
+   "kanji": "銀治郎",
+   "reading": "ぎんじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "玄一",
+   "reading": "げんいち",
+   "code": "S"
+  },
+  {
+   "kanji": "光絵",
+   "reading": "みつえ",
+   "code": "E"
+  },
+  {
+   "kanji": "郁津香",
+   "reading": "いづか",
+   "code": "U"
+  },
+  {
+   "kanji": "緋鶴",
+   "reading": "ひづる",
+   "code": "M"
+  },
+  {
+   "kanji": "百音",
+   "reading": "ももね",
+   "code": "B"
+  },
+  {
+   "kanji": "紅霞",
+   "reading": "べにか",
+   "code": "M"
+  },
+  {
+   "kanji": "真愛",
+   "reading": "まい",
+   "code": "B"
+  },
+  {
+   "kanji": "武三郎",
+   "reading": "たけさぶろう",
+   "code": "S"
+  },
+  {
+   "kanji": "久々美",
+   "reading": "くくみ",
+   "code": "U"
+  },
+  {
+   "kanji": "葵実子",
+   "reading": "きみこ",
+   "code": "U"
+  },
+  {
+   "kanji": "野火子",
+   "reading": "のびこ",
+   "code": "U"
+  },
+  {
+   "kanji": "愛水",
+   "reading": "あいすい",
+   "code": "U"
+  },
+  {
+   "kanji": "真由季",
+   "reading": "まゆき",
+   "code": "B"
+  },
+  {
+   "kanji": "長太郎",
+   "reading": "ちょうたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "厚緒",
+   "reading": "あつお",
+   "code": "U"
+  },
+  {
+   "kanji": "竜志郎",
+   "reading": "りゅうしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "時太郎",
+   "reading": "ときたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "佐緒",
+   "reading": "さお",
+   "code": "E"
+  },
+  {
+   "kanji": "衣左士",
+   "reading": "いさし",
+   "code": "U"
+  },
+  {
+   "kanji": "策太郎",
+   "reading": "さくたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "智澄",
+   "reading": "ちずみ",
+   "code": "E"
+  },
+  {
+   "kanji": "温真",
+   "reading": "あつま",
+   "code": "B"
+  },
+  {
+   "kanji": "千冬",
+   "reading": "ちふゆ",
+   "code": "E"
+  },
+  {
+   "kanji": "香凜",
+   "reading": "かりん",
+   "code": "E"
+  },
+  {
+   "kanji": "子輝",
+   "reading": "しき",
+   "code": "U"
+  },
+  {
+   "kanji": "直吉",
+   "reading": "なおきち",
+   "code": "S"
+  },
+  {
+   "kanji": "剛虎",
+   "reading": "たかとら",
+   "code": "S"
+  },
+  {
+   "kanji": "依梨阿",
+   "reading": "いりあ",
+   "code": "U"
+  },
+  {
+   "kanji": "沙央美",
+   "reading": "さおみ",
+   "code": "B"
+  },
+  {
+   "kanji": "きく子",
+   "reading": "きくこ",
+   "code": "B"
+  },
+  {
+   "kanji": "葵美香",
+   "reading": "きみか",
+   "code": "B"
+  },
+  {
+   "kanji": "多真実",
+   "reading": "たまみ",
+   "code": "B"
+  },
+  {
+   "kanji": "力正",
+   "reading": "かつまさ",
+   "code": "S"
+  },
+  {
+   "kanji": "吉弥",
+   "reading": "きちや",
+   "code": "B"
+  },
+  {
+   "kanji": "久真",
+   "reading": "ひさなお",
+   "code": "X"
+  },
+  {
+   "kanji": "稚奈津",
+   "reading": "ちなつ",
+   "code": "B"
+  },
+  {
+   "kanji": "嘉毅",
+   "reading": "よしき",
+   "code": "S"
+  },
+  {
+   "kanji": "香裕",
+   "reading": "かゆう",
+   "code": "U"
+  },
+  {
+   "kanji": "三四朗",
+   "reading": "さんしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "海王",
+   "reading": "かいおう",
+   "code": "S"
+  },
+  {
+   "kanji": "颯太朗",
+   "reading": "そうたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "宗真",
+   "reading": "そうま",
+   "code": "S"
+  },
+  {
+   "kanji": "公保子",
+   "reading": "きほこ",
+   "code": "U"
+  },
+  {
+   "kanji": "銀蔵",
+   "reading": "ぎんぞう",
+   "code": "S"
+  },
+  {
+   "kanji": "律沙枝",
+   "reading": "りさえ",
+   "code": "U"
+  },
+  {
+   "kanji": "安樹",
+   "reading": "あんじゅ",
+   "code": "E"
+  },
+  {
+   "kanji": "雅大",
+   "reading": "まさひろ",
+   "code": "E"
+  },
+  {
+   "kanji": "優穂",
+   "reading": "まさほ",
+   "code": "E"
+  },
+  {
+   "kanji": "福太朗",
+   "reading": "ふくたろう",
+   "code": "B"
+  },
+  {
+   "kanji": "淳也",
+   "reading": "きよなり",
+   "code": "X"
+  },
+  {
+   "kanji": "千翔",
+   "reading": "せんと",
+   "code": "U"
+  },
+  {
+   "kanji": "愛絵",
+   "reading": "いとえ",
+   "code": "U"
+  },
+  {
+   "kanji": "亮二朗",
+   "reading": "りょうじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "善兵衛",
+   "reading": "ぜんべえ",
+   "code": "S"
+  },
+  {
+   "kanji": "誠之進",
+   "reading": "せいのしん",
+   "code": "S"
+  },
+  {
+   "kanji": "静久",
+   "reading": "きよひさ",
+   "code": "X"
+  },
+  {
+   "kanji": "隆光",
+   "reading": "りゅうこう",
+   "code": "S"
+  },
+  {
+   "kanji": "和武",
+   "reading": "かずたけ",
+   "code": "S"
+  },
+  {
+   "kanji": "晴一",
+   "reading": "はるいち",
+   "code": "B"
+  },
+  {
+   "kanji": "文直",
+   "reading": "ふみなお",
+   "code": "E"
+  },
+  {
+   "kanji": "作夢",
+   "reading": "さむ",
+   "code": "U"
+  },
+  {
+   "kanji": "美依",
+   "reading": "みい",
+   "code": "B"
+  },
+  {
+   "kanji": "元四郎",
+   "reading": "げんしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "愛美咲",
+   "reading": "あみさ",
+   "code": "U"
+  },
+  {
+   "kanji": "麻希美",
+   "reading": "まきみ",
+   "code": "E"
+  },
+  {
+   "kanji": "重陽",
+   "reading": "しげはる",
+   "code": "E"
+  },
+  {
+   "kanji": "美奈代",
+   "reading": "みなよ",
+   "code": "E"
+  },
+  {
+   "kanji": "冬華",
+   "reading": "ふゆか",
+   "code": "M"
+  },
+  {
+   "kanji": "菜月",
+   "reading": "なづき",
+   "code": "B"
+  },
+  {
+   "kanji": "茶美歌",
+   "reading": "さみか",
+   "code": "U"
+  },
+  {
+   "kanji": "福美",
+   "reading": "ふくみ",
+   "code": "B"
+  },
+  {
+   "kanji": "歩繰",
+   "reading": "あぐり",
+   "code": "X"
+  },
+  {
+   "kanji": "虎松",
+   "reading": "とらまつ",
+   "code": "S"
+  },
+  {
+   "kanji": "久壽男",
+   "reading": "くすお",
+   "code": "U"
+  },
+  {
+   "kanji": "勝三",
+   "reading": "しょうぞう",
+   "code": "X"
+  },
+  {
+   "kanji": "夢歩",
+   "reading": "ゆめほ",
+   "code": "B"
+  },
+  {
+   "kanji": "武平",
+   "reading": "ぶへい",
+   "code": "S"
+  },
+  {
+   "kanji": "長四郎",
+   "reading": "ちょうしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "翔子",
+   "reading": "しょうこ",
+   "code": "E"
+  },
+  {
+   "kanji": "奈雪",
+   "reading": "なゆき",
+   "code": "E"
+  },
+  {
+   "kanji": "紀央美",
+   "reading": "きおみ",
+   "code": "E"
+  },
+  {
+   "kanji": "和葉",
+   "reading": "かずは",
+   "code": "E"
+  },
+  {
+   "kanji": "銀子",
+   "reading": "ぎんこ",
+   "code": "U"
+  },
+  {
+   "kanji": "啓彰",
+   "reading": "けいしょう",
+   "code": "S"
+  },
+  {
+   "kanji": "生芽子",
+   "reading": "うめこ",
+   "code": "U"
+  },
+  {
+   "kanji": "星那",
+   "reading": "せいな",
+   "code": "B"
+  },
+  {
+   "kanji": "文緒",
+   "reading": "ふみを",
+   "code": "E"
+  },
+  {
+   "kanji": "桃季菜",
+   "reading": "ときな",
+   "code": "U"
+  },
+  {
+   "kanji": "冬栄",
+   "reading": "ふゆえ",
+   "code": "E"
+  },
+  {
+   "kanji": "伊里奈",
+   "reading": "いりな",
+   "code": "B"
+  },
+  {
+   "kanji": "静乃",
+   "reading": "しずの",
+   "code": "E"
+  },
+  {
+   "kanji": "亜都子",
+   "reading": "あとこ",
+   "code": "U"
+  },
+  {
+   "kanji": "克赴",
+   "reading": "かつゆき",
+   "code": "X"
+  },
+  {
+   "kanji": "希枝子",
+   "reading": "きえこ",
+   "code": "E"
+  },
+  {
+   "kanji": "千弥",
+   "reading": "ちや",
+   "code": "U"
+  },
+  {
+   "kanji": "椛音",
+   "reading": "かのん",
+   "code": "B"
+  },
+  {
+   "kanji": "亜喜代",
+   "reading": "あきよ",
+   "code": "B"
+  },
+  {
+   "kanji": "輝穂",
+   "reading": "てるほ",
+   "code": "E"
+  },
+  {
+   "kanji": "龍作",
+   "reading": "りゅうさく",
+   "code": "S"
+  },
+  {
+   "kanji": "更愛",
+   "reading": "さら",
+   "code": "B"
+  },
+  {
+   "kanji": "南椰子",
+   "reading": "みやこ",
+   "code": "X"
+  },
+  {
+   "kanji": "小寿々",
+   "reading": "こすず",
+   "code": "B"
+  },
+  {
+   "kanji": "新五郎",
+   "reading": "しんごろう",
+   "code": "S"
+  },
+  {
+   "kanji": "深",
+   "reading": "ふかし",
+   "code": "M"
+  },
+  {
+   "kanji": "樹久生",
+   "reading": "きくお",
+   "code": "U"
+  },
+  {
+   "kanji": "公須子",
+   "reading": "くすこ",
+   "code": "U"
+  },
+  {
+   "kanji": "歌月名",
+   "reading": "かづな",
+   "code": "U"
+  },
+  {
+   "kanji": "直紀",
+   "reading": "なおつぐ",
+   "code": "E"
+  },
+  {
+   "kanji": "芽留萌",
+   "reading": "めるも",
+   "code": "U"
+  },
+  {
+   "kanji": "詩城音",
+   "reading": "しきね",
+   "code": "M"
+  },
+  {
+   "kanji": "紅紫",
+   "reading": "あかし",
+   "code": "M"
+  },
+  {
+   "kanji": "健吉",
+   "reading": "けんきち",
+   "code": "S"
+  },
+  {
+   "kanji": "久良香",
+   "reading": "くらか",
+   "code": "U"
+  },
+  {
+   "kanji": "信穂里",
+   "reading": "しほり",
+   "code": "E"
+  },
+  {
+   "kanji": "賢三朗",
+   "reading": "けんさぶろう",
+   "code": "X"
+  },
+  {
+   "kanji": "直三",
+   "reading": "なおぞう",
+   "code": "S"
+  },
+  {
+   "kanji": "美希衣",
+   "reading": "みきえ",
+   "code": "B"
+  },
+  {
+   "kanji": "晴土",
+   "reading": "はると",
+   "code": "B"
+  },
+  {
+   "kanji": "花帆",
+   "reading": "はなほ",
+   "code": "B"
+  },
+  {
+   "kanji": "征史朗",
+   "reading": "せいしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "陸翔",
+   "reading": "りくと",
+   "code": "S"
+  },
+  {
+   "kanji": "珠水子",
+   "reading": "たみこ",
+   "code": "X"
+  },
+  {
+   "kanji": "稚衣子",
+   "reading": "ちいこ",
+   "code": "U"
+  },
+  {
+   "kanji": "花津乃",
+   "reading": "かづの",
+   "code": "B"
+  },
+  {
+   "kanji": "花栄",
+   "reading": "はなえ",
+   "code": "B"
+  },
+  {
+   "kanji": "哲直",
+   "reading": "てつなお",
+   "code": "E"
+  },
+  {
+   "kanji": "輝之助",
+   "reading": "てるのすけ",
+   "code": "S"
+  },
+  {
+   "kanji": "有勝",
+   "reading": "ありかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "名知子",
+   "reading": "なちこ",
+   "code": "U"
+  },
+  {
+   "kanji": "夢夏",
+   "reading": "ゆめか",
+   "code": "B"
+  },
+  {
+   "kanji": "勉美",
+   "reading": "いつみ",
+   "code": "X"
+  },
+  {
+   "kanji": "仙次郎",
+   "reading": "せんじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "勢津世",
+   "reading": "せつよ",
+   "code": "U"
+  },
+  {
+   "kanji": "清剛",
+   "reading": "せいごう",
+   "code": "S"
+  },
+  {
+   "kanji": "夏静",
+   "reading": "かせい",
+   "code": "M"
+  },
+  {
+   "kanji": "卯月",
+   "reading": "うづき",
+   "code": "E"
+  },
+  {
+   "kanji": "真作",
+   "reading": "しんさく",
+   "code": "S"
+  },
+  {
+   "kanji": "紺",
+   "reading": "こん",
+   "code": "M"
+  },
+  {
+   "kanji": "希早代",
+   "reading": "きさよ",
+   "code": "U"
+  },
+  {
+   "kanji": "稚香",
+   "reading": "ちか",
+   "code": "B"
+  },
+  {
+   "kanji": "弥右衛門",
+   "reading": "やえもん",
+   "code": "S"
+  },
+  {
+   "kanji": "竜乃",
+   "reading": "たつの",
+   "code": "U"
+  },
+  {
+   "kanji": "信直",
+   "reading": "のぶなお",
+   "code": "S"
+  },
+  {
+   "kanji": "晃多",
+   "reading": "こうた",
+   "code": "B"
+  },
+  {
+   "kanji": "泰晴",
+   "reading": "やすはる",
+   "code": "E"
+  },
+  {
+   "kanji": "仁英",
+   "reading": "ひとえ",
+   "code": "E"
+  },
+  {
+   "kanji": "希世奈",
+   "reading": "きよな",
+   "code": "U"
+  },
+  {
+   "kanji": "多馨子",
+   "reading": "たかこ",
+   "code": "X"
+  },
+  {
+   "kanji": "玄磨",
+   "reading": "げんま",
+   "code": "M"
+  },
+  {
+   "kanji": "朔真",
+   "reading": "さくま",
+   "code": "S"
+  },
+  {
+   "kanji": "忠晶",
+   "reading": "ただまさ",
+   "code": "S"
+  },
+  {
+   "kanji": "伊里子",
+   "reading": "いりこ",
+   "code": "U"
+  },
+  {
+   "kanji": "茉留美",
+   "reading": "まるみ",
+   "code": "B"
+  },
+  {
+   "kanji": "晴和",
+   "reading": "はるかず",
+   "code": "E"
+  },
+  {
+   "kanji": "勝太",
+   "reading": "かつた",
+   "code": "S"
+  },
+  {
+   "kanji": "千夏乃",
+   "reading": "ちかの",
+   "code": "X"
+  },
+  {
+   "kanji": "影丸",
+   "reading": "かげまる",
+   "code": "M"
+  },
+  {
+   "kanji": "裡須夢",
+   "reading": "りずむ",
+   "code": "U"
+  },
+  {
+   "kanji": "宙世",
+   "reading": "おきよ",
+   "code": "X"
+  },
+  {
+   "kanji": "択弥",
+   "reading": "たくや",
+   "code": "S"
+  },
+  {
+   "kanji": "英丸",
+   "reading": "ひでまる",
+   "code": "U"
+  },
+  {
+   "kanji": "比左子",
+   "reading": "ひさこ",
+   "code": "E"
+  },
+  {
+   "kanji": "笑夢",
+   "reading": "えむ",
+   "code": "B"
+  },
+  {
+   "kanji": "美玲",
+   "reading": "みれい",
+   "code": "E"
+  },
+  {
+   "kanji": "繁英",
+   "reading": "しげひで",
+   "code": "E"
+  },
+  {
+   "kanji": "苑光",
+   "reading": "そのみ",
+   "code": "X"
+  },
+  {
+   "kanji": "冬野",
+   "reading": "とうや",
+   "code": "M"
+  },
+  {
+   "kanji": "直範",
+   "reading": "なおのり",
+   "code": "E"
+  },
+  {
+   "kanji": "貴音",
+   "reading": "たかね",
+   "code": "E"
+  },
+  {
+   "kanji": "乃碧",
+   "reading": "のあ",
+   "code": "B"
+  },
+  {
+   "kanji": "比加利",
+   "reading": "ひかり",
+   "code": "U"
+  },
+  {
+   "kanji": "皓暉",
+   "reading": "ひろき",
+   "code": "E"
+  },
+  {
+   "kanji": "冠充郎",
+   "reading": "かんじゅうろう",
+   "code": "U"
+  },
+  {
+   "kanji": "光圀",
+   "reading": "みつくに",
+   "code": "S"
+  },
+  {
+   "kanji": "宇美",
+   "reading": "ひろみ",
+   "code": "X"
+  },
+  {
+   "kanji": "碧樹",
+   "reading": "あおき",
+   "code": "M"
+  },
+  {
+   "kanji": "多祐子",
+   "reading": "たゆこ",
+   "code": "U"
+  },
+  {
+   "kanji": "志津奈",
+   "reading": "しづな",
+   "code": "E"
+  },
+  {
+   "kanji": "篤翔",
+   "reading": "あつか",
+   "code": "U"
+  },
+  {
+   "kanji": "文彦",
+   "reading": "あやひこ",
+   "code": "E"
+  },
+  {
+   "kanji": "真秀美",
+   "reading": "まほみ",
+   "code": "E"
+  },
+  {
+   "kanji": "壮志朗",
+   "reading": "そうしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "真利絵",
+   "reading": "まりえ",
+   "code": "E"
+  },
+  {
+   "kanji": "穂沙奈",
+   "reading": "ほさな",
+   "code": "U"
+  },
+  {
+   "kanji": "不比等",
+   "reading": "ふひと",
+   "code": "U"
+  },
+  {
+   "kanji": "萬美子",
+   "reading": "まみこ",
+   "code": "E"
+  },
+  {
+   "kanji": "潤心",
+   "reading": "じゅんしん",
+   "code": "E"
+  },
+  {
+   "kanji": "野夕美",
+   "reading": "のゆみ",
+   "code": "U"
+  },
+  {
+   "kanji": "愛之",
+   "reading": "ちかゆき",
+   "code": "E"
+  },
+  {
+   "kanji": "英庸",
+   "reading": "ひでつね",
+   "code": "E"
+  },
+  {
+   "kanji": "莉奈子",
+   "reading": "りなこ",
+   "code": "B"
+  },
+  {
+   "kanji": "佑月",
+   "reading": "ゆづき",
+   "code": "E"
+  },
+  {
+   "kanji": "陽香",
+   "reading": "きよか",
+   "code": "X"
+  },
+  {
+   "kanji": "健美",
+   "reading": "たつみ",
+   "code": "X"
+  },
+  {
+   "kanji": "澪澄",
+   "reading": "れいす",
+   "code": "U"
+  },
+  {
+   "kanji": "銀平",
+   "reading": "ぎんぺい",
+   "code": "S"
+  },
+  {
+   "kanji": "真彩乃",
+   "reading": "まさの",
+   "code": "E"
+  },
+  {
+   "kanji": "剛造",
+   "reading": "ごうぞう",
+   "code": "S"
+  },
+  {
+   "kanji": "奈美里",
+   "reading": "なみり",
+   "code": "U"
+  },
+  {
+   "kanji": "明雪",
+   "reading": "あゆき",
+   "code": "B"
+  },
+  {
+   "kanji": "碧海",
+   "reading": "あおみ",
+   "code": "E"
+  },
+  {
+   "kanji": "州珠代",
+   "reading": "すずよ",
+   "code": "U"
+  },
+  {
+   "kanji": "喜己代",
+   "reading": "きみよ",
+   "code": "U"
+  },
+  {
+   "kanji": "真留美",
+   "reading": "まるみ",
+   "code": "B"
+  },
+  {
+   "kanji": "静正",
+   "reading": "しずまさ",
+   "code": "E"
+  },
+  {
+   "kanji": "夕霧",
+   "reading": "ゆうぎり",
+   "code": "M"
+  },
+  {
+   "kanji": "賢明",
+   "reading": "けんめい",
+   "code": "E"
+  },
+  {
+   "kanji": "武直",
+   "reading": "たけなお",
+   "code": "S"
+  },
+  {
+   "kanji": "外次郎",
+   "reading": "そとじろう",
+   "code": "U"
+  },
+  {
+   "kanji": "季次郎",
+   "reading": "すえじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "玲遠",
+   "reading": "れおん",
+   "code": "M"
+  },
+  {
+   "kanji": "宇宙",
+   "reading": "たかみち",
+   "code": "X"
+  },
+  {
+   "kanji": "早矢子",
+   "reading": "さやこ",
+   "code": "B"
+  },
+  {
+   "kanji": "志能子",
+   "reading": "しのこ",
+   "code": "E"
+  },
+  {
+   "kanji": "雨音人",
+   "reading": "うねと",
+   "code": "X"
+  },
+  {
+   "kanji": "冨士子",
+   "reading": "ふじこ",
+   "code": "E"
+  },
+  {
+   "kanji": "冬季",
+   "reading": "ふゆき",
+   "code": "E"
+  },
+  {
+   "kanji": "春菜子",
+   "reading": "はなこ",
+   "code": "B"
+  },
+  {
+   "kanji": "寿菜穂",
+   "reading": "すなほ",
+   "code": "U"
+  },
+  {
+   "kanji": "龍磨",
+   "reading": "たつま",
+   "code": "S"
+  },
+  {
+   "kanji": "高虎",
+   "reading": "たかとら",
+   "code": "S"
+  },
+  {
+   "kanji": "匡克",
+   "reading": "ただかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "帆菜美",
+   "reading": "ほなみ",
+   "code": "B"
+  },
+  {
+   "kanji": "加奈世",
+   "reading": "かなよ",
+   "code": "B"
+  },
+  {
+   "kanji": "徳伸朗",
+   "reading": "とくしろう",
+   "code": "X"
+  },
+  {
+   "kanji": "亜紫",
+   "reading": "あし",
+   "code": "U"
+  },
+  {
+   "kanji": "智寿賀",
+   "reading": "ちずか",
+   "code": "E"
+  },
+  {
+   "kanji": "仙太郎",
+   "reading": "せんたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "慧緋",
+   "reading": "けいひ",
+   "code": "M"
+  },
+  {
+   "kanji": "夢紘",
+   "reading": "ゆめひろ",
+   "code": "U"
+  },
+  {
+   "kanji": "里夢",
+   "reading": "さとむ",
+   "code": "U"
+  },
+  {
+   "kanji": "雅一",
+   "reading": "まさいち",
+   "code": "E"
+  },
+  {
+   "kanji": "知恵代",
+   "reading": "ちえよ",
+   "code": "E"
+  },
+  {
+   "kanji": "稲美",
+   "reading": "いなみ",
+   "code": "E"
+  },
+  {
+   "kanji": "榮理羽",
+   "reading": "えりは",
+   "code": "U"
+  },
+  {
+   "kanji": "江差治",
+   "reading": "えさじ",
+   "code": "U"
+  },
+  {
+   "kanji": "茂文",
+   "reading": "しげふみ",
+   "code": "E"
+  },
+  {
+   "kanji": "文根",
+   "reading": "あやね",
+   "code": "U"
+  },
+  {
+   "kanji": "碧波",
+   "reading": "あおば",
+   "code": "E"
+  },
+  {
+   "kanji": "美登志",
+   "reading": "みとし",
+   "code": "E"
+  },
+  {
+   "kanji": "汐香",
+   "reading": "しおか",
+   "code": "B"
+  },
+  {
+   "kanji": "理克",
+   "reading": "ただかつ",
+   "code": "X"
+  },
+  {
+   "kanji": "好龍",
+   "reading": "よしたつ",
+   "code": "S"
+  },
+  {
+   "kanji": "深冬",
+   "reading": "みふゆ",
+   "code": "M"
+  },
+  {
+   "kanji": "瑠莉",
+   "reading": "るり",
+   "code": "E"
+  },
+  {
+   "kanji": "竜臣",
+   "reading": "たつおみ",
+   "code": "S"
+  },
+  {
+   "kanji": "清文",
+   "reading": "すがふみ",
+   "code": "E"
+  },
+  {
+   "kanji": "直一",
+   "reading": "なおかず",
+   "code": "E"
+  },
+  {
+   "kanji": "彩星",
+   "reading": "さいせい",
+   "code": "M"
+  },
+  {
+   "kanji": "伊穂子",
+   "reading": "いほこ",
+   "code": "E"
+  },
+  {
+   "kanji": "恵一郎",
+   "reading": "けいいちろう",
+   "code": "E"
+  },
+  {
+   "kanji": "拓夢",
+   "reading": "たくむ",
+   "code": "B"
+  },
+  {
+   "kanji": "銀二",
+   "reading": "ぎんじ",
+   "code": "S"
+  },
+  {
+   "kanji": "武吉",
+   "reading": "ぶきち",
+   "code": "S"
+  },
+  {
+   "kanji": "夢路花",
+   "reading": "むじか",
+   "code": "U"
+  },
+  {
+   "kanji": "詩苑",
+   "reading": "しおん",
+   "code": "M"
+  },
+  {
+   "kanji": "影美",
+   "reading": "えいみ",
+   "code": "M"
+  },
+  {
+   "kanji": "希奈佳",
+   "reading": "きなか",
+   "code": "U"
+  },
+  {
+   "kanji": "剛二郎",
+   "reading": "ごうじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "夏留土",
+   "reading": "かるど",
+   "code": "U"
+  },
+  {
+   "kanji": "明日和",
+   "reading": "あすわ",
+   "code": "B"
+  },
+  {
+   "kanji": "大陸",
+   "reading": "ひろむ",
+   "code": "X"
+  },
+  {
+   "kanji": "真江子",
+   "reading": "まえこ",
+   "code": "U"
+  },
+  {
+   "kanji": "矢五郎",
+   "reading": "やごろう",
+   "code": "S"
+  },
+  {
+   "kanji": "理湖奈",
+   "reading": "りこな",
+   "code": "B"
+  },
+  {
+   "kanji": "香穂美",
+   "reading": "かほみ",
+   "code": "E"
+  },
+  {
+   "kanji": "傳兵衛",
+   "reading": "でんべえ",
+   "code": "S"
+  },
+  {
+   "kanji": "直重",
+   "reading": "なおしげ",
+   "code": "S"
+  },
+  {
+   "kanji": "直二郎",
+   "reading": "なおじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "雅季子",
+   "reading": "まきこ",
+   "code": "E"
+  },
+  {
+   "kanji": "光隆",
+   "reading": "こうりゅう",
+   "code": "S"
+  },
+  {
+   "kanji": "椰紗",
+   "reading": "やさ",
+   "code": "U"
+  },
+  {
+   "kanji": "千八恵",
+   "reading": "ちやえ",
+   "code": "X"
+  },
+  {
+   "kanji": "真智香",
+   "reading": "まちか",
+   "code": "B"
+  },
+  {
+   "kanji": "苗美",
+   "reading": "なえみ",
+   "code": "B"
+  },
+  {
+   "kanji": "暎美",
+   "reading": "ひでみ",
+   "code": "E"
+  },
+  {
+   "kanji": "鉄之伸",
+   "reading": "てつのしん",
+   "code": "S"
+  },
+  {
+   "kanji": "芙美佳",
+   "reading": "ふみか",
+   "code": "E"
+  },
+  {
+   "kanji": "麻葉",
+   "reading": "あさは",
+   "code": "E"
+  },
+  {
+   "kanji": "登夢",
+   "reading": "とむ",
+   "code": "U"
+  },
+  {
+   "kanji": "智恵奈",
+   "reading": "ちえな",
+   "code": "E"
+  },
+  {
+   "kanji": "陸祐",
+   "reading": "みちすけ",
+   "code": "X"
+  },
+  {
+   "kanji": "希朋",
+   "reading": "きほう",
+   "code": "U"
+  },
+  {
+   "kanji": "碧留",
+   "reading": "へきる",
+   "code": "M"
+  },
+  {
+   "kanji": "眞知枝",
+   "reading": "まちえ",
+   "code": "E"
+  },
+  {
+   "kanji": "亜夢斗",
+   "reading": "あむと",
+   "code": "U"
+  },
+  {
+   "kanji": "壽文",
+   "reading": "としふみ",
+   "code": "E"
+  },
+  {
+   "kanji": "尉佐義",
+   "reading": "いさよし",
+   "code": "U"
+  },
+  {
+   "kanji": "玲美",
+   "reading": "なるみ",
+   "code": "X"
+  },
+  {
+   "kanji": "沙亜也",
+   "reading": "さあや",
+   "code": "B"
+  },
+  {
+   "kanji": "有里南",
+   "reading": "ゆりな",
+   "code": "B"
+  },
+  {
+   "kanji": "嗣誠",
+   "reading": "つぐなり",
+   "code": "E"
+  },
+  {
+   "kanji": "春音",
+   "reading": "はるね",
+   "code": "B"
+  },
+  {
+   "kanji": "香春",
+   "reading": "かはる",
+   "code": "E"
+  },
+  {
+   "kanji": "帆音",
+   "reading": "ほの",
+   "code": "B"
+  },
+  {
+   "kanji": "志月",
+   "reading": "しずき",
+   "code": "M"
+  },
+  {
+   "kanji": "阿久利",
+   "reading": "あぐり",
+   "code": "U"
+  },
+  {
+   "kanji": "佐平太",
+   "reading": "さへいた",
+   "code": "S"
+  },
+  {
+   "kanji": "弥七",
+   "reading": "やしち",
+   "code": "S"
+  },
+  {
+   "kanji": "竜",
+   "reading": "たつ",
+   "code": "S"
+  },
+  {
+   "kanji": "恵梨可",
+   "reading": "えりか",
+   "code": "B"
+  },
+  {
+   "kanji": "才太郎",
+   "reading": "さいたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "輝飛",
+   "reading": "てると",
+   "code": "S"
+  },
+  {
+   "kanji": "誠恵",
+   "reading": "まさえ",
+   "code": "E"
+  },
+  {
+   "kanji": "華紗",
+   "reading": "けさ",
+   "code": "U"
+  },
+  {
+   "kanji": "思惟奈",
+   "reading": "しいな",
+   "code": "M"
+  },
+  {
+   "kanji": "有美",
+   "reading": "あるみ",
+   "code": "U"
+  },
+  {
+   "kanji": "静恵",
+   "reading": "しずえ",
+   "code": "E"
+  },
+  {
+   "kanji": "恵実里",
+   "reading": "えみり",
+   "code": "B"
+  },
+  {
+   "kanji": "星人",
+   "reading": "ほしと",
+   "code": "U"
+  },
+  {
+   "kanji": "賀津葉",
+   "reading": "かずは",
+   "code": "E"
+  },
+  {
+   "kanji": "希加子",
+   "reading": "きかこ",
+   "code": "B"
+  },
+  {
+   "kanji": "瑠奈",
+   "reading": "るな",
+   "code": "B"
+  },
+  {
+   "kanji": "求美",
+   "reading": "もとみ",
+   "code": "E"
+  },
+  {
+   "kanji": "真里代",
+   "reading": "まりよ",
+   "code": "E"
+  },
+  {
+   "kanji": "直一郎",
+   "reading": "なおいちろう",
+   "code": "E"
+  },
+  {
+   "kanji": "小夜歌",
+   "reading": "さよか",
+   "code": "E"
+  },
+  {
+   "kanji": "樹里恵",
+   "reading": "きりえ",
+   "code": "U"
+  },
+  {
+   "kanji": "侑里奈",
+   "reading": "ゆりな",
+   "code": "B"
+  },
+  {
+   "kanji": "湖真代",
+   "reading": "こまよ",
+   "code": "U"
+  },
+  {
+   "kanji": "志乃佳",
+   "reading": "しのか",
+   "code": "E"
+  },
+  {
+   "kanji": "希春",
+   "reading": "きはる",
+   "code": "B"
+  },
+  {
+   "kanji": "夏夢",
+   "reading": "かゆめ",
+   "code": "U"
+  },
+  {
+   "kanji": "勝美",
+   "reading": "かつみ",
+   "code": "S"
+  },
+  {
+   "kanji": "王佐夢",
+   "reading": "おさむ",
+   "code": "U"
+  },
+  {
+   "kanji": "愛乃",
+   "reading": "ちかの",
+   "code": "E"
+  },
+  {
+   "kanji": "亜都生",
+   "reading": "あとき",
+   "code": "U"
+  },
+  {
+   "kanji": "健喜",
+   "reading": "たつき",
+   "code": "S"
+  },
+  {
+   "kanji": "岩緒",
+   "reading": "いわお",
+   "code": "U"
+  },
+  {
+   "kanji": "創士郎",
+   "reading": "そうしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "英久",
+   "reading": "ひでひさ",
+   "code": "E"
+  },
+  {
+   "kanji": "愛美",
+   "reading": "かなみ",
+   "code": "B"
+  },
+  {
+   "kanji": "基次郎",
+   "reading": "もとじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "根自子",
+   "reading": "ねじこ",
+   "code": "U"
+  },
+  {
+   "kanji": "武丸",
+   "reading": "たけまる",
+   "code": "S"
+  },
+  {
+   "kanji": "静文",
+   "reading": "しずふみ",
+   "code": "E"
+  },
+  {
+   "kanji": "歩夢",
+   "reading": "あゆむ",
+   "code": "B"
+  },
+  {
+   "kanji": "冬男",
+   "reading": "ふゆお",
+   "code": "U"
+  },
+  {
+   "kanji": "紫豊",
+   "reading": "しほ",
+   "code": "X"
+  },
+  {
+   "kanji": "鷹之介",
+   "reading": "たかのすけ",
+   "code": "S"
+  },
+  {
+   "kanji": "米勝",
+   "reading": "よねかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "真凛",
+   "reading": "まりん",
+   "code": "E"
+  },
+  {
+   "kanji": "夢記",
+   "reading": "ゆめき",
+   "code": "U"
+  },
+  {
+   "kanji": "沙亜乃",
+   "reading": "さあの",
+   "code": "U"
+  },
+  {
+   "kanji": "二美世",
+   "reading": "ふみよ",
+   "code": "U"
+  },
+  {
+   "kanji": "真仁",
+   "reading": "なおひと",
+   "code": "E"
+  },
+  {
+   "kanji": "夢彦",
+   "reading": "ゆめひこ",
+   "code": "U"
+  },
+  {
+   "kanji": "恋葉",
+   "reading": "こいは",
+   "code": "B"
+  },
+  {
+   "kanji": "真聖",
+   "reading": "まさきよ",
+   "code": "E"
+  },
+  {
+   "kanji": "呼亜沙",
+   "reading": "こあさ",
+   "code": "U"
+  },
+  {
+   "kanji": "佐年世",
+   "reading": "さとよ",
+   "code": "U"
+  },
+  {
+   "kanji": "春久",
+   "reading": "はるひさ",
+   "code": "E"
+  },
+  {
+   "kanji": "直秀",
+   "reading": "なおひで",
+   "code": "S"
+  },
+  {
+   "kanji": "南愛",
+   "reading": "なちか",
+   "code": "B"
+  },
+  {
+   "kanji": "悠月",
+   "reading": "ゆづき",
+   "code": "E"
+  },
+  {
+   "kanji": "夢希",
+   "reading": "ゆめき",
+   "code": "B"
+  },
+  {
+   "kanji": "菜夢",
+   "reading": "なむ",
+   "code": "U"
+  },
+  {
+   "kanji": "多喜蔵",
+   "reading": "たきぞう",
+   "code": "S"
+  },
+  {
+   "kanji": "夢就",
+   "reading": "ゆめなり",
+   "code": "U"
+  },
+  {
+   "kanji": "直亮",
+   "reading": "なおかつ",
+   "code": "E"
+  },
+  {
+   "kanji": "良々歌",
+   "reading": "ららか",
+   "code": "U"
+  },
+  {
+   "kanji": "晴公",
+   "reading": "はるまさ",
+   "code": "E"
+  },
+  {
+   "kanji": "愛美",
+   "reading": "ひでみ",
+   "code": "X"
+  },
+  {
+   "kanji": "純晴",
+   "reading": "すみはる",
+   "code": "E"
+  },
+  {
+   "kanji": "光一",
+   "reading": "みつかず",
+   "code": "E"
+  },
+  {
+   "kanji": "静麻",
+   "reading": "せいま",
+   "code": "M"
+  },
+  {
+   "kanji": "流佳",
+   "reading": "るか",
+   "code": "B"
+  },
+  {
+   "kanji": "栄光",
+   "reading": "しげみつ",
+   "code": "S"
+  },
+  {
+   "kanji": "央梨恵",
+   "reading": "おりえ",
+   "code": "E"
+  },
+  {
+   "kanji": "佳一朗",
+   "reading": "けいいちろう",
+   "code": "X"
+  },
+  {
+   "kanji": "学香",
+   "reading": "まなか",
+   "code": "B"
+  },
+  {
+   "kanji": "竜吉",
+   "reading": "たつきち",
+   "code": "S"
+  },
+  {
+   "kanji": "いく子",
+   "reading": "いくこ",
+   "code": "B"
+  },
+  {
+   "kanji": "紗枝菜",
+   "reading": "さえな",
+   "code": "B"
+  },
+  {
+   "kanji": "萌菜美",
+   "reading": "もなみ",
+   "code": "B"
+  },
+  {
+   "kanji": "野雪",
+   "reading": "のゆき",
+   "code": "M"
+  },
+  {
+   "kanji": "羅夢音",
+   "reading": "らむね",
+   "code": "U"
+  },
+  {
+   "kanji": "釟太郎",
+   "reading": "はつたろう",
+   "code": "U"
+  },
+  {
+   "kanji": "久未世",
+   "reading": "くみよ",
+   "code": "E"
+  },
+  {
+   "kanji": "直次郎",
+   "reading": "なおじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "憂喜枝",
+   "reading": "うきえ",
+   "code": "U"
+  },
+  {
+   "kanji": "輝直",
+   "reading": "てるなお",
+   "code": "S"
+  },
+  {
+   "kanji": "真左子",
+   "reading": "まさこ",
+   "code": "E"
+  },
+  {
+   "kanji": "豪聖",
+   "reading": "たけまさ",
+   "code": "S"
+  },
+  {
+   "kanji": "万寿穂",
+   "reading": "ますほ",
+   "code": "E"
+  },
+  {
+   "kanji": "千津恵",
+   "reading": "ちずえ",
+   "code": "E"
+  },
+  {
+   "kanji": "海音",
+   "reading": "かいね",
+   "code": "M"
+  },
+  {
+   "kanji": "英仁",
+   "reading": "あやひと",
+   "code": "E"
+  },
+  {
+   "kanji": "多海",
+   "reading": "たみ",
+   "code": "U"
+  },
+  {
+   "kanji": "夢至",
+   "reading": "ゆめじ",
+   "code": "U"
+  },
+  {
+   "kanji": "三緒子",
+   "reading": "みおこ",
+   "code": "E"
+  },
+  {
+   "kanji": "響子",
+   "reading": "きょうこ",
+   "code": "E"
+  },
+  {
+   "kanji": "輝正",
+   "reading": "みつまさ",
+   "code": "S"
+  },
+  {
+   "kanji": "幹四郎",
+   "reading": "みきしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "紗矢奈",
+   "reading": "さやな",
+   "code": "B"
+  },
+  {
+   "kanji": "兼春",
+   "reading": "かねはる",
+   "code": "E"
+  },
+  {
+   "kanji": "思星歌",
+   "reading": "しほか",
+   "code": "U"
+  },
+  {
+   "kanji": "東朔",
+   "reading": "とうさく",
+   "code": "M"
+  },
+  {
+   "kanji": "英里紗",
+   "reading": "えりさ",
+   "code": "B"
+  },
+  {
+   "kanji": "紗環",
+   "reading": "さわ",
+   "code": "X"
+  },
+  {
+   "kanji": "華武",
+   "reading": "はなたけ",
+   "code": "U"
+  },
+  {
+   "kanji": "克支",
+   "reading": "かつし",
+   "code": "S"
+  },
+  {
+   "kanji": "清朝",
+   "reading": "きよとも",
+   "code": "E"
+  },
+  {
+   "kanji": "丈文",
+   "reading": "たけふみ",
+   "code": "S"
+  },
+  {
+   "kanji": "陽策",
+   "reading": "ようさく",
+   "code": "S"
+  },
+  {
+   "kanji": "真帆香",
+   "reading": "まほか",
+   "code": "B"
+  },
+  {
+   "kanji": "鈴音",
+   "reading": "すずね",
+   "code": "E"
+  },
+  {
+   "kanji": "奏",
+   "reading": "かなで",
+   "code": "E"
+  },
+  {
+   "kanji": "雪郎",
+   "reading": "せつろう",
+   "code": "M"
+  },
+  {
+   "kanji": "玄介",
+   "reading": "げんすけ",
+   "code": "S"
+  },
+  {
+   "kanji": "武房",
+   "reading": "たけふさ",
+   "code": "S"
+  },
+  {
+   "kanji": "陀璃亜",
+   "reading": "だりあ",
+   "code": "U"
+  },
+  {
+   "kanji": "華之枝",
+   "reading": "かのえ",
+   "code": "E"
+  },
+  {
+   "kanji": "早亜紗",
+   "reading": "さあさ",
+   "code": "B"
+  },
+  {
+   "kanji": "日出正",
+   "reading": "ひでまさ",
+   "code": "S"
+  },
+  {
+   "kanji": "乙恵",
+   "reading": "いつえ",
+   "code": "E"
+  },
+  {
+   "kanji": "幾武",
+   "reading": "いくたけ",
+   "code": "S"
+  },
+  {
+   "kanji": "克雄",
+   "reading": "かつお",
+   "code": "S"
+  },
+  {
+   "kanji": "宇沙梨",
+   "reading": "うさり",
+   "code": "U"
+  },
+  {
+   "kanji": "聖理子",
+   "reading": "せりこ",
+   "code": "E"
+  },
+  {
+   "kanji": "佳冬",
+   "reading": "かふゆ",
+   "code": "U"
+  },
+  {
+   "kanji": "希太郎",
+   "reading": "きたろう",
+   "code": "U"
+  },
+  {
+   "kanji": "季意子",
+   "reading": "きいこ",
+   "code": "U"
+  },
+  {
+   "kanji": "護弥",
+   "reading": "もりや",
+   "code": "S"
+  },
+  {
+   "kanji": "紀多美",
+   "reading": "きたみ",
+   "code": "E"
+  },
+  {
+   "kanji": "穂由美",
+   "reading": "ほゆみ",
+   "code": "B"
+  },
+  {
+   "kanji": "玲江",
+   "reading": "さちえ",
+   "code": "X"
+  },
+  {
+   "kanji": "斗志夫",
+   "reading": "としお",
+   "code": "S"
+  },
+  {
+   "kanji": "治世子",
+   "reading": "ちよこ",
+   "code": "E"
+  },
+  {
+   "kanji": "海音",
+   "reading": "みおん",
+   "code": "M"
+  },
+  {
+   "kanji": "斗夢",
+   "reading": "とむ",
+   "code": "U"
+  },
+  {
+   "kanji": "百合樹",
+   "reading": "ゆりき",
+   "code": "U"
+  },
+  {
+   "kanji": "尚直",
+   "reading": "ひさなお",
+   "code": "E"
+  },
+  {
+   "kanji": "紫乃",
+   "reading": "しの",
+   "code": "E"
+  },
+  {
+   "kanji": "由香栄",
+   "reading": "ゆかえ",
+   "code": "E"
+  },
+  {
+   "kanji": "岳二",
+   "reading": "がくじ",
+   "code": "S"
+  },
+  {
+   "kanji": "和香沙",
+   "reading": "わかさ",
+   "code": "B"
+  },
+  {
+   "kanji": "亜祐夢",
+   "reading": "あゆむ",
+   "code": "U"
+  },
+  {
+   "kanji": "依嘉子",
+   "reading": "いかこ",
+   "code": "U"
+  },
+  {
+   "kanji": "飛翔",
+   "reading": "ひしょう",
+   "code": "S"
+  },
+  {
+   "kanji": "笑音",
+   "reading": "えみね",
+   "code": "B"
+  },
+  {
+   "kanji": "映夢",
+   "reading": "えむ",
+   "code": "U"
+  },
+  {
+   "kanji": "楽",
+   "reading": "たのし",
+   "code": "U"
+  },
+  {
+   "kanji": "陽蔓",
+   "reading": "ひづる",
+   "code": "U"
+  },
+  {
+   "kanji": "葵代",
+   "reading": "きよ",
+   "code": "E"
+  },
+  {
+   "kanji": "益直",
+   "reading": "ますなお",
+   "code": "S"
+  },
+  {
+   "kanji": "暁次朗",
+   "reading": "あきじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "熊之輔",
+   "reading": "くまのすけ",
+   "code": "S"
+  },
+  {
+   "kanji": "真奈佳",
+   "reading": "まなか",
+   "code": "B"
+  },
+  {
+   "kanji": "伊武樹",
+   "reading": "いぶき",
+   "code": "U"
+  },
+  {
+   "kanji": "光峰",
+   "reading": "てるみね",
+   "code": "E"
+  },
+  {
+   "kanji": "幸佳",
+   "reading": "ゆきよし",
+   "code": "E"
+  },
+  {
+   "kanji": "淳恵",
+   "reading": "きよえ",
+   "code": "E"
+  },
+  {
+   "kanji": "南陽",
+   "reading": "なんよう",
+   "code": "M"
+  },
+  {
+   "kanji": "彩明",
+   "reading": "さいめい",
+   "code": "M"
+  },
+  {
+   "kanji": "聡夢",
+   "reading": "さとむ",
+   "code": "E"
+  },
+  {
+   "kanji": "南波人",
+   "reading": "なはと",
+   "code": "U"
+  },
+  {
+   "kanji": "剛志",
+   "reading": "ごうじ",
+   "code": "S"
+  },
+  {
+   "kanji": "廉明",
+   "reading": "きよあき",
+   "code": "E"
+  },
+  {
+   "kanji": "真幹",
+   "reading": "まさもと",
+   "code": "E"
+  },
+  {
+   "kanji": "真恵美",
+   "reading": "まえみ",
+   "code": "E"
+  },
+  {
+   "kanji": "翔大郎",
+   "reading": "しょうたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "真理美",
+   "reading": "まりみ",
+   "code": "E"
+  },
+  {
+   "kanji": "豊一朗",
+   "reading": "とよいちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "鷹",
+   "reading": "たか",
+   "code": "S"
+  },
+  {
+   "kanji": "静昭",
+   "reading": "しずあき",
+   "code": "E"
+  },
+  {
+   "kanji": "一花",
+   "reading": "ひとか",
+   "code": "B"
+  },
+  {
+   "kanji": "光蔵",
+   "reading": "みつぞう",
+   "code": "S"
+  },
+  {
+   "kanji": "知津衣",
+   "reading": "ちづえ",
+   "code": "E"
+  },
+  {
+   "kanji": "利喜太郎",
+   "reading": "りきたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "真寿男",
+   "reading": "ますお",
+   "code": "E"
+  },
+  {
+   "kanji": "長春",
+   "reading": "ながはる",
+   "code": "E"
+  },
+  {
+   "kanji": "朱理",
+   "reading": "あけり",
+   "code": "E"
+  },
+  {
+   "kanji": "弓葉",
+   "reading": "ゆみは",
+   "code": "E"
+  },
+  {
+   "kanji": "小澄",
+   "reading": "こすみ",
+   "code": "E"
+  },
+  {
+   "kanji": "恵夢",
+   "reading": "えむ",
+   "code": "U"
+  },
+  {
+   "kanji": "玖璃珠",
+   "reading": "くりす",
+   "code": "U"
+  },
+  {
+   "kanji": "翔菜",
+   "reading": "かな",
+   "code": "X"
+  },
+  {
+   "kanji": "都貴音",
+   "reading": "ときね",
+   "code": "E"
+  },
+  {
+   "kanji": "淳久",
+   "reading": "あつひさ",
+   "code": "E"
+  },
+  {
+   "kanji": "志季穂",
+   "reading": "しきほ",
+   "code": "E"
+  },
+  {
+   "kanji": "夢香",
+   "reading": "ゆめか",
+   "code": "B"
+  },
+  {
+   "kanji": "規志子",
+   "reading": "きしこ",
+   "code": "U"
+  },
+  {
+   "kanji": "貞勝",
+   "reading": "さだかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "寧音",
+   "reading": "ねおん",
+   "code": "M"
+  },
+  {
+   "kanji": "葉優子",
+   "reading": "はゆこ",
+   "code": "B"
+  },
+  {
+   "kanji": "祐勝",
+   "reading": "ゆうしょう",
+   "code": "S"
+  },
+  {
+   "kanji": "英水",
+   "reading": "えいみ",
+   "code": "E"
+  },
+  {
+   "kanji": "優羽",
+   "reading": "ゆうは",
+   "code": "B"
+  },
+  {
+   "kanji": "恵里沙",
+   "reading": "えりざ",
+   "code": "B"
+  },
+  {
+   "kanji": "広志郎",
+   "reading": "こうしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "端月",
+   "reading": "はづき",
+   "code": "E"
+  },
+  {
+   "kanji": "惣兵衛",
+   "reading": "そうべえ",
+   "code": "S"
+  },
+  {
+   "kanji": "壽美",
+   "reading": "ひさみ",
+   "code": "E"
+  },
+  {
+   "kanji": "澄義",
+   "reading": "すみよし",
+   "code": "E"
+  },
+  {
+   "kanji": "勝太朗",
+   "reading": "しょうたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "伊佐也",
+   "reading": "いさや",
+   "code": "S"
+  },
+  {
+   "kanji": "亜沙都",
+   "reading": "あさと",
+   "code": "U"
+  },
+  {
+   "kanji": "美涼",
+   "reading": "みすず",
+   "code": "E"
+  },
+  {
+   "kanji": "知那津",
+   "reading": "ちなつ",
+   "code": "B"
+  },
+  {
+   "kanji": "冬海",
+   "reading": "ふゆみ",
+   "code": "E"
+  },
+  {
+   "kanji": "優美",
+   "reading": "すぐみ",
+   "code": "E"
+  },
+  {
+   "kanji": "由梨絵",
+   "reading": "ゆりえ",
+   "code": "E"
+  },
+  {
+   "kanji": "朝妃",
+   "reading": "あさひ",
+   "code": "E"
+  },
+  {
+   "kanji": "克清",
+   "reading": "かつきよ",
+   "code": "S"
+  },
+  {
+   "kanji": "いつ子",
+   "reading": "いつこ",
+   "code": "B"
+  },
+  {
+   "kanji": "理夢",
+   "reading": "まさむ",
+   "code": "U"
+  },
+  {
+   "kanji": "望夢",
+   "reading": "のぞむ",
+   "code": "B"
+  },
+  {
+   "kanji": "詩乃",
+   "reading": "しの",
+   "code": "E"
+  },
+  {
+   "kanji": "恵玲",
+   "reading": "えれい",
+   "code": "E"
+  },
+  {
+   "kanji": "秀龍",
+   "reading": "ひでたつ",
+   "code": "S"
+  },
+  {
+   "kanji": "安衣里",
+   "reading": "あいり",
+   "code": "B"
+  },
+  {
+   "kanji": "竜宗",
+   "reading": "たつむね",
+   "code": "S"
+  },
+  {
+   "kanji": "央百花",
+   "reading": "おもか",
+   "code": "U"
+  },
+  {
+   "kanji": "栄理美",
+   "reading": "えりみ",
+   "code": "E"
+  },
+  {
+   "kanji": "比羅夫",
+   "reading": "ひらお",
+   "code": "U"
+  },
+  {
+   "kanji": "暁治",
+   "reading": "あきはる",
+   "code": "E"
+  },
+  {
+   "kanji": "歩真",
+   "reading": "あるま",
+   "code": "U"
+  },
+  {
+   "kanji": "留海子",
+   "reading": "るみこ",
+   "code": "B"
+  },
+  {
+   "kanji": "徳郁",
+   "reading": "とくふみ",
+   "code": "E"
+  },
+  {
+   "kanji": "芙歩子",
+   "reading": "ふうこ",
+   "code": "U"
+  },
+  {
+   "kanji": "総兵衛",
+   "reading": "そうべえ",
+   "code": "S"
+  },
+  {
+   "kanji": "高文",
+   "reading": "たかふみ",
+   "code": "E"
+  },
+  {
+   "kanji": "夏愛",
+   "reading": "かあい",
+   "code": "U"
+  },
+  {
+   "kanji": "紫絵瑠",
+   "reading": "しえる",
+   "code": "M"
+  },
+  {
+   "kanji": "知加奈",
+   "reading": "ちかな",
+   "code": "B"
+  },
+  {
+   "kanji": "亜美瑠",
+   "reading": "あみる",
+   "code": "U"
+  },
+  {
+   "kanji": "愛",
+   "reading": "めぐみ",
+   "code": "E"
+  },
+  {
+   "kanji": "明海",
+   "reading": "あきうみ",
+   "code": "E"
+  },
+  {
+   "kanji": "玄弥",
+   "reading": "げんや",
+   "code": "M"
+  },
+  {
+   "kanji": "瑞世",
+   "reading": "みずよ",
+   "code": "E"
+  },
+  {
+   "kanji": "佑夏",
+   "reading": "ゆうか",
+   "code": "B"
+  },
+  {
+   "kanji": "承太郎",
+   "reading": "じょうたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "敏冬",
+   "reading": "としふゆ",
+   "code": "E"
+  },
+  {
+   "kanji": "有里愛",
+   "reading": "ゆりあ",
+   "code": "B"
+  },
+  {
+   "kanji": "澪夏",
+   "reading": "みおか",
+   "code": "E"
+  },
+  {
+   "kanji": "朝成",
+   "reading": "あさなり",
+   "code": "S"
+  },
+  {
+   "kanji": "瑠子",
+   "reading": "るこ",
+   "code": "U"
+  },
+  {
+   "kanji": "夢穂",
+   "reading": "ゆめほ",
+   "code": "B"
+  },
+  {
+   "kanji": "星彦",
+   "reading": "ほしひこ",
+   "code": "U"
+  },
+  {
+   "kanji": "南十星",
+   "reading": "なとせ",
+   "code": "U"
+  },
+  {
+   "kanji": "夢仔",
+   "reading": "ゆめこ",
+   "code": "U"
+  },
+  {
+   "kanji": "直朗",
+   "reading": "なおあき",
+   "code": "E"
+  },
+  {
+   "kanji": "十夢",
+   "reading": "とむ",
+   "code": "U"
+  },
+  {
+   "kanji": "安一郎",
+   "reading": "やすいちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "今日",
+   "reading": "きょう",
+   "code": "U"
+  },
+  {
+   "kanji": "岳美",
+   "reading": "たけみ",
+   "code": "S"
+  },
+  {
+   "kanji": "夢大",
+   "reading": "ゆめひろ",
+   "code": "U"
+  },
+  {
+   "kanji": "安",
+   "reading": "あん",
+   "code": "E"
+  },
+  {
+   "kanji": "ひと美",
+   "reading": "ひとみ",
+   "code": "B"
+  },
+  {
+   "kanji": "菜実加",
+   "reading": "なみか",
+   "code": "B"
+  },
+  {
+   "kanji": "麻夢",
+   "reading": "あさむ",
+   "code": "U"
+  },
+  {
+   "kanji": "夏美",
+   "reading": "なみ",
+   "code": "X"
+  },
+  {
+   "kanji": "園明",
+   "reading": "そのあき",
+   "code": "E"
+  },
+  {
+   "kanji": "輝生",
+   "reading": "きせい",
+   "code": "S"
+  },
+  {
+   "kanji": "星人",
+   "reading": "ほしひと",
+   "code": "U"
+  },
+  {
+   "kanji": "伊万夫",
+   "reading": "いまお",
+   "code": "U"
+  },
+  {
+   "kanji": "愛梨奈",
+   "reading": "えりな",
+   "code": "B"
+  },
+  {
+   "kanji": "栄剛",
+   "reading": "しげたか",
+   "code": "S"
+  },
+  {
+   "kanji": "羽留奈",
+   "reading": "はるな",
+   "code": "B"
+  },
+  {
+   "kanji": "歩子",
+   "reading": "あゆみこ",
+   "code": "U"
+  },
+  {
+   "kanji": "優夢",
+   "reading": "すぐむ",
+   "code": "U"
+  },
+  {
+   "kanji": "静葉",
+   "reading": "しずは",
+   "code": "E"
+  },
+  {
+   "kanji": "夕海沙",
+   "reading": "ゆみさ",
+   "code": "B"
+  },
+  {
+   "kanji": "清音",
+   "reading": "すがね",
+   "code": "E"
+  },
+  {
+   "kanji": "克祐",
+   "reading": "かつすけ",
+   "code": "S"
+  },
+  {
+   "kanji": "多基江",
+   "reading": "たきえ",
+   "code": "E"
+  },
+  {
+   "kanji": "千由紀",
+   "reading": "ちゆき",
+   "code": "E"
+  },
+  {
+   "kanji": "亜月子",
+   "reading": "あつこ",
+   "code": "X"
+  },
+  {
+   "kanji": "和奈美",
+   "reading": "かなみ",
+   "code": "B"
+  },
+  {
+   "kanji": "龍史朗",
+   "reading": "りゅうしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "絹明",
+   "reading": "きぬあき",
+   "code": "U"
+  },
+  {
+   "kanji": "岩子",
+   "reading": "いわこ",
+   "code": "U"
+  },
+  {
+   "kanji": "邦暁",
+   "reading": "くにあき",
+   "code": "E"
+  },
+  {
+   "kanji": "妙佳",
+   "reading": "たえか",
+   "code": "E"
+  },
+  {
+   "kanji": "仁香",
+   "reading": "ひとか",
+   "code": "E"
+  },
+  {
+   "kanji": "宇企子",
+   "reading": "うきこ",
+   "code": "U"
+  },
+  {
+   "kanji": "汀紗",
+   "reading": "なぎさ",
+   "code": "E"
+  },
+  {
+   "kanji": "克豊",
+   "reading": "かつとよ",
+   "code": "S"
+  },
+  {
+   "kanji": "紗津香",
+   "reading": "さつか",
+   "code": "B"
+  },
+  {
+   "kanji": "稲深",
+   "reading": "いなみ",
+   "code": "M"
+  },
+  {
+   "kanji": "武郎",
+   "reading": "たけろう",
+   "code": "S"
+  },
+  {
+   "kanji": "佳龍",
+   "reading": "けいりゅう",
+   "code": "S"
+  },
+  {
+   "kanji": "亜津佐",
+   "reading": "あずさ",
+   "code": "B"
+  },
+  {
+   "kanji": "明昇",
+   "reading": "あけのぶ",
+   "code": "S"
+  },
+  {
+   "kanji": "静法",
+   "reading": "しずのり",
+   "code": "E"
+  },
+  {
+   "kanji": "薫子",
+   "reading": "かおりこ",
+   "code": "E"
+  },
+  {
+   "kanji": "篤真",
+   "reading": "あつま",
+   "code": "S"
+  },
+  {
+   "kanji": "丈美",
+   "reading": "たけみ",
+   "code": "S"
+  },
+  {
+   "kanji": "喜志男",
+   "reading": "きしお",
+   "code": "S"
+  },
+  {
+   "kanji": "風夢",
+   "reading": "かざみ",
+   "code": "X"
+  },
+  {
+   "kanji": "宇之輔",
+   "reading": "うのすけ",
+   "code": "S"
+  },
+  {
+   "kanji": "真民",
+   "reading": "まさたみ",
+   "code": "E"
+  },
+  {
+   "kanji": "海洋",
+   "reading": "かいよう",
+   "code": "S"
+  },
+  {
+   "kanji": "鐵太郎",
+   "reading": "てつたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "七奈代",
+   "reading": "ななよ",
+   "code": "B"
+  },
+  {
+   "kanji": "朔人",
+   "reading": "さくと",
+   "code": "S"
+  },
+  {
+   "kanji": "秀治郎",
+   "reading": "ひでじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "静希",
+   "reading": "しずき",
+   "code": "E"
+  },
+  {
+   "kanji": "夏月",
+   "reading": "かづき",
+   "code": "E"
+  },
+  {
+   "kanji": "比奈三",
+   "reading": "ひなみ",
+   "code": "U"
+  },
+  {
+   "kanji": "志津菜",
+   "reading": "しずな",
+   "code": "E"
+  },
+  {
+   "kanji": "恵祐",
+   "reading": "けいゆう",
+   "code": "E"
+  },
+  {
+   "kanji": "なお子",
+   "reading": "なおこ",
+   "code": "B"
+  },
+  {
+   "kanji": "豪友",
+   "reading": "ひでとも",
+   "code": "X"
+  },
+  {
+   "kanji": "日愛樹",
+   "reading": "にちあき",
+   "code": "U"
+  },
+  {
+   "kanji": "今英",
+   "reading": "いまひで",
+   "code": "U"
+  },
+  {
+   "kanji": "柳美",
+   "reading": "やなみ",
+   "code": "E"
+  },
+  {
+   "kanji": "安三",
+   "reading": "やすぞう",
+   "code": "S"
+  },
+  {
+   "kanji": "玖々莉",
+   "reading": "くくり",
+   "code": "M"
+  },
+  {
+   "kanji": "沙歩美",
+   "reading": "さほみ",
+   "code": "B"
+  },
+  {
+   "kanji": "多加良",
+   "reading": "たから",
+   "code": "U"
+  },
+  {
+   "kanji": "洸二朗",
+   "reading": "こうじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "早容美",
+   "reading": "さよみ",
+   "code": "B"
+  },
+  {
+   "kanji": "香水",
+   "reading": "かざみ",
+   "code": "X"
+  },
+  {
+   "kanji": "多芸美",
+   "reading": "たけみ",
+   "code": "U"
+  },
+  {
+   "kanji": "亜冬子",
+   "reading": "あとこ",
+   "code": "U"
+  },
+  {
+   "kanji": "佐絵里",
+   "reading": "さえり",
+   "code": "B"
+  },
+  {
+   "kanji": "風太朗",
+   "reading": "ふうたろう",
+   "code": "B"
+  },
+  {
+   "kanji": "皐姫",
+   "reading": "さつき",
+   "code": "E"
+  },
+  {
+   "kanji": "沙絵美",
+   "reading": "さえみ",
+   "code": "B"
+  },
+  {
+   "kanji": "早奈子",
+   "reading": "さなこ",
+   "code": "B"
+  },
+  {
+   "kanji": "澄也",
+   "reading": "すみや",
+   "code": "E"
+  },
+  {
+   "kanji": "和夢",
+   "reading": "かずむ",
+   "code": "U"
+  },
+  {
+   "kanji": "健樹",
+   "reading": "けんじゅ",
+   "code": "S"
+  },
+  {
+   "kanji": "宙飛",
+   "reading": "ちゅうひ",
+   "code": "U"
+  },
+  {
+   "kanji": "寧里亜",
+   "reading": "ねりあ",
+   "code": "U"
+  },
+  {
+   "kanji": "羽留香",
+   "reading": "はるか",
+   "code": "B"
+  },
+  {
+   "kanji": "健美",
+   "reading": "けんみ",
+   "code": "U"
+  },
+  {
+   "kanji": "威智郎",
+   "reading": "いちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "一央奈",
+   "reading": "いおな",
+   "code": "B"
+  },
+  {
+   "kanji": "麻穂香",
+   "reading": "まほか",
+   "code": "B"
+  },
+  {
+   "kanji": "光世",
+   "reading": "てるよ",
+   "code": "E"
+  },
+  {
+   "kanji": "剛道",
+   "reading": "たけみち",
+   "code": "S"
+  },
+  {
+   "kanji": "克麻",
+   "reading": "かつま",
+   "code": "S"
+  },
+  {
+   "kanji": "冬樹",
+   "reading": "ふゆき",
+   "code": "E"
+  },
+  {
+   "kanji": "雪路",
+   "reading": "ゆきじ",
+   "code": "M"
+  },
+  {
+   "kanji": "真誉",
+   "reading": "まさたか",
+   "code": "E"
+  },
+  {
+   "kanji": "虎雄",
+   "reading": "とらお",
+   "code": "S"
+  },
+  {
+   "kanji": "弥衣紗",
+   "reading": "やいさ",
+   "code": "U"
+  },
+  {
+   "kanji": "直之介",
+   "reading": "なおのすけ",
+   "code": "S"
+  },
+  {
+   "kanji": "富英",
+   "reading": "とみひで",
+   "code": "E"
+  },
+  {
+   "kanji": "記代味",
+   "reading": "きよみ",
+   "code": "U"
+  },
+  {
+   "kanji": "雅帆",
+   "reading": "まさほ",
+   "code": "E"
+  },
+  {
+   "kanji": "勝泉",
+   "reading": "かつもと",
+   "code": "X"
+  },
+  {
+   "kanji": "良馨",
+   "reading": "よしか",
+   "code": "U"
+  },
+  {
+   "kanji": "佳幸",
+   "reading": "よしゆき",
+   "code": "E"
+  },
+  {
+   "kanji": "佳克",
+   "reading": "よしかづ",
+   "code": "S"
+  },
+  {
+   "kanji": "華",
+   "reading": "はな",
+   "code": "B"
+  },
+  {
+   "kanji": "乃々愛",
+   "reading": "ののあ",
+   "code": "B"
+  },
+  {
+   "kanji": "夢之介",
+   "reading": "ゆめのすけ",
+   "code": "U"
+  },
+  {
+   "kanji": "小夜美",
+   "reading": "さよみ",
+   "code": "E"
+  },
+  {
+   "kanji": "奈須加",
+   "reading": "なすか",
+   "code": "U"
+  },
+  {
+   "kanji": "圭月",
+   "reading": "かづき",
+   "code": "E"
+  },
+  {
+   "kanji": "日子",
+   "reading": "にちこ",
+   "code": "U"
+  },
+  {
+   "kanji": "真秀里",
+   "reading": "まほり",
+   "code": "U"
+  },
+  {
+   "kanji": "絵月",
+   "reading": "えづき",
+   "code": "E"
+  },
+  {
+   "kanji": "家明",
+   "reading": "いえあき",
+   "code": "E"
+  },
+  {
+   "kanji": "愛絵",
+   "reading": "かなえ",
+   "code": "X"
+  },
+  {
+   "kanji": "偉剛",
+   "reading": "いごう",
+   "code": "S"
+  },
+  {
+   "kanji": "鼓乃歌",
+   "reading": "このか",
+   "code": "B"
+  },
+  {
+   "kanji": "銀実",
+   "reading": "かねみ",
+   "code": "U"
+  },
+  {
+   "kanji": "夏博",
+   "reading": "なつひろ",
+   "code": "B"
+  },
+  {
+   "kanji": "絵理亜",
+   "reading": "えりあ",
+   "code": "U"
+  },
+  {
+   "kanji": "泰緒子",
+   "reading": "たおこ",
+   "code": "U"
+  },
+  {
+   "kanji": "明月",
+   "reading": "あづき",
+   "code": "M"
+  },
+  {
+   "kanji": "守克",
+   "reading": "もりかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "雪代",
+   "reading": "せつよ",
+   "code": "E"
+  },
+  {
+   "kanji": "剛佐",
+   "reading": "ごうさ",
+   "code": "S"
+  },
+  {
+   "kanji": "勝在",
+   "reading": "かつあり",
+   "code": "S"
+  },
+  {
+   "kanji": "紗耶子",
+   "reading": "さやこ",
+   "code": "E"
+  },
+  {
+   "kanji": "美星",
+   "reading": "みほし",
+   "code": "M"
+  },
+  {
+   "kanji": "紅凛",
+   "reading": "くりん",
+   "code": "M"
+  },
+  {
+   "kanji": "夢奈",
+   "reading": "ゆめな",
+   "code": "B"
+  },
+  {
+   "kanji": "真利依",
+   "reading": "まりよ",
+   "code": "X"
+  },
+  {
+   "kanji": "静保",
+   "reading": "しずほ",
+   "code": "E"
+  },
+  {
+   "kanji": "成直",
+   "reading": "しげなお",
+   "code": "E"
+  },
+  {
+   "kanji": "伊理也",
+   "reading": "いりや",
+   "code": "U"
+  },
+  {
+   "kanji": "洸明",
+   "reading": "ひろとし",
+   "code": "E"
+  },
+  {
+   "kanji": "葉怜",
+   "reading": "はれい",
+   "code": "E"
+  },
+  {
+   "kanji": "夕美子",
+   "reading": "ゆみこ",
+   "code": "E"
+  },
+  {
+   "kanji": "鉄造",
+   "reading": "てつぞう",
+   "code": "S"
+  },
+  {
+   "kanji": "勝也",
+   "reading": "かつなり",
+   "code": "S"
+  },
+  {
+   "kanji": "歌音",
+   "reading": "かのん",
+   "code": "B"
+  },
+  {
+   "kanji": "七彩",
+   "reading": "ちあや",
+   "code": "U"
+  },
+  {
+   "kanji": "克平",
+   "reading": "かつへい",
+   "code": "S"
+  },
+  {
+   "kanji": "萌恵子",
+   "reading": "もえこ",
+   "code": "B"
+  },
+  {
+   "kanji": "智与美",
+   "reading": "ちよみ",
+   "code": "E"
+  },
+  {
+   "kanji": "純葉",
+   "reading": "すみは",
+   "code": "E"
+  },
+  {
+   "kanji": "健朗",
+   "reading": "けんろう",
+   "code": "S"
+  },
+  {
+   "kanji": "星華",
+   "reading": "ほしか",
+   "code": "M"
+  },
+  {
+   "kanji": "雅市郎",
+   "reading": "まさいちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "真也乃",
+   "reading": "まやの",
+   "code": "B"
+  },
+  {
+   "kanji": "弦輝",
+   "reading": "げんき",
+   "code": "S"
+  },
+  {
+   "kanji": "星都奈",
+   "reading": "せつな",
+   "code": "M"
+  },
+  {
+   "kanji": "星歌",
+   "reading": "ほしか",
+   "code": "B"
+  },
+  {
+   "kanji": "了太郎",
+   "reading": "りょうたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "暁子",
+   "reading": "てるこ",
+   "code": "E"
+  },
+  {
+   "kanji": "壽榮子",
+   "reading": "すえこ",
+   "code": "E"
+  },
+  {
+   "kanji": "梨香",
+   "reading": "りんか",
+   "code": "X"
+  },
+  {
+   "kanji": "静菜",
+   "reading": "せな",
+   "code": "E"
+  },
+  {
+   "kanji": "恒雪",
+   "reading": "こうせつ",
+   "code": "M"
+  },
+  {
+   "kanji": "宙亘",
+   "reading": "ときのぶ",
+   "code": "X"
+  },
+  {
+   "kanji": "奏葉",
+   "reading": "かなは",
+   "code": "B"
+  },
+  {
+   "kanji": "又次郎",
+   "reading": "またじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "将匡",
+   "reading": "まさきみ",
+   "code": "S"
+  },
+  {
+   "kanji": "朱理",
+   "reading": "しゅり",
+   "code": "E"
+  },
+  {
+   "kanji": "勝光",
+   "reading": "かつみつ",
+   "code": "S"
+  },
+  {
+   "kanji": "浩淳",
+   "reading": "ひろあつ",
+   "code": "E"
+  },
+  {
+   "kanji": "野笑留",
+   "reading": "のえる",
+   "code": "U"
+  },
+  {
+   "kanji": "茉莉音",
+   "reading": "まりね",
+   "code": "B"
+  },
+  {
+   "kanji": "恵奈子",
+   "reading": "えなこ",
+   "code": "B"
+  },
+  {
+   "kanji": "天翔",
+   "reading": "てんしょう",
+   "code": "S"
+  },
+  {
+   "kanji": "深月",
+   "reading": "みつき",
+   "code": "M"
+  },
+  {
+   "kanji": "奏希",
+   "reading": "そうき",
+   "code": "B"
+  },
+  {
+   "kanji": "耶月",
+   "reading": "やつき",
+   "code": "M"
+  },
+  {
+   "kanji": "静音",
+   "reading": "しずね",
+   "code": "E"
+  },
+  {
+   "kanji": "輝満",
+   "reading": "てるみつ",
+   "code": "S"
+  },
+  {
+   "kanji": "真盛",
+   "reading": "まさもり",
+   "code": "S"
+  },
+  {
+   "kanji": "むつ子",
+   "reading": "むつこ",
+   "code": "B"
+  },
+  {
+   "kanji": "雅佳",
+   "reading": "まさよし",
+   "code": "E"
+  },
+  {
+   "kanji": "真香",
+   "reading": "なほか",
+   "code": "X"
+  },
+  {
+   "kanji": "隆優",
+   "reading": "たかまさ",
+   "code": "E"
+  },
+  {
+   "kanji": "忍佳",
+   "reading": "しのか",
+   "code": "E"
+  },
+  {
+   "kanji": "樹里奈",
+   "reading": "じゅりな",
+   "code": "B"
+  },
+  {
+   "kanji": "郁善",
+   "reading": "くによし",
+   "code": "X"
+  },
+  {
+   "kanji": "庚子男",
+   "reading": "きねお",
+   "code": "X"
+  },
+  {
+   "kanji": "重毅",
+   "reading": "あつとし",
+   "code": "X"
+  },
+  {
+   "kanji": "柊弥",
+   "reading": "とうや",
+   "code": "S"
+  },
+  {
+   "kanji": "剛士",
+   "reading": "ごうし",
+   "code": "S"
+  },
+  {
+   "kanji": "早華",
+   "reading": "はやか",
+   "code": "B"
+  },
+  {
+   "kanji": "風美",
+   "reading": "ふうみ",
+   "code": "B"
+  },
+  {
+   "kanji": "紅霞",
+   "reading": "こうか",
+   "code": "M"
+  },
+  {
+   "kanji": "藍海",
+   "reading": "あおみ",
+   "code": "M"
+  },
+  {
+   "kanji": "雅経",
+   "reading": "まさつね",
+   "code": "E"
+  },
+  {
+   "kanji": "笑保子",
+   "reading": "えほこ",
+   "code": "B"
+  },
+  {
+   "kanji": "耿誠",
+   "reading": "こうせい",
+   "code": "S"
+  },
+  {
+   "kanji": "紫音",
+   "reading": "しおん",
+   "code": "M"
+  },
+  {
+   "kanji": "卯月",
+   "reading": "うつき",
+   "code": "E"
+  },
+  {
+   "kanji": "夢仁",
+   "reading": "ゆめひと",
+   "code": "U"
+  },
+  {
+   "kanji": "希望",
+   "reading": "きぼう",
+   "code": "U"
+  },
+  {
+   "kanji": "悠佳世",
+   "reading": "ゆかよ",
+   "code": "B"
+  },
+  {
+   "kanji": "真由人",
+   "reading": "まゆと",
+   "code": "B"
+  },
+  {
+   "kanji": "甲人",
+   "reading": "かんと",
+   "code": "U"
+  },
+  {
+   "kanji": "竜子",
+   "reading": "りょうこ",
+   "code": "E"
+  },
+  {
+   "kanji": "豪子",
+   "reading": "ひでこ",
+   "code": "X"
+  },
+  {
+   "kanji": "伽矢男",
+   "reading": "かやお",
+   "code": "U"
+  },
+  {
+   "kanji": "陽彦",
+   "reading": "はるひこ",
+   "code": "E"
+  },
+  {
+   "kanji": "健四郎",
+   "reading": "けんしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "香幸",
+   "reading": "こゆき",
+   "code": "B"
+  },
+  {
+   "kanji": "朗智",
+   "reading": "あきとも",
+   "code": "E"
+  },
+  {
+   "kanji": "紗絵里",
+   "reading": "さえり",
+   "code": "B"
+  },
+  {
+   "kanji": "亜蘭",
+   "reading": "あらん",
+   "code": "U"
+  },
+  {
+   "kanji": "英勝",
+   "reading": "ひでかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "紗希帆",
+   "reading": "さきほ",
+   "code": "B"
+  },
+  {
+   "kanji": "実姫",
+   "reading": "みき",
+   "code": "E"
+  },
+  {
+   "kanji": "郁生",
+   "reading": "いくみ",
+   "code": "E"
+  },
+  {
+   "kanji": "月乃",
+   "reading": "つきの",
+   "code": "M"
+  },
+  {
+   "kanji": "夢優",
+   "reading": "むゆう",
+   "code": "U"
+  },
+  {
+   "kanji": "初香",
+   "reading": "はつか",
+   "code": "B"
+  },
+  {
+   "kanji": "佳夕子",
+   "reading": "かゆこ",
+   "code": "E"
+  },
+  {
+   "kanji": "朝妃",
+   "reading": "あさい",
+   "code": "X"
+  },
+  {
+   "kanji": "明克",
+   "reading": "あきかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "恭志郎",
+   "reading": "きょうしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "暁夢",
+   "reading": "あきむ",
+   "code": "M"
+  },
+  {
+   "kanji": "麻歩",
+   "reading": "あさほ",
+   "code": "B"
+  },
+  {
+   "kanji": "七緒",
+   "reading": "ななお",
+   "code": "E"
+  },
+  {
+   "kanji": "真鳥",
+   "reading": "まとり",
+   "code": "M"
+  },
+  {
+   "kanji": "宇唯寧",
+   "reading": "ういね",
+   "code": "U"
+  },
+  {
+   "kanji": "布美江",
+   "reading": "ふみえ",
+   "code": "E"
+  },
+  {
+   "kanji": "睦月",
+   "reading": "むつき",
+   "code": "E"
+  },
+  {
+   "kanji": "勝丸",
+   "reading": "かつまる",
+   "code": "S"
+  },
+  {
+   "kanji": "庸晴",
+   "reading": "のぶはる",
+   "code": "E"
+  },
+  {
+   "kanji": "喜久治",
+   "reading": "きくじ",
+   "code": "S"
+  },
+  {
+   "kanji": "将虎",
+   "reading": "まさとら",
+   "code": "S"
+  },
+  {
+   "kanji": "美和子",
+   "reading": "みわこ",
+   "code": "E"
+  },
+  {
+   "kanji": "朱一郎",
+   "reading": "しゅいちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "光吉",
+   "reading": "こうきち",
+   "code": "S"
+  },
+  {
+   "kanji": "咲音",
+   "reading": "さきね",
+   "code": "B"
+  },
+  {
+   "kanji": "香和",
+   "reading": "かより",
+   "code": "X"
+  },
+  {
+   "kanji": "千香華",
+   "reading": "ちかげ",
+   "code": "X"
+  },
+  {
+   "kanji": "衣織",
+   "reading": "いおり",
+   "code": "E"
+  },
+  {
+   "kanji": "想夏",
+   "reading": "そうか",
+   "code": "B"
+  },
+  {
+   "kanji": "友加帆",
+   "reading": "ゆかほ",
+   "code": "B"
+  },
+  {
+   "kanji": "恋音",
+   "reading": "こいね",
+   "code": "M"
+  },
+  {
+   "kanji": "理沙恵",
+   "reading": "りさえ",
+   "code": "E"
+  },
+  {
+   "kanji": "星河",
+   "reading": "せいが",
+   "code": "M"
+  },
+  {
+   "kanji": "宇宙",
+   "reading": "そら",
+   "code": "M"
+  },
+  {
+   "kanji": "勝平",
+   "reading": "かつひら",
+   "code": "S"
+  },
+  {
+   "kanji": "亜古奈",
+   "reading": "あこな",
+   "code": "U"
+  },
+  {
+   "kanji": "正朗",
+   "reading": "まさろう",
+   "code": "E"
+  },
+  {
+   "kanji": "茉莉枝",
+   "reading": "まりえ",
+   "code": "E"
+  },
+  {
+   "kanji": "玄直",
+   "reading": "はるなお",
+   "code": "X"
+  },
+  {
+   "kanji": "靖晴",
+   "reading": "やすはる",
+   "code": "E"
+  },
+  {
+   "kanji": "位直",
+   "reading": "たかなお",
+   "code": "E"
+  },
+  {
+   "kanji": "由太郎",
+   "reading": "よしたろう",
+   "code": "E"
+  },
+  {
+   "kanji": "恵梨沙",
+   "reading": "えりさ",
+   "code": "B"
+  },
+  {
+   "kanji": "二朗",
+   "reading": "にろう",
+   "code": "X"
+  },
+  {
+   "kanji": "直幹",
+   "reading": "なおみき",
+   "code": "E"
+  },
+  {
+   "kanji": "幸明",
+   "reading": "こうめい",
+   "code": "S"
+  },
+  {
+   "kanji": "玄祥",
+   "reading": "げんしょう",
+   "code": "M"
+  },
+  {
+   "kanji": "朔彦",
+   "reading": "さくひこ",
+   "code": "M"
+  },
+  {
+   "kanji": "弓里香",
+   "reading": "ゆりか",
+   "code": "B"
+  },
+  {
+   "kanji": "朝英",
+   "reading": "ちょうえい",
+   "code": "S"
+  },
+  {
+   "kanji": "杏月",
+   "reading": "あづき",
+   "code": "E"
+  },
+  {
+   "kanji": "欧美",
+   "reading": "おうみ",
+   "code": "U"
+  },
+  {
+   "kanji": "陣一",
+   "reading": "じんいち",
+   "code": "S"
+  },
+  {
+   "kanji": "淳乃",
+   "reading": "じゅんの",
+   "code": "E"
+  },
+  {
+   "kanji": "至紀子",
+   "reading": "しきこ",
+   "code": "U"
+  },
+  {
+   "kanji": "多佑子",
+   "reading": "たゆこ",
+   "code": "U"
+  },
+  {
+   "kanji": "優哲",
+   "reading": "ゆうてつ",
+   "code": "S"
+  },
+  {
+   "kanji": "夢見",
+   "reading": "むみ",
+   "code": "U"
+  },
+  {
+   "kanji": "伸一朗",
+   "reading": "しんいちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "碧沙",
+   "reading": "あおさ",
+   "code": "U"
+  },
+  {
+   "kanji": "風友乃",
+   "reading": "ふゆの",
+   "code": "B"
+  },
+  {
+   "kanji": "結真",
+   "reading": "ゆま",
+   "code": "B"
+  },
+  {
+   "kanji": "紫津葉",
+   "reading": "しづは",
+   "code": "M"
+  },
+  {
+   "kanji": "金兵衛",
+   "reading": "きんべえ",
+   "code": "S"
+  },
+  {
+   "kanji": "勝久",
+   "reading": "かつひさ",
+   "code": "S"
+  },
+  {
+   "kanji": "深愛",
+   "reading": "みあい",
+   "code": "M"
+  },
+  {
+   "kanji": "希衣子",
+   "reading": "まいこ",
+   "code": "X"
+  },
+  {
+   "kanji": "伊千恵",
+   "reading": "いちえ",
+   "code": "E"
+  },
+  {
+   "kanji": "里織菜",
+   "reading": "りおな",
+   "code": "B"
+  },
+  {
+   "kanji": "八百吉",
+   "reading": "やおきち",
+   "code": "U"
+  },
+  {
+   "kanji": "隼也",
+   "reading": "しゅんや",
+   "code": "S"
+  },
+  {
+   "kanji": "美樹代",
+   "reading": "みきよ",
+   "code": "E"
+  },
+  {
+   "kanji": "静馬",
+   "reading": "しずま",
+   "code": "S"
+  },
+  {
+   "kanji": "亜夢",
+   "reading": "あゆめ",
+   "code": "U"
+  },
+  {
+   "kanji": "甲子彦",
+   "reading": "きねひこ",
+   "code": "U"
+  },
+  {
+   "kanji": "倫理子",
+   "reading": "りりこ",
+   "code": "U"
+  },
+  {
+   "kanji": "佳美",
+   "reading": "かみ",
+   "code": "U"
+  },
+  {
+   "kanji": "凌",
+   "reading": "りょう",
+   "code": "S"
+  },
+  {
+   "kanji": "輝勝",
+   "reading": "てるかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "澄成",
+   "reading": "すみなり",
+   "code": "E"
+  },
+  {
+   "kanji": "長治郎",
+   "reading": "ちょうじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "嗣夢",
+   "reading": "つぐむ",
+   "code": "U"
+  },
+  {
+   "kanji": "玄造",
+   "reading": "げんぞう",
+   "code": "S"
+  },
+  {
+   "kanji": "名保恵",
+   "reading": "なほえ",
+   "code": "E"
+  },
+  {
+   "kanji": "希美乃",
+   "reading": "きみの",
+   "code": "E"
+  },
+  {
+   "kanji": "千穂未",
+   "reading": "ちほみ",
+   "code": "E"
+  },
+  {
+   "kanji": "岳丸",
+   "reading": "たけまる",
+   "code": "S"
+  },
+  {
+   "kanji": "千穂理",
+   "reading": "ちほり",
+   "code": "E"
+  },
+  {
+   "kanji": "恵恋",
+   "reading": "えれん",
+   "code": "U"
+  },
+  {
+   "kanji": "白愛",
+   "reading": "はくあ",
+   "code": "M"
+  },
+  {
+   "kanji": "眞樹也",
+   "reading": "まきや",
+   "code": "E"
+  },
+  {
+   "kanji": "優月",
+   "reading": "ゆずき",
+   "code": "E"
+  },
+  {
+   "kanji": "力男",
+   "reading": "りきお",
+   "code": "S"
+  },
+  {
+   "kanji": "能文美",
+   "reading": "のぶみ",
+   "code": "U"
+  },
+  {
+   "kanji": "史比古",
+   "reading": "ふみひこ",
+   "code": "E"
+  },
+  {
+   "kanji": "修雪",
+   "reading": "しゅうせつ",
+   "code": "M"
+  },
+  {
+   "kanji": "呼奈津",
+   "reading": "こなつ",
+   "code": "U"
+  },
+  {
+   "kanji": "瑞華",
+   "reading": "みずか",
+   "code": "E"
+  },
+  {
+   "kanji": "定太郎",
+   "reading": "ていたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "春木",
+   "reading": "はるき",
+   "code": "B"
+  },
+  {
+   "kanji": "希月",
+   "reading": "きづき",
+   "code": "M"
+  },
+  {
+   "kanji": "紗奈子",
+   "reading": "さなこ",
+   "code": "B"
+  },
+  {
+   "kanji": "竜照",
+   "reading": "りゅうしょう",
+   "code": "S"
+  },
+  {
+   "kanji": "萌華",
+   "reading": "もえか",
+   "code": "B"
+  },
+  {
+   "kanji": "愛等",
+   "reading": "あいら",
+   "code": "X"
+  },
+  {
+   "kanji": "鼓湖呂",
+   "reading": "こころ",
+   "code": "U"
+  },
+  {
+   "kanji": "安香",
+   "reading": "やすか",
+   "code": "E"
+  },
+  {
+   "kanji": "星江",
+   "reading": "ほしえ",
+   "code": "M"
+  },
+  {
+   "kanji": "木乃葉",
+   "reading": "このは",
+   "code": "B"
+  },
+  {
+   "kanji": "剣八",
+   "reading": "けんぱち",
+   "code": "S"
+  },
+  {
+   "kanji": "亜英",
+   "reading": "あえ",
+   "code": "U"
+  },
+  {
+   "kanji": "昂士",
+   "reading": "こうし",
+   "code": "S"
+  },
+  {
+   "kanji": "竜次",
+   "reading": "りゅうじ",
+   "code": "S"
+  },
+  {
+   "kanji": "紗葉",
+   "reading": "さよ",
+   "code": "E"
+  },
+  {
+   "kanji": "多由里",
+   "reading": "たゆり",
+   "code": "U"
+  },
+  {
+   "kanji": "真我",
+   "reading": "しんが",
+   "code": "S"
+  },
+  {
+   "kanji": "池五郎",
+   "reading": "いけごろう",
+   "code": "U"
+  },
+  {
+   "kanji": "正影",
+   "reading": "まさかげ",
+   "code": "M"
+  },
+  {
+   "kanji": "達夢",
+   "reading": "たつむ",
+   "code": "U"
+  },
+  {
+   "kanji": "佐知也",
+   "reading": "さちや",
+   "code": "E"
+  },
+  {
+   "kanji": "麻穂果",
+   "reading": "まほか",
+   "code": "B"
+  },
+  {
+   "kanji": "蒼玄",
+   "reading": "そうげん",
+   "code": "M"
+  },
+  {
+   "kanji": "佳夢奈",
+   "reading": "かむな",
+   "code": "U"
+  },
+  {
+   "kanji": "夢菜",
+   "reading": "ゆめな",
+   "code": "B"
+  },
+  {
+   "kanji": "佳世乃",
+   "reading": "かよの",
+   "code": "E"
+  },
+  {
+   "kanji": "麻司",
+   "reading": "あさじ",
+   "code": "U"
+  },
+  {
+   "kanji": "香沙音",
+   "reading": "かさね",
+   "code": "E"
+  },
+  {
+   "kanji": "久梨絵",
+   "reading": "くりえ",
+   "code": "B"
+  },
+  {
+   "kanji": "修治郎",
+   "reading": "しゅうじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "伊予子",
+   "reading": "いよこ",
+   "code": "E"
+  },
+  {
+   "kanji": "朝彦",
+   "reading": "あさひこ",
+   "code": "E"
+  },
+  {
+   "kanji": "璃亜音",
+   "reading": "りあね",
+   "code": "U"
+  },
+  {
+   "kanji": "夏生",
+   "reading": "なつお",
+   "code": "B"
+  },
+  {
+   "kanji": "静人",
+   "reading": "しずと",
+   "code": "E"
+  },
+  {
+   "kanji": "晶代",
+   "reading": "あかよ",
+   "code": "U"
+  },
+  {
+   "kanji": "正武",
+   "reading": "まさむ",
+   "code": "S"
+  },
+  {
+   "kanji": "勝乃",
+   "reading": "かつの",
+   "code": "U"
+  },
+  {
+   "kanji": "霧香",
+   "reading": "きりか",
+   "code": "M"
+  },
+  {
+   "kanji": "希帆",
+   "reading": "まほ",
+   "code": "X"
+  },
+  {
+   "kanji": "多寿美",
+   "reading": "たずみ",
+   "code": "E"
+  },
+  {
+   "kanji": "せつ子",
+   "reading": "せつこ",
+   "code": "B"
+  },
+  {
+   "kanji": "静喜",
+   "reading": "しずき",
+   "code": "E"
+  },
+  {
+   "kanji": "紀保子",
+   "reading": "きおこ",
+   "code": "E"
+  },
+  {
+   "kanji": "亮勝",
+   "reading": "りょうしょう",
+   "code": "S"
+  },
+  {
+   "kanji": "希穂子",
+   "reading": "きほこ",
+   "code": "E"
+  },
+  {
+   "kanji": "豪星",
+   "reading": "ごうせい",
+   "code": "S"
+  },
+  {
+   "kanji": "静樹",
+   "reading": "しずき",
+   "code": "E"
+  },
+  {
+   "kanji": "澪夏",
+   "reading": "れいか",
+   "code": "E"
+  },
+  {
+   "kanji": "邦愛",
+   "reading": "くにちか",
+   "code": "E"
+  },
+  {
+   "kanji": "伊智穂",
+   "reading": "いちほ",
+   "code": "E"
+  },
+  {
+   "kanji": "知剛",
+   "reading": "かずたか",
+   "code": "S"
+  },
+  {
+   "kanji": "雪乃",
+   "reading": "ゆきの",
+   "code": "E"
+  },
+  {
+   "kanji": "弓音",
+   "reading": "ゆみね",
+   "code": "E"
+  },
+  {
+   "kanji": "夢愛",
+   "reading": "ゆあ",
+   "code": "B"
+  },
+  {
+   "kanji": "晴乃",
+   "reading": "はるの",
+   "code": "B"
+  },
+  {
+   "kanji": "聡音",
+   "reading": "さとね",
+   "code": "E"
+  },
+  {
+   "kanji": "愛理恵",
+   "reading": "ありえ",
+   "code": "E"
+  },
+  {
+   "kanji": "朔愛",
+   "reading": "さくあ",
+   "code": "U"
+  },
+  {
+   "kanji": "茉衣子",
+   "reading": "まいこ",
+   "code": "B"
+  },
+  {
+   "kanji": "夏行",
+   "reading": "なつゆき",
+   "code": "E"
+  },
+  {
+   "kanji": "英虎",
+   "reading": "ひでとら",
+   "code": "S"
+  },
+  {
+   "kanji": "星沙",
+   "reading": "せいさ",
+   "code": "M"
+  },
+  {
+   "kanji": "愛鐘",
+   "reading": "あかね",
+   "code": "X"
+  },
+  {
+   "kanji": "勝豊",
+   "reading": "かつとよ",
+   "code": "S"
+  },
+  {
+   "kanji": "澄三郎",
+   "reading": "ちょうざぶろう",
+   "code": "X"
+  },
+  {
+   "kanji": "考将",
+   "reading": "たかまさ",
+   "code": "X"
+  },
+  {
+   "kanji": "彩一郎",
+   "reading": "さいいちろう",
+   "code": "U"
+  },
+  {
+   "kanji": "多緒",
+   "reading": "たお",
+   "code": "U"
+  },
+  {
+   "kanji": "岳里",
+   "reading": "たけさと",
+   "code": "S"
+  },
+  {
+   "kanji": "禎太郎",
+   "reading": "ていたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "直太郎",
+   "reading": "なおたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "愛世",
+   "reading": "ちかよ",
+   "code": "E"
+  },
+  {
+   "kanji": "如月",
+   "reading": "きさらぎ",
+   "code": "M"
+  },
+  {
+   "kanji": "叡太郎",
+   "reading": "えいたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "信玄",
+   "reading": "のぶもと",
+   "code": "S"
+  },
+  {
+   "kanji": "睦直",
+   "reading": "むつなお",
+   "code": "E"
+  },
+  {
+   "kanji": "愛依",
+   "reading": "なえ",
+   "code": "X"
+  },
+  {
+   "kanji": "大翔",
+   "reading": "たいしょう",
+   "code": "S"
+  },
+  {
+   "kanji": "剛規",
+   "reading": "たけき",
+   "code": "S"
+  },
+  {
+   "kanji": "徳英",
+   "reading": "とくひで",
+   "code": "E"
+  },
+  {
+   "kanji": "歌音",
+   "reading": "うたね",
+   "code": "B"
+  },
+  {
+   "kanji": "謙明",
+   "reading": "けんめい",
+   "code": "S"
+  },
+  {
+   "kanji": "温美",
+   "reading": "たずみ",
+   "code": "X"
+  },
+  {
+   "kanji": "朋花",
+   "reading": "ともか",
+   "code": "B"
+  },
+  {
+   "kanji": "駿",
+   "reading": "はやお",
+   "code": "S"
+  },
+  {
+   "kanji": "貴麻子",
+   "reading": "きまこ",
+   "code": "U"
+  },
+  {
+   "kanji": "星々羅",
+   "reading": "せせら",
+   "code": "U"
+  },
+  {
+   "kanji": "知龍",
+   "reading": "ともたつ",
+   "code": "S"
+  },
+  {
+   "kanji": "美望",
+   "reading": "みも",
+   "code": "U"
+  },
+  {
+   "kanji": "織衛",
+   "reading": "おりえ",
+   "code": "U"
+  },
+  {
+   "kanji": "彰朗",
+   "reading": "あきろう",
+   "code": "E"
+  },
+  {
+   "kanji": "儒里奈",
+   "reading": "じゅりな",
+   "code": "U"
+  },
+  {
+   "kanji": "美千乃",
+   "reading": "みちの",
+   "code": "E"
+  },
+  {
+   "kanji": "加美子",
+   "reading": "かみこ",
+   "code": "E"
+  },
+  {
+   "kanji": "月彦",
+   "reading": "つきひこ",
+   "code": "M"
+  },
+  {
+   "kanji": "徹意",
+   "reading": "てつおき",
+   "code": "E"
+  },
+  {
+   "kanji": "陽準",
+   "reading": "はるのり",
+   "code": "X"
+  },
+  {
+   "kanji": "美影",
+   "reading": "みえい",
+   "code": "M"
+  },
+  {
+   "kanji": "淑恵",
+   "reading": "よしえ",
+   "code": "E"
+  },
+  {
+   "kanji": "夕海",
+   "reading": "ゆみ",
+   "code": "E"
+  },
+  {
+   "kanji": "真冬",
+   "reading": "まふゆ",
+   "code": "M"
+  },
+  {
+   "kanji": "豪太",
+   "reading": "ごうた",
+   "code": "S"
+  },
+  {
+   "kanji": "陽和",
+   "reading": "あきかず",
+   "code": "E"
+  },
+  {
+   "kanji": "冨美子",
+   "reading": "ふみこ",
+   "code": "E"
+  },
+  {
+   "kanji": "霞",
+   "reading": "かすみ",
+   "code": "E"
+  },
+  {
+   "kanji": "羅美",
+   "reading": "らみ",
+   "code": "U"
+  },
+  {
+   "kanji": "久爾満",
+   "reading": "くにみつ",
+   "code": "U"
+  },
+  {
+   "kanji": "友加乃",
+   "reading": "ゆかの",
+   "code": "B"
+  },
+  {
+   "kanji": "静穂",
+   "reading": "しずほ",
+   "code": "E"
+  },
+  {
+   "kanji": "文五郎",
+   "reading": "ぶんごろう",
+   "code": "S"
+  },
+  {
+   "kanji": "澄治",
+   "reading": "すみはる",
+   "code": "E"
+  },
+  {
+   "kanji": "光翔",
+   "reading": "こうしょう",
+   "code": "S"
+  },
+  {
+   "kanji": "真理麻",
+   "reading": "まりあ",
+   "code": "U"
+  },
+  {
+   "kanji": "継真",
+   "reading": "けいしん",
+   "code": "S"
+  },
+  {
+   "kanji": "静郎",
+   "reading": "しずろう",
+   "code": "E"
+  },
+  {
+   "kanji": "凛太",
+   "reading": "りんた",
+   "code": "S"
+  },
+  {
+   "kanji": "夏奈",
+   "reading": "なな",
+   "code": "B"
+  },
+  {
+   "kanji": "裕莉乃",
+   "reading": "ゆりの",
+   "code": "B"
+  },
+  {
+   "kanji": "美旅",
+   "reading": "みたび",
+   "code": "U"
+  },
+  {
+   "kanji": "星太郎",
+   "reading": "ほしたろう",
+   "code": "U"
+  },
+  {
+   "kanji": "明宗",
+   "reading": "あきむね",
+   "code": "S"
+  },
+  {
+   "kanji": "直民",
+   "reading": "なおひと",
+   "code": "X"
+  },
+  {
+   "kanji": "摩依子",
+   "reading": "まいこ",
+   "code": "B"
+  },
+  {
+   "kanji": "圭駿",
+   "reading": "けいしゅん",
+   "code": "S"
+  },
+  {
+   "kanji": "真紀",
+   "reading": "のぶき",
+   "code": "U"
+  },
+  {
+   "kanji": "隼亮",
+   "reading": "しゅんすけ",
+   "code": "S"
+  },
+  {
+   "kanji": "砂雪",
+   "reading": "さゆき",
+   "code": "E"
+  },
+  {
+   "kanji": "夕葉",
+   "reading": "ゆうは",
+   "code": "B"
+  },
+  {
+   "kanji": "歌夕",
+   "reading": "かゆう",
+   "code": "U"
+  },
+  {
+   "kanji": "俊剛",
+   "reading": "としかた",
+   "code": "S"
+  },
+  {
+   "kanji": "宙太郎",
+   "reading": "ちゅうたろう",
+   "code": "U"
+  },
+  {
+   "kanji": "文六",
+   "reading": "ぶんろく",
+   "code": "U"
+  },
+  {
+   "kanji": "有美菜",
+   "reading": "うみな",
+   "code": "B"
+  },
+  {
+   "kanji": "玄",
+   "reading": "げん",
+   "code": "M"
+  },
+  {
+   "kanji": "志津保",
+   "reading": "しづほ",
+   "code": "E"
+  },
+  {
+   "kanji": "位奈子",
+   "reading": "いなこ",
+   "code": "U"
+  },
+  {
+   "kanji": "士明",
+   "reading": "しめい",
+   "code": "M"
+  },
+  {
+   "kanji": "假奈代",
+   "reading": "かなよ",
+   "code": "E"
+  },
+  {
+   "kanji": "影伸",
+   "reading": "かげのぶ",
+   "code": "M"
+  },
+  {
+   "kanji": "佳留",
+   "reading": "かる",
+   "code": "U"
+  },
+  {
+   "kanji": "玄聖",
+   "reading": "げんしょう",
+   "code": "M"
+  },
+  {
+   "kanji": "恭真",
+   "reading": "きょうま",
+   "code": "S"
+  },
+  {
+   "kanji": "良勝",
+   "reading": "よしかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "彼留斗",
+   "reading": "かると",
+   "code": "U"
+  },
+  {
+   "kanji": "留美絵",
+   "reading": "るみえ",
+   "code": "E"
+  },
+  {
+   "kanji": "清雅",
+   "reading": "きよまさ",
+   "code": "E"
+  },
+  {
+   "kanji": "旭将",
+   "reading": "あきのぶ",
+   "code": "X"
+  },
+  {
+   "kanji": "雪世",
+   "reading": "ゆきよ",
+   "code": "E"
+  },
+  {
+   "kanji": "里星来",
+   "reading": "りせら",
+   "code": "U"
+  },
+  {
+   "kanji": "勝興",
+   "reading": "かつおき",
+   "code": "S"
+  },
+  {
+   "kanji": "初華",
+   "reading": "はつき",
+   "code": "X"
+  },
+  {
+   "kanji": "菜雪",
+   "reading": "なゆき",
+   "code": "B"
+  },
+  {
+   "kanji": "露央沙",
+   "reading": "ろおさ",
+   "code": "U"
+  },
+  {
+   "kanji": "千麻里",
+   "reading": "ちまり",
+   "code": "U"
+  },
+  {
+   "kanji": "綺凛",
+   "reading": "きりん",
+   "code": "U"
+  },
+  {
+   "kanji": "星来",
+   "reading": "せいら",
+   "code": "M"
+  },
+  {
+   "kanji": "康勝",
+   "reading": "やすかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "惠剛",
+   "reading": "けいごう",
+   "code": "S"
+  },
+  {
+   "kanji": "皓生",
+   "reading": "ひろお",
+   "code": "E"
+  },
+  {
+   "kanji": "葉雪",
+   "reading": "はゆき",
+   "code": "E"
+  },
+  {
+   "kanji": "芽衣南",
+   "reading": "めいな",
+   "code": "B"
+  },
+  {
+   "kanji": "緋奈子",
+   "reading": "ひなこ",
+   "code": "B"
+  },
+  {
+   "kanji": "聖位子",
+   "reading": "せいこ",
+   "code": "U"
+  },
+  {
+   "kanji": "由佳代",
+   "reading": "ゆかよ",
+   "code": "B"
+  },
+  {
+   "kanji": "英史",
+   "reading": "えいし",
+   "code": "E"
+  },
+  {
+   "kanji": "悠翔",
+   "reading": "ゆうと",
+   "code": "S"
+  },
+  {
+   "kanji": "恵澄",
+   "reading": "えすみ",
+   "code": "E"
+  },
+  {
+   "kanji": "兵五郎",
+   "reading": "へいごろう",
+   "code": "S"
+  },
+  {
+   "kanji": "健華",
+   "reading": "けんか",
+   "code": "S"
+  },
+  {
+   "kanji": "太克子",
+   "reading": "たきこ",
+   "code": "U"
+  },
+  {
+   "kanji": "秀勇",
+   "reading": "ひでたけ",
+   "code": "S"
+  },
+  {
+   "kanji": "静世",
+   "reading": "しずよ",
+   "code": "E"
+  },
+  {
+   "kanji": "夜空",
+   "reading": "よぞら",
+   "code": "M"
+  },
+  {
+   "kanji": "与夢",
+   "reading": "あとむ",
+   "code": "X"
+  },
+  {
+   "kanji": "陽花瑠",
+   "reading": "ひかる",
+   "code": "U"
+  },
+  {
+   "kanji": "仁晃",
+   "reading": "ひろあき",
+   "code": "E"
+  },
+  {
+   "kanji": "剛豊",
+   "reading": "たけとよ",
+   "code": "S"
+  },
+  {
+   "kanji": "宇美",
+   "reading": "たかみ",
+   "code": "X"
+  },
+  {
+   "kanji": "立太郎",
+   "reading": "たつたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "衣里子",
+   "reading": "いりこ",
+   "code": "U"
+  },
+  {
+   "kanji": "景春",
+   "reading": "けいしゅん",
+   "code": "S"
+  },
+  {
+   "kanji": "愛受",
+   "reading": "あいず",
+   "code": "U"
+  },
+  {
+   "kanji": "星見",
+   "reading": "ほしみ",
+   "code": "M"
+  },
+  {
+   "kanji": "梨織音",
+   "reading": "りおね",
+   "code": "B"
+  },
+  {
+   "kanji": "真唯子",
+   "reading": "まいこ",
+   "code": "E"
+  },
+  {
+   "kanji": "玄知",
+   "reading": "はるとも",
+   "code": "X"
+  },
+  {
+   "kanji": "睦明",
+   "reading": "むつあき",
+   "code": "E"
+  },
+  {
+   "kanji": "広華",
+   "reading": "ひろか",
+   "code": "B"
+  },
+  {
+   "kanji": "翼",
+   "reading": "つばさ",
+   "code": "S"
+  },
+  {
+   "kanji": "龍一",
+   "reading": "りゅういち",
+   "code": "S"
+  },
+  {
+   "kanji": "弥平",
+   "reading": "やへい",
+   "code": "S"
+  },
+  {
+   "kanji": "汐陽",
+   "reading": "しおひ",
+   "code": "U"
+  },
+  {
+   "kanji": "宙哉",
+   "reading": "ちゅうや",
+   "code": "U"
+  },
+  {
+   "kanji": "静沙",
+   "reading": "しずさ",
+   "code": "E"
+  },
+  {
+   "kanji": "小霧",
+   "reading": "さぎり",
+   "code": "X"
+  },
+  {
+   "kanji": "晶広",
+   "reading": "あきひろ",
+   "code": "E"
+  },
+  {
+   "kanji": "健伸",
+   "reading": "けんしん",
+   "code": "S"
+  },
+  {
+   "kanji": "愛石",
+   "reading": "あいせき",
+   "code": "U"
+  },
+  {
+   "kanji": "思帆音",
+   "reading": "しほね",
+   "code": "E"
+  },
+  {
+   "kanji": "帆希",
+   "reading": "ほまれ",
+   "code": "X"
+  },
+  {
+   "kanji": "英剛",
+   "reading": "えいごう",
+   "code": "S"
+  },
+  {
+   "kanji": "流星",
+   "reading": "りゅうせい",
+   "code": "S"
+  },
+  {
+   "kanji": "和朗",
+   "reading": "かずろう",
+   "code": "E"
+  },
+  {
+   "kanji": "沙耶葉",
+   "reading": "さやは",
+   "code": "B"
+  },
+  {
+   "kanji": "星子",
+   "reading": "ほしこ",
+   "code": "M"
+  },
+  {
+   "kanji": "結月",
+   "reading": "ゆずき",
+   "code": "E"
+  },
+  {
+   "kanji": "龍輝",
+   "reading": "りゅうき",
+   "code": "S"
+  },
+  {
+   "kanji": "和希",
+   "reading": "かずき",
+   "code": "E"
+  },
+  {
+   "kanji": "又兵衞",
+   "reading": "またべえ",
+   "code": "S"
+  },
+  {
+   "kanji": "彩夢",
+   "reading": "あやむ",
+   "code": "U"
+  },
+  {
+   "kanji": "晶",
+   "reading": "あかし",
+   "code": "U"
+  },
+  {
+   "kanji": "明日枝",
+   "reading": "あすえ",
+   "code": "E"
+  },
+  {
+   "kanji": "竜登美",
+   "reading": "たつとみ",
+   "code": "S"
+  },
+  {
+   "kanji": "萌々果",
+   "reading": "ももか",
+   "code": "B"
+  },
+  {
+   "kanji": "小帆里",
+   "reading": "さをり",
+   "code": "X"
+  },
+  {
+   "kanji": "八千花",
+   "reading": "やちか",
+   "code": "E"
+  },
+  {
+   "kanji": "力也",
+   "reading": "りきや",
+   "code": "S"
+  },
+  {
+   "kanji": "菊紫朗",
+   "reading": "きくしろう",
+   "code": "U"
+  },
+  {
+   "kanji": "千依里",
+   "reading": "ちえり",
+   "code": "B"
+  },
+  {
+   "kanji": "友香枝",
+   "reading": "ゆかえ",
+   "code": "B"
+  },
+  {
+   "kanji": "究夢",
+   "reading": "きわむ",
+   "code": "U"
+  },
+  {
+   "kanji": "季夏",
+   "reading": "としか",
+   "code": "X"
+  },
+  {
+   "kanji": "郁人",
+   "reading": "ふみひと",
+   "code": "E"
+  },
+  {
+   "kanji": "玄督",
+   "reading": "げんとく",
+   "code": "M"
+  },
+  {
+   "kanji": "銀太郎",
+   "reading": "ぎんたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "希織",
+   "reading": "きおり",
+   "code": "E"
+  },
+  {
+   "kanji": "衣穂子",
+   "reading": "いほこ",
+   "code": "E"
+  },
+  {
+   "kanji": "玄太",
+   "reading": "げんた",
+   "code": "S"
+  },
+  {
+   "kanji": "琢由起",
+   "reading": "たくゆき",
+   "code": "S"
+  },
+  {
+   "kanji": "稲夜",
+   "reading": "いなよ",
+   "code": "M"
+  },
+  {
+   "kanji": "愛麗絲",
+   "reading": "ありす",
+   "code": "U"
+  },
+  {
+   "kanji": "渡史樹",
+   "reading": "としき",
+   "code": "U"
+  },
+  {
+   "kanji": "彼武人",
+   "reading": "かぶと",
+   "code": "U"
+  },
+  {
+   "kanji": "康有利",
+   "reading": "こゆり",
+   "code": "X"
+  },
+  {
+   "kanji": "愛吉",
+   "reading": "あいきち",
+   "code": "U"
+  },
+  {
+   "kanji": "木久美",
+   "reading": "きくみ",
+   "code": "B"
+  },
+  {
+   "kanji": "数光",
+   "reading": "かずみつ",
+   "code": "E"
+  },
+  {
+   "kanji": "甲斐之助",
+   "reading": "かいのすけ",
+   "code": "S"
+  },
+  {
+   "kanji": "真理男",
+   "reading": "まりお",
+   "code": "U"
+  },
+  {
+   "kanji": "朔朗",
+   "reading": "さくろう",
+   "code": "M"
+  },
+  {
+   "kanji": "真彦",
+   "reading": "まさひこ",
+   "code": "E"
+  },
+  {
+   "kanji": "幸薫",
+   "reading": "さちか",
+   "code": "X"
+  },
+  {
+   "kanji": "花深",
+   "reading": "はなみ",
+   "code": "E"
+  },
+  {
+   "kanji": "志保利",
+   "reading": "しおり",
+   "code": "E"
+  },
+  {
+   "kanji": "容朗",
+   "reading": "なりあき",
+   "code": "E"
+  },
+  {
+   "kanji": "陽来",
+   "reading": "ようく",
+   "code": "U"
+  },
+  {
+   "kanji": "伊佐乃",
+   "reading": "いさの",
+   "code": "U"
+  },
+  {
+   "kanji": "海夏人",
+   "reading": "かなと",
+   "code": "U"
+  },
+  {
+   "kanji": "剛臣",
+   "reading": "たけみ",
+   "code": "S"
+  },
+  {
+   "kanji": "勝一朗",
+   "reading": "かついちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "偉克",
+   "reading": "ひでかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "南美樹",
+   "reading": "なみき",
+   "code": "E"
+  },
+  {
+   "kanji": "秋龍",
+   "reading": "あきたつ",
+   "code": "S"
+  },
+  {
+   "kanji": "磨知子",
+   "reading": "まちこ",
+   "code": "E"
+  },
+  {
+   "kanji": "珠真子",
+   "reading": "すまこ",
+   "code": "E"
+  },
+  {
+   "kanji": "文太",
+   "reading": "あやた",
+   "code": "B"
+  },
+  {
+   "kanji": "那瑠",
+   "reading": "なる",
+   "code": "B"
+  },
+  {
+   "kanji": "彩弥",
+   "reading": "あやや",
+   "code": "B"
+  },
+  {
+   "kanji": "来夢",
+   "reading": "らいむ",
+   "code": "U"
+  },
+  {
+   "kanji": "史真",
+   "reading": "ふみちか",
+   "code": "E"
+  },
+  {
+   "kanji": "陸人",
+   "reading": "りくと",
+   "code": "S"
+  },
+  {
+   "kanji": "玄九郎",
+   "reading": "げんくろう",
+   "code": "S"
+  },
+  {
+   "kanji": "香美",
+   "reading": "かぐみ",
+   "code": "U"
+  },
+  {
+   "kanji": "輝帆",
+   "reading": "てるほ",
+   "code": "E"
+  },
+  {
+   "kanji": "興晴",
+   "reading": "おきはる",
+   "code": "E"
+  },
+  {
+   "kanji": "冬夫",
+   "reading": "ふゆお",
+   "code": "U"
+  },
+  {
+   "kanji": "鈴紗",
+   "reading": "すずさ",
+   "code": "B"
+  },
+  {
+   "kanji": "英巳",
+   "reading": "えみ",
+   "code": "E"
+  },
+  {
+   "kanji": "加津沙",
+   "reading": "かづさ",
+   "code": "B"
+  },
+  {
+   "kanji": "輝昇",
+   "reading": "きしょう",
+   "code": "S"
+  },
+  {
+   "kanji": "玄遊",
+   "reading": "げんゆう",
+   "code": "M"
+  },
+  {
+   "kanji": "彩菜",
+   "reading": "さいな",
+   "code": "B"
+  },
+  {
+   "kanji": "薫季",
+   "reading": "いぶき",
+   "code": "X"
+  },
+  {
+   "kanji": "玄一郎",
+   "reading": "げんいちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "半兵衛",
+   "reading": "はんべえ",
+   "code": "S"
+  },
+  {
+   "kanji": "豪平",
+   "reading": "ごうへい",
+   "code": "S"
+  },
+  {
+   "kanji": "亞夢",
+   "reading": "あむ",
+   "code": "U"
+  },
+  {
+   "kanji": "五十吉",
+   "reading": "いそきち",
+   "code": "U"
+  },
+  {
+   "kanji": "邦剛",
+   "reading": "くにかた",
+   "code": "S"
+  },
+  {
+   "kanji": "晃以",
+   "reading": "てるい",
+   "code": "U"
+  },
+  {
+   "kanji": "美森",
+   "reading": "みもり",
+   "code": "E"
+  },
+  {
+   "kanji": "貴佳",
+   "reading": "あつよし",
+   "code": "X"
+  },
+  {
+   "kanji": "英聖",
+   "reading": "ひでさと",
+   "code": "E"
+  },
+  {
+   "kanji": "静史",
+   "reading": "しずと",
+   "code": "X"
+  },
+  {
+   "kanji": "未央奈",
+   "reading": "みおな",
+   "code": "B"
+  },
+  {
+   "kanji": "火星也",
+   "reading": "かせや",
+   "code": "U"
+  },
+  {
+   "kanji": "絋恵",
+   "reading": "ひろえ",
+   "code": "E"
+  },
+  {
+   "kanji": "紗衣香",
+   "reading": "さいか",
+   "code": "B"
+  },
+  {
+   "kanji": "嘉都美",
+   "reading": "かづみ",
+   "code": "E"
+  },
+  {
+   "kanji": "敏次郎",
+   "reading": "としじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "静宜",
+   "reading": "せいぎ",
+   "code": "E"
+  },
+  {
+   "kanji": "亜由奈",
+   "reading": "あゆな",
+   "code": "B"
+  },
+  {
+   "kanji": "伊月",
+   "reading": "いつき",
+   "code": "E"
+  },
+  {
+   "kanji": "野花",
+   "reading": "のか",
+   "code": "B"
+  },
+  {
+   "kanji": "光朝",
+   "reading": "みつとも",
+   "code": "E"
+  },
+  {
+   "kanji": "晃章",
+   "reading": "こうしょう",
+   "code": "S"
+  },
+  {
+   "kanji": "竜次郎",
+   "reading": "たつじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "歩月",
+   "reading": "ほづき",
+   "code": "E"
+  },
+  {
+   "kanji": "冬紀",
+   "reading": "ふゆき",
+   "code": "E"
+  },
+  {
+   "kanji": "絹香",
+   "reading": "きぬか",
+   "code": "E"
+  },
+  {
+   "kanji": "怜佳",
+   "reading": "さとか",
+   "code": "X"
+  },
+  {
+   "kanji": "光之",
+   "reading": "みつゆき",
+   "code": "E"
+  },
+  {
+   "kanji": "真結枝",
+   "reading": "まゆえ",
+   "code": "E"
+  },
+  {
+   "kanji": "志月",
+   "reading": "しづき",
+   "code": "E"
+  },
+  {
+   "kanji": "明里",
+   "reading": "あけり",
+   "code": "E"
+  },
+  {
+   "kanji": "千直",
+   "reading": "ちなお",
+   "code": "U"
+  },
+  {
+   "kanji": "月子",
+   "reading": "つきこ",
+   "code": "M"
+  },
+  {
+   "kanji": "冬人",
+   "reading": "ふゆと",
+   "code": "M"
+  },
+  {
+   "kanji": "政太郎",
+   "reading": "まさたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "公瑞",
+   "reading": "こうずい",
+   "code": "U"
+  },
+  {
+   "kanji": "夢隆",
+   "reading": "ゆめたか",
+   "code": "U"
+  },
+  {
+   "kanji": "夏夕",
+   "reading": "かゆ",
+   "code": "U"
+  },
+  {
+   "kanji": "朔夜",
+   "reading": "さくや",
+   "code": "M"
+  },
+  {
+   "kanji": "紀葉",
+   "reading": "すみは",
+   "code": "X"
+  },
+  {
+   "kanji": "恵樹",
+   "reading": "けいじゅ",
+   "code": "E"
+  },
+  {
+   "kanji": "玄徳",
+   "reading": "げんとく",
+   "code": "M"
+  },
+  {
+   "kanji": "宇宙",
+   "reading": "たかおき",
+   "code": "X"
+  },
+  {
+   "kanji": "晴耕",
+   "reading": "はるたか",
+   "code": "X"
+  },
+  {
+   "kanji": "光穂",
+   "reading": "てるほ",
+   "code": "E"
+  },
+  {
+   "kanji": "佳周",
+   "reading": "よしちか",
+   "code": "E"
+  },
+  {
+   "kanji": "夏世",
+   "reading": "なつよ",
+   "code": "E"
+  },
+  {
+   "kanji": "妃女乃",
+   "reading": "ひめの",
+   "code": "U"
+  },
+  {
+   "kanji": "富代美",
+   "reading": "とよみ",
+   "code": "E"
+  },
+  {
+   "kanji": "世里子",
+   "reading": "せりこ",
+   "code": "E"
+  },
+  {
+   "kanji": "絵佐江",
+   "reading": "えさえ",
+   "code": "U"
+  },
+  {
+   "kanji": "沙保里",
+   "reading": "さほり",
+   "code": "E"
+  },
+  {
+   "kanji": "海次郎",
+   "reading": "かいじろう",
+   "code": "U"
+  },
+  {
+   "kanji": "雪月",
+   "reading": "せつき",
+   "code": "M"
+  },
+  {
+   "kanji": "輝嗣",
+   "reading": "てるつぐ",
+   "code": "S"
+  },
+  {
+   "kanji": "未尾梨",
+   "reading": "みおり",
+   "code": "U"
+  },
+  {
+   "kanji": "希穂",
+   "reading": "ほまれ",
+   "code": "X"
+  },
+  {
+   "kanji": "美早江",
+   "reading": "みさえ",
+   "code": "E"
+  },
+  {
+   "kanji": "充輝",
+   "reading": "みつてる",
+   "code": "S"
+  },
+  {
+   "kanji": "麻利帆",
+   "reading": "まりほ",
+   "code": "B"
+  },
+  {
+   "kanji": "沙里衣",
+   "reading": "さりい",
+   "code": "U"
+  },
+  {
+   "kanji": "梅美",
+   "reading": "うめみ",
+   "code": "B"
+  },
+  {
+   "kanji": "真智代",
+   "reading": "まちよ",
+   "code": "E"
+  },
+  {
+   "kanji": "真智",
+   "reading": "まさとも",
+   "code": "E"
+  },
+  {
+   "kanji": "虹羽",
+   "reading": "にじは",
+   "code": "B"
+  },
+  {
+   "kanji": "冬彦",
+   "reading": "ふゆひこ",
+   "code": "M"
+  },
+  {
+   "kanji": "風冬志",
+   "reading": "ふとし",
+   "code": "U"
+  },
+  {
+   "kanji": "奈里子",
+   "reading": "なりこ",
+   "code": "E"
+  },
+  {
+   "kanji": "小由可",
+   "reading": "こゆか",
+   "code": "B"
+  },
+  {
+   "kanji": "愛和",
+   "reading": "あいと",
+   "code": "U"
+  },
+  {
+   "kanji": "祐里波",
+   "reading": "ゆりは",
+   "code": "B"
+  },
+  {
+   "kanji": "勇松",
+   "reading": "たけまつ",
+   "code": "S"
+  },
+  {
+   "kanji": "友織",
+   "reading": "ともおり",
+   "code": "U"
+  },
+  {
+   "kanji": "佐久良",
+   "reading": "さくら",
+   "code": "B"
+  },
+  {
+   "kanji": "永日",
+   "reading": "ながひ",
+   "code": "U"
+  },
+  {
+   "kanji": "明二",
+   "reading": "あきじ",
+   "code": "E"
+  },
+  {
+   "kanji": "緑葉",
+   "reading": "あおば",
+   "code": "X"
+  },
+  {
+   "kanji": "直生",
+   "reading": "なお",
+   "code": "E"
+  },
+  {
+   "kanji": "野馬彦",
+   "reading": "のまひこ",
+   "code": "U"
+  },
+  {
+   "kanji": "奈誉美",
+   "reading": "なほみ",
+   "code": "E"
+  },
+  {
+   "kanji": "幸克",
+   "reading": "ゆきかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "芙功子",
+   "reading": "ふくこ",
+   "code": "U"
+  },
+  {
+   "kanji": "志保乃",
+   "reading": "しほの",
+   "code": "E"
+  },
+  {
+   "kanji": "銀時",
+   "reading": "ぎんとき",
+   "code": "U"
+  },
+  {
+   "kanji": "靖太郎",
+   "reading": "せいたろう",
+   "code": "X"
+  },
+  {
+   "kanji": "銀子",
+   "reading": "かねこ",
+   "code": "U"
+  },
+  {
+   "kanji": "心音",
+   "reading": "ここね",
+   "code": "B"
+  },
+  {
+   "kanji": "香乃美",
+   "reading": "かのみ",
+   "code": "B"
+  },
+  {
+   "kanji": "深之",
+   "reading": "ふかし",
+   "code": "X"
+  },
+  {
+   "kanji": "龍秀",
+   "reading": "たつひで",
+   "code": "S"
+  },
+  {
+   "kanji": "麻菜美",
+   "reading": "まなみ",
+   "code": "B"
+  },
+  {
+   "kanji": "緋那",
+   "reading": "ひな",
+   "code": "M"
+  },
+  {
+   "kanji": "末春",
+   "reading": "すえはる",
+   "code": "E"
+  },
+  {
+   "kanji": "朝彦",
+   "reading": "ともひこ",
+   "code": "E"
+  },
+  {
+   "kanji": "修玄",
+   "reading": "のぶもと",
+   "code": "X"
+  },
+  {
+   "kanji": "華巳",
+   "reading": "はなみ",
+   "code": "B"
+  },
+  {
+   "kanji": "亜綾",
+   "reading": "あや",
+   "code": "E"
+  },
+  {
+   "kanji": "勝市",
+   "reading": "かついち",
+   "code": "S"
+  },
+  {
+   "kanji": "貞輝",
+   "reading": "さだてる",
+   "code": "S"
+  },
+  {
+   "kanji": "緋水",
+   "reading": "ひすい",
+   "code": "M"
+  },
+  {
+   "kanji": "紅葉",
+   "reading": "かえで",
+   "code": "E"
+  },
+  {
+   "kanji": "在美",
+   "reading": "ありみ",
+   "code": "U"
+  },
+  {
+   "kanji": "真美世",
+   "reading": "まみよ",
+   "code": "E"
+  },
+  {
+   "kanji": "寧音",
+   "reading": "ねいね",
+   "code": "M"
+  },
+  {
+   "kanji": "静奈",
+   "reading": "せいな",
+   "code": "E"
+  },
+  {
+   "kanji": "武貞",
+   "reading": "たけさだ",
+   "code": "S"
+  },
+  {
+   "kanji": "伊根子",
+   "reading": "いねこ",
+   "code": "U"
+  },
+  {
+   "kanji": "静美",
+   "reading": "しずみ",
+   "code": "E"
+  },
+  {
+   "kanji": "征次郎",
+   "reading": "せいじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "邦葉",
+   "reading": "くには",
+   "code": "E"
+  },
+  {
+   "kanji": "小久夜",
+   "reading": "さくや",
+   "code": "X"
+  },
+  {
+   "kanji": "政之輔",
+   "reading": "まさのすけ",
+   "code": "S"
+  },
+  {
+   "kanji": "梨王子",
+   "reading": "りおこ",
+   "code": "U"
+  },
+  {
+   "kanji": "勝富",
+   "reading": "かちとみ",
+   "code": "S"
+  },
+  {
+   "kanji": "直臣",
+   "reading": "なおおみ",
+   "code": "E"
+  },
+  {
+   "kanji": "衣姫",
+   "reading": "いき",
+   "code": "U"
+  },
+  {
+   "kanji": "脩司朗",
+   "reading": "しゅうじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "麻耶香",
+   "reading": "まやか",
+   "code": "B"
+  },
+  {
+   "kanji": "小奈美",
+   "reading": "さなみ",
+   "code": "X"
+  },
+  {
+   "kanji": "多葉紗",
+   "reading": "たばさ",
+   "code": "U"
+  },
+  {
+   "kanji": "摩季子",
+   "reading": "まきこ",
+   "code": "E"
+  },
+  {
+   "kanji": "詩佳",
+   "reading": "うたか",
+   "code": "E"
+  },
+  {
+   "kanji": "明恵",
+   "reading": "はるえ",
+   "code": "E"
+  },
+  {
+   "kanji": "佳月",
+   "reading": "かづき",
+   "code": "E"
+  },
+  {
+   "kanji": "秋音",
+   "reading": "あきね",
+   "code": "E"
+  },
+  {
+   "kanji": "徹一",
+   "reading": "てついち",
+   "code": "S"
+  },
+  {
+   "kanji": "七夕子",
+   "reading": "なゆこ",
+   "code": "X"
+  },
+  {
+   "kanji": "美夏",
+   "reading": "みなつ",
+   "code": "B"
+  },
+  {
+   "kanji": "直史",
+   "reading": "なおぶみ",
+   "code": "E"
+  },
+  {
+   "kanji": "愛彦",
+   "reading": "よしひこ",
+   "code": "X"
+  },
+  {
+   "kanji": "真生",
+   "reading": "なおお",
+   "code": "X"
+  },
+  {
+   "kanji": "直次",
+   "reading": "なおつぐ",
+   "code": "E"
+  },
+  {
+   "kanji": "明治郎",
+   "reading": "あけじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "影美",
+   "reading": "かげみ",
+   "code": "M"
+  },
+  {
+   "kanji": "志都子",
+   "reading": "しつこ",
+   "code": "E"
+  },
+  {
+   "kanji": "篤直",
+   "reading": "あつなお",
+   "code": "S"
+  },
+  {
+   "kanji": "愛童",
+   "reading": "あいどう",
+   "code": "U"
+  },
+  {
+   "kanji": "葉音",
+   "reading": "はおと",
+   "code": "M"
+  },
+  {
+   "kanji": "恵雪",
+   "reading": "けいせつ",
+   "code": "M"
+  },
+  {
+   "kanji": "みね子",
+   "reading": "みねこ",
+   "code": "B"
+  },
+  {
+   "kanji": "疏雪",
+   "reading": "そゆき",
+   "code": "U"
+  },
+  {
+   "kanji": "美宙",
+   "reading": "みそら",
+   "code": "M"
+  },
+  {
+   "kanji": "悠月",
+   "reading": "ゆずき",
+   "code": "E"
+  },
+  {
+   "kanji": "九里香",
+   "reading": "くりか",
+   "code": "U"
+  },
+  {
+   "kanji": "博香",
+   "reading": "ひろか",
+   "code": "E"
+  },
+  {
+   "kanji": "佳三",
+   "reading": "よしぞう",
+   "code": "S"
+  },
+  {
+   "kanji": "翔日",
+   "reading": "しょうひ",
+   "code": "U"
+  },
+  {
+   "kanji": "寿葉",
+   "reading": "としは",
+   "code": "E"
+  },
+  {
+   "kanji": "真千絵",
+   "reading": "まちえ",
+   "code": "E"
+  },
+  {
+   "kanji": "小夜香",
+   "reading": "さやか",
+   "code": "B"
+  },
+  {
+   "kanji": "空",
+   "reading": "くう",
+   "code": "M"
+  },
+  {
+   "kanji": "吹雪",
+   "reading": "ふぶき",
+   "code": "M"
+  },
+  {
+   "kanji": "真結子",
+   "reading": "まゆこ",
+   "code": "E"
+  },
+  {
+   "kanji": "朗昌",
+   "reading": "あきよし",
+   "code": "E"
+  },
+  {
+   "kanji": "芳弥",
+   "reading": "かぐや",
+   "code": "X"
+  },
+  {
+   "kanji": "乃安",
+   "reading": "のあん",
+   "code": "U"
+  },
+  {
+   "kanji": "香代利",
+   "reading": "かより",
+   "code": "E"
+  },
+  {
+   "kanji": "健樹",
+   "reading": "たてき",
+   "code": "X"
+  },
+  {
+   "kanji": "朔也",
+   "reading": "さくや",
+   "code": "M"
+  },
+  {
+   "kanji": "銀",
+   "reading": "ぎん",
+   "code": "S"
+  },
+  {
+   "kanji": "亞里菜",
+   "reading": "ありな",
+   "code": "B"
+  },
+  {
+   "kanji": "美菜穂",
+   "reading": "みなほ",
+   "code": "B"
+  },
+  {
+   "kanji": "真義",
+   "reading": "さだよし",
+   "code": "E"
+  },
+  {
+   "kanji": "碧陽",
+   "reading": "あおひ",
+   "code": "M"
+  },
+  {
+   "kanji": "克衛",
+   "reading": "かつえい",
+   "code": "S"
+  },
+  {
+   "kanji": "菜摘女",
+   "reading": "なつめ",
+   "code": "U"
+  },
+  {
+   "kanji": "真千子",
+   "reading": "まちこ",
+   "code": "E"
+  },
+  {
+   "kanji": "聖夜",
+   "reading": "あきら",
+   "code": "X"
+  },
+  {
+   "kanji": "伊奈夫",
+   "reading": "いなお",
+   "code": "U"
+  },
+  {
+   "kanji": "公望",
+   "reading": "きみもつ",
+   "code": "X"
+  },
+  {
+   "kanji": "勝直",
+   "reading": "かつなお",
+   "code": "S"
+  },
+  {
+   "kanji": "葉亜舞",
+   "reading": "はあぶ",
+   "code": "U"
+  },
+  {
+   "kanji": "美麿",
+   "reading": "よしまろ",
+   "code": "U"
+  },
+  {
+   "kanji": "夕里亜",
+   "reading": "ゆりあ",
+   "code": "B"
+  },
+  {
+   "kanji": "竜太",
+   "reading": "りゅうた",
+   "code": "S"
+  },
+  {
+   "kanji": "星乃",
+   "reading": "せいの",
+   "code": "M"
+  },
+  {
+   "kanji": "維風紀",
+   "reading": "いぶき",
+   "code": "U"
+  },
+  {
+   "kanji": "英洋",
+   "reading": "ひでひろ",
+   "code": "E"
+  },
+  {
+   "kanji": "希舟",
+   "reading": "きしゅう",
+   "code": "M"
+  },
+  {
+   "kanji": "靖直",
+   "reading": "やすなお",
+   "code": "E"
+  },
+  {
+   "kanji": "頼克",
+   "reading": "よりかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "勇四郎",
+   "reading": "ゆうしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "志保奈",
+   "reading": "しほな",
+   "code": "B"
+  },
+  {
+   "kanji": "雪丸",
+   "reading": "ゆきまる",
+   "code": "U"
+  },
+  {
+   "kanji": "佳季子",
+   "reading": "かきこ",
+   "code": "U"
+  },
+  {
+   "kanji": "直之助",
+   "reading": "なおのすけ",
+   "code": "S"
+  },
+  {
+   "kanji": "宣英",
+   "reading": "のりひで",
+   "code": "E"
+  },
+  {
+   "kanji": "恭弥",
+   "reading": "きょうや",
+   "code": "S"
+  },
+  {
+   "kanji": "美由奈",
+   "reading": "みゆな",
+   "code": "B"
+  },
+  {
+   "kanji": "力",
+   "reading": "りき",
+   "code": "S"
+  },
+  {
+   "kanji": "友里絵",
+   "reading": "ゆりえ",
+   "code": "B"
+  },
+  {
+   "kanji": "彰基",
+   "reading": "あきもと",
+   "code": "E"
+  },
+  {
+   "kanji": "奈都希",
+   "reading": "なつき",
+   "code": "B"
+  },
+  {
+   "kanji": "久美花",
+   "reading": "くみか",
+   "code": "B"
+  },
+  {
+   "kanji": "文奈",
+   "reading": "ふみな",
+   "code": "E"
+  },
+  {
+   "kanji": "重朗",
+   "reading": "しげろう",
+   "code": "S"
+  },
+  {
+   "kanji": "岳永",
+   "reading": "がくえい",
+   "code": "S"
+  },
+  {
+   "kanji": "星璃守",
+   "reading": "せりす",
+   "code": "U"
+  },
+  {
+   "kanji": "雅基",
+   "reading": "まさもと",
+   "code": "E"
+  },
+  {
+   "kanji": "瑞穂",
+   "reading": "みずほ",
+   "code": "E"
+  },
+  {
+   "kanji": "銀夜",
+   "reading": "ぎんや",
+   "code": "M"
+  },
+  {
+   "kanji": "睦五郎",
+   "reading": "むつごろう",
+   "code": "S"
+  },
+  {
+   "kanji": "園海",
+   "reading": "そのみ",
+   "code": "E"
+  },
+  {
+   "kanji": "衣美奈",
+   "reading": "えみな",
+   "code": "B"
+  },
+  {
+   "kanji": "敏太郎",
+   "reading": "としたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "士月",
+   "reading": "しつき",
+   "code": "M"
+  },
+  {
+   "kanji": "亜月",
+   "reading": "あづき",
+   "code": "E"
+  },
+  {
+   "kanji": "ます子",
+   "reading": "ますこ",
+   "code": "B"
+  },
+  {
+   "kanji": "郁",
+   "reading": "いく",
+   "code": "E"
+  },
+  {
+   "kanji": "等勝",
+   "reading": "としかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "麻里代",
+   "reading": "あさよ",
+   "code": "X"
+  },
+  {
+   "kanji": "智矢子",
+   "reading": "ちやこ",
+   "code": "E"
+  },
+  {
+   "kanji": "登恵子",
+   "reading": "とえこ",
+   "code": "U"
+  },
+  {
+   "kanji": "規和央",
+   "reading": "きわお",
+   "code": "U"
+  },
+  {
+   "kanji": "亜久良",
+   "reading": "あくら",
+   "code": "U"
+  },
+  {
+   "kanji": "静之",
+   "reading": "しずゆき",
+   "code": "E"
+  },
+  {
+   "kanji": "香樹子",
+   "reading": "かきこ",
+   "code": "E"
+  },
+  {
+   "kanji": "克益",
+   "reading": "かつえき",
+   "code": "S"
+  },
+  {
+   "kanji": "冬乃",
+   "reading": "ふゆの",
+   "code": "E"
+  },
+  {
+   "kanji": "佳也",
+   "reading": "けいや",
+   "code": "E"
+  },
+  {
+   "kanji": "常雅",
+   "reading": "つねまさ",
+   "code": "E"
+  },
+  {
+   "kanji": "紀世彦",
+   "reading": "きせひこ",
+   "code": "E"
+  },
+  {
+   "kanji": "露輝",
+   "reading": "つゆき",
+   "code": "M"
+  },
+  {
+   "kanji": "天李",
+   "reading": "あまり",
+   "code": "X"
+  },
+  {
+   "kanji": "拓太郎",
+   "reading": "たくたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "佳紗",
+   "reading": "けいさ",
+   "code": "E"
+  },
+  {
+   "kanji": "夢美",
+   "reading": "ゆめみ",
+   "code": "B"
+  },
+  {
+   "kanji": "誠祥",
+   "reading": "せいしょう",
+   "code": "S"
+  },
+  {
+   "kanji": "夕雨",
+   "reading": "ゆう",
+   "code": "M"
+  },
+  {
+   "kanji": "喜代継",
+   "reading": "きよつぐ",
+   "code": "S"
+  },
+  {
+   "kanji": "竜真",
+   "reading": "りょうま",
+   "code": "S"
+  },
+  {
+   "kanji": "瞬輝",
+   "reading": "しゅんき",
+   "code": "S"
+  },
+  {
+   "kanji": "郁",
+   "reading": "かおる",
+   "code": "E"
+  },
+  {
+   "kanji": "心愛",
+   "reading": "ここあ",
+   "code": "B"
+  },
+  {
+   "kanji": "知澄",
+   "reading": "ちすみ",
+   "code": "E"
+  },
+  {
+   "kanji": "弥作",
+   "reading": "やさく",
+   "code": "S"
+  },
+  {
+   "kanji": "亜梨子",
+   "reading": "えりこ",
+   "code": "X"
+  },
+  {
+   "kanji": "金次郎",
+   "reading": "きんじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "夏彦",
+   "reading": "なつひこ",
+   "code": "E"
+  },
+  {
+   "kanji": "七星",
+   "reading": "ななせ",
+   "code": "M"
+  },
+  {
+   "kanji": "真麻理",
+   "reading": "まおり",
+   "code": "U"
+  },
+  {
+   "kanji": "奈朋子",
+   "reading": "なほこ",
+   "code": "X"
+  },
+  {
+   "kanji": "玲乃",
+   "reading": "れいの",
+   "code": "E"
+  },
+  {
+   "kanji": "輝樹",
+   "reading": "こうじゅ",
+   "code": "S"
+  },
+  {
+   "kanji": "万友帆",
+   "reading": "まゆほ",
+   "code": "B"
+  },
+  {
+   "kanji": "寿楽",
+   "reading": "じゅら",
+   "code": "U"
+  },
+  {
+   "kanji": "冬芽",
+   "reading": "とうが",
+   "code": "M"
+  },
+  {
+   "kanji": "映次郎",
+   "reading": "えいじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "幸音",
+   "reading": "さちね",
+   "code": "B"
+  },
+  {
+   "kanji": "海太朗",
+   "reading": "かいたろう",
+   "code": "B"
+  },
+  {
+   "kanji": "甲臣",
+   "reading": "こうしん",
+   "code": "S"
+  },
+  {
+   "kanji": "知可恵",
+   "reading": "ちかえ",
+   "code": "E"
+  },
+  {
+   "kanji": "冬佳",
+   "reading": "ふゆか",
+   "code": "E"
+  },
+  {
+   "kanji": "真",
+   "reading": "まこと",
+   "code": "E"
+  },
+  {
+   "kanji": "光陽",
+   "reading": "てるあき",
+   "code": "E"
+  },
+  {
+   "kanji": "市治郎",
+   "reading": "いちじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "慶真",
+   "reading": "けいしん",
+   "code": "S"
+  },
+  {
+   "kanji": "夕彦",
+   "reading": "ゆうひこ",
+   "code": "U"
+  },
+  {
+   "kanji": "乱歩",
+   "reading": "らんぽ",
+   "code": "U"
+  },
+  {
+   "kanji": "三美",
+   "reading": "みよし",
+   "code": "E"
+  },
+  {
+   "kanji": "麗良",
+   "reading": "うらら",
+   "code": "E"
+  },
+  {
+   "kanji": "直尚",
+   "reading": "なおのぶ",
+   "code": "E"
+  },
+  {
+   "kanji": "伸直",
+   "reading": "のぶなお",
+   "code": "E"
+  },
+  {
+   "kanji": "大智郎",
+   "reading": "たいちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "甚兵衛",
+   "reading": "じんべえ",
+   "code": "S"
+  },
+  {
+   "kanji": "初姫",
+   "reading": "はつき",
+   "code": "B"
+  },
+  {
+   "kanji": "智亜子",
+   "reading": "ちあこ",
+   "code": "B"
+  },
+  {
+   "kanji": "夢花",
+   "reading": "ゆめか",
+   "code": "B"
+  },
+  {
+   "kanji": "和文",
+   "reading": "かずふみ",
+   "code": "E"
+  },
+  {
+   "kanji": "博誠",
+   "reading": "ひろさね",
+   "code": "E"
+  },
+  {
+   "kanji": "麻悠",
+   "reading": "まゆう",
+   "code": "E"
+  },
+  {
+   "kanji": "塩美",
+   "reading": "しおみ",
+   "code": "U"
+  },
+  {
+   "kanji": "明哲",
+   "reading": "あきてつ",
+   "code": "S"
+  },
+  {
+   "kanji": "皓人",
+   "reading": "あきひと",
+   "code": "E"
+  },
+  {
+   "kanji": "松春",
+   "reading": "まつはる",
+   "code": "U"
+  },
+  {
+   "kanji": "鉄三",
+   "reading": "てつぞう",
+   "code": "S"
+  },
+  {
+   "kanji": "茅夏",
+   "reading": "ちなつ",
+   "code": "B"
+  },
+  {
+   "kanji": "紫都",
+   "reading": "しず",
+   "code": "M"
+  },
+  {
+   "kanji": "朗孝",
+   "reading": "あきたか",
+   "code": "E"
+  },
+  {
+   "kanji": "阿津奈",
+   "reading": "あずな",
+   "code": "B"
+  },
+  {
+   "kanji": "美里奈",
+   "reading": "みりな",
+   "code": "B"
+  },
+  {
+   "kanji": "千影",
+   "reading": "ちかげ",
+   "code": "M"
+  },
+  {
+   "kanji": "雪歌",
+   "reading": "せつか",
+   "code": "M"
+  },
+  {
+   "kanji": "登志二",
+   "reading": "としじ",
+   "code": "U"
+  },
+  {
+   "kanji": "麻那",
+   "reading": "あさな",
+   "code": "E"
+  },
+  {
+   "kanji": "律美",
+   "reading": "りつみ",
+   "code": "E"
+  },
+  {
+   "kanji": "安也子",
+   "reading": "あやこ",
+   "code": "B"
+  },
+  {
+   "kanji": "龍吾",
+   "reading": "りょうご",
+   "code": "S"
+  },
+  {
+   "kanji": "幸由礼",
+   "reading": "さゆら",
+   "code": "U"
+  },
+  {
+   "kanji": "深",
+   "reading": "しん",
+   "code": "M"
+  },
+  {
+   "kanji": "勘治郎",
+   "reading": "かんじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "竜姫",
+   "reading": "たつき",
+   "code": "U"
+  },
+  {
+   "kanji": "朔太郎",
+   "reading": "さくたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "冥沙",
+   "reading": "めいさ",
+   "code": "M"
+  },
+  {
+   "kanji": "葉津紀",
+   "reading": "はづき",
+   "code": "E"
+  },
+  {
+   "kanji": "朝仁",
+   "reading": "あさひと",
+   "code": "E"
+  },
+  {
+   "kanji": "真夏男",
+   "reading": "まかお",
+   "code": "X"
+  },
+  {
+   "kanji": "可愛",
+   "reading": "かわい",
+   "code": "U"
+  },
+  {
+   "kanji": "星亜",
+   "reading": "せいあ",
+   "code": "M"
+  },
+  {
+   "kanji": "克予",
+   "reading": "かつよ",
+   "code": "U"
+  },
+  {
+   "kanji": "星奈",
+   "reading": "ほしな",
+   "code": "M"
+  },
+  {
+   "kanji": "星仁",
+   "reading": "ほしひと",
+   "code": "U"
+  },
+  {
+   "kanji": "千恵乃",
+   "reading": "ちえの",
+   "code": "E"
+  },
+  {
+   "kanji": "香佐美",
+   "reading": "かさみ",
+   "code": "E"
+  },
+  {
+   "kanji": "真一",
+   "reading": "しんいち",
+   "code": "S"
+  },
+  {
+   "kanji": "史月",
+   "reading": "しづき",
+   "code": "M"
+  },
+  {
+   "kanji": "亜伊朗",
+   "reading": "あいろう",
+   "code": "U"
+  },
+  {
+   "kanji": "一暁",
+   "reading": "かづあき",
+   "code": "E"
+  },
+  {
+   "kanji": "英有",
+   "reading": "ひであり",
+   "code": "E"
+  },
+  {
+   "kanji": "星乃",
+   "reading": "せの",
+   "code": "U"
+  },
+  {
+   "kanji": "七彩",
+   "reading": "ないろ",
+   "code": "U"
+  },
+  {
+   "kanji": "京佳",
+   "reading": "きょうか",
+   "code": "E"
+  },
+  {
+   "kanji": "志乃布",
+   "reading": "しのぶ",
+   "code": "E"
+  },
+  {
+   "kanji": "銀志郎",
+   "reading": "ぎんしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "佳由",
+   "reading": "かゆ",
+   "code": "U"
+  },
+  {
+   "kanji": "冬雄",
+   "reading": "ふゆお",
+   "code": "S"
+  },
+  {
+   "kanji": "初陽",
+   "reading": "はつひ",
+   "code": "B"
+  },
+  {
+   "kanji": "禎美",
+   "reading": "さだみ",
+   "code": "E"
+  },
+  {
+   "kanji": "公朗",
+   "reading": "こうろう",
+   "code": "E"
+  },
+  {
+   "kanji": "結梨枝",
+   "reading": "ゆりえ",
+   "code": "B"
+  },
+  {
+   "kanji": "津希夫",
+   "reading": "つきお",
+   "code": "U"
+  },
+  {
+   "kanji": "紫明",
+   "reading": "しあ",
+   "code": "M"
+  },
+  {
+   "kanji": "冬花",
+   "reading": "とうか",
+   "code": "E"
+  },
+  {
+   "kanji": "夏月夜",
+   "reading": "なつや",
+   "code": "U"
+  },
+  {
+   "kanji": "摩佑美",
+   "reading": "まゆみ",
+   "code": "E"
+  },
+  {
+   "kanji": "霧代",
+   "reading": "きりよ",
+   "code": "M"
+  },
+  {
+   "kanji": "欣資子",
+   "reading": "きしこ",
+   "code": "U"
+  },
+  {
+   "kanji": "琴菜",
+   "reading": "ことな",
+   "code": "B"
+  },
+  {
+   "kanji": "寿弥子",
+   "reading": "すやこ",
+   "code": "U"
+  },
+  {
+   "kanji": "飛悠吾",
+   "reading": "ひゅうご",
+   "code": "U"
+  },
+  {
+   "kanji": "亜土夢",
+   "reading": "あとむ",
+   "code": "U"
+  },
+  {
+   "kanji": "星",
+   "reading": "かがり",
+   "code": "X"
+  },
+  {
+   "kanji": "武一郎",
+   "reading": "たけいちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "沙南子",
+   "reading": "さなこ",
+   "code": "B"
+  },
+  {
+   "kanji": "初夏",
+   "reading": "はつか",
+   "code": "B"
+  },
+  {
+   "kanji": "峰毅",
+   "reading": "みねき",
+   "code": "S"
+  },
+  {
+   "kanji": "尚克",
+   "reading": "なおかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "雪穂",
+   "reading": "ゆきほ",
+   "code": "E"
+  },
+  {
+   "kanji": "克時",
+   "reading": "かつとき",
+   "code": "S"
+  },
+  {
+   "kanji": "夕紀奈",
+   "reading": "ゆきな",
+   "code": "B"
+  },
+  {
+   "kanji": "加津男",
+   "reading": "かづお",
+   "code": "S"
+  },
+  {
+   "kanji": "さと子",
+   "reading": "さとこ",
+   "code": "B"
+  },
+  {
+   "kanji": "真以奈",
+   "reading": "まいな",
+   "code": "B"
+  },
+  {
+   "kanji": "静季",
+   "reading": "しずき",
+   "code": "E"
+  },
+  {
+   "kanji": "基一朗",
+   "reading": "もといちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "駒太郎",
+   "reading": "こまたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "静利",
+   "reading": "しずとし",
+   "code": "E"
+  },
+  {
+   "kanji": "美果",
+   "reading": "みか",
+   "code": "B"
+  },
+  {
+   "kanji": "結美",
+   "reading": "ゆみ",
+   "code": "E"
+  },
+  {
+   "kanji": "由里子",
+   "reading": "ゆりこ",
+   "code": "E"
+  },
+  {
+   "kanji": "亮晴",
+   "reading": "あきはる",
+   "code": "E"
+  },
+  {
+   "kanji": "明夏",
+   "reading": "めいか",
+   "code": "B"
+  },
+  {
+   "kanji": "早海",
+   "reading": "はやみ",
+   "code": "E"
+  },
+  {
+   "kanji": "奈津奈",
+   "reading": "なつな",
+   "code": "B"
+  },
+  {
+   "kanji": "紀姫",
+   "reading": "のりひ",
+   "code": "U"
+  },
+  {
+   "kanji": "凛菜",
+   "reading": "りんな",
+   "code": "E"
+  },
+  {
+   "kanji": "史朗",
+   "reading": "ふみろう",
+   "code": "E"
+  },
+  {
+   "kanji": "道与志",
+   "reading": "みちよし",
+   "code": "E"
+  },
+  {
+   "kanji": "直功",
+   "reading": "なおとし",
+   "code": "X"
+  },
+  {
+   "kanji": "仲美",
+   "reading": "なかみ",
+   "code": "U"
+  },
+  {
+   "kanji": "紫奈代",
+   "reading": "しなよ",
+   "code": "U"
+  },
+  {
+   "kanji": "雅峰",
+   "reading": "まさみね",
+   "code": "E"
+  },
+  {
+   "kanji": "碧子",
+   "reading": "あおこ",
+   "code": "M"
+  },
+  {
+   "kanji": "虎六",
+   "reading": "ころく",
+   "code": "U"
+  },
+  {
+   "kanji": "彬太郎",
+   "reading": "りんたろう",
+   "code": "X"
+  },
+  {
+   "kanji": "有葉",
+   "reading": "あるは",
+   "code": "U"
+  },
+  {
+   "kanji": "亜月",
+   "reading": "あつき",
+   "code": "E"
+  },
+  {
+   "kanji": "文博",
+   "reading": "あやひろ",
+   "code": "E"
+  },
+  {
+   "kanji": "万穂美",
+   "reading": "まほみ",
+   "code": "E"
+  },
+  {
+   "kanji": "夕羽",
+   "reading": "ゆうは",
+   "code": "B"
+  },
+  {
+   "kanji": "静弘",
+   "reading": "しずひろ",
+   "code": "E"
+  },
+  {
+   "kanji": "勇成",
+   "reading": "はやなり",
+   "code": "S"
+  },
+  {
+   "kanji": "英滋",
+   "reading": "ひでし",
+   "code": "E"
+  },
+  {
+   "kanji": "治郎吉",
+   "reading": "じろきち",
+   "code": "S"
+  },
+  {
+   "kanji": "咲実",
+   "reading": "さくみ",
+   "code": "B"
+  },
+  {
+   "kanji": "蒼吉郎",
+   "reading": "そうきちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "美苗穂",
+   "reading": "みなほ",
+   "code": "U"
+  },
+  {
+   "kanji": "孝次郎",
+   "reading": "たかじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "史葉",
+   "reading": "ふみは",
+   "code": "E"
+  },
+  {
+   "kanji": "夜鶴",
+   "reading": "よづる",
+   "code": "M"
+  },
+  {
+   "kanji": "英朗",
+   "reading": "ひでろう",
+   "code": "E"
+  },
+  {
+   "kanji": "誠志",
+   "reading": "せいし",
+   "code": "S"
+  },
+  {
+   "kanji": "大士郎",
+   "reading": "だいしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "済太郎",
+   "reading": "せいたろう",
+   "code": "U"
+  },
+  {
+   "kanji": "綾衣",
+   "reading": "あやい",
+   "code": "B"
+  },
+  {
+   "kanji": "豊毅",
+   "reading": "とよたか",
+   "code": "S"
+  },
+  {
+   "kanji": "伊緒奈",
+   "reading": "いおな",
+   "code": "B"
+  },
+  {
+   "kanji": "兎萌",
+   "reading": "とも",
+   "code": "U"
+  },
+  {
+   "kanji": "咲代",
+   "reading": "さくよ",
+   "code": "B"
+  },
+  {
+   "kanji": "詩乃江",
+   "reading": "しのえ",
+   "code": "E"
+  },
+  {
+   "kanji": "和香代",
+   "reading": "わかよ",
+   "code": "E"
+  },
+  {
+   "kanji": "来久美",
+   "reading": "らくみ",
+   "code": "U"
+  },
+  {
+   "kanji": "凛人",
+   "reading": "りと",
+   "code": "S"
+  },
+  {
+   "kanji": "彦摩呂",
+   "reading": "ひこまろ",
+   "code": "U"
+  },
+  {
+   "kanji": "星馬",
+   "reading": "せいま",
+   "code": "M"
+  },
+  {
+   "kanji": "豪一郎",
+   "reading": "ごういちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "夢春",
+   "reading": "ゆめはる",
+   "code": "U"
+  },
+  {
+   "kanji": "翼人",
+   "reading": "よくと",
+   "code": "U"
+  },
+  {
+   "kanji": "馨",
+   "reading": "かをる",
+   "code": "E"
+  },
+  {
+   "kanji": "理井子",
+   "reading": "りいこ",
+   "code": "U"
+  },
+  {
+   "kanji": "貴美昭",
+   "reading": "きみあき",
+   "code": "E"
+  },
+  {
+   "kanji": "紺乃",
+   "reading": "あおの",
+   "code": "X"
+  },
+  {
+   "kanji": "竜馬",
+   "reading": "りゅうま",
+   "code": "S"
+  },
+  {
+   "kanji": "舞雪",
+   "reading": "まゆき",
+   "code": "M"
+  },
+  {
+   "kanji": "瑠里菜",
+   "reading": "るりな",
+   "code": "B"
+  },
+  {
+   "kanji": "明羅",
+   "reading": "めいら",
+   "code": "M"
+  },
+  {
+   "kanji": "隆誠",
+   "reading": "りゅうせい",
+   "code": "S"
+  },
+  {
+   "kanji": "理喜子",
+   "reading": "りきこ",
+   "code": "E"
+  },
+  {
+   "kanji": "せき子",
+   "reading": "せきこ",
+   "code": "U"
+  },
+  {
+   "kanji": "生葉",
+   "reading": "いくは",
+   "code": "B"
+  },
+  {
+   "kanji": "克正",
+   "reading": "かつまさ",
+   "code": "S"
+  },
+  {
+   "kanji": "琶月",
+   "reading": "わつき",
+   "code": "U"
+  },
+  {
+   "kanji": "富勝",
+   "reading": "とみかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "果美",
+   "reading": "かぐみ",
+   "code": "U"
+  },
+  {
+   "kanji": "共英",
+   "reading": "ともひで",
+   "code": "E"
+  },
+  {
+   "kanji": "晃基",
+   "reading": "あきもと",
+   "code": "E"
+  },
+  {
+   "kanji": "照葉",
+   "reading": "てりは",
+   "code": "E"
+  },
+  {
+   "kanji": "園華",
+   "reading": "そのか",
+   "code": "B"
+  },
+  {
+   "kanji": "陽月",
+   "reading": "ひづき",
+   "code": "E"
+  },
+  {
+   "kanji": "亜希彦",
+   "reading": "あきひこ",
+   "code": "E"
+  },
+  {
+   "kanji": "八雲",
+   "reading": "やくも",
+   "code": "M"
+  },
+  {
+   "kanji": "優美乃",
+   "reading": "ゆみの",
+   "code": "B"
+  },
+  {
+   "kanji": "森大郎",
+   "reading": "しんたろう",
+   "code": "X"
+  },
+  {
+   "kanji": "紫穗里",
+   "reading": "しほり",
+   "code": "E"
+  },
+  {
+   "kanji": "陸奥美",
+   "reading": "むつみ",
+   "code": "E"
+  },
+  {
+   "kanji": "静泰",
+   "reading": "しずやす",
+   "code": "E"
+  },
+  {
+   "kanji": "弘夏",
+   "reading": "こなつ",
+   "code": "X"
+  },
+  {
+   "kanji": "夢見",
+   "reading": "ゆめみ",
+   "code": "M"
+  },
+  {
+   "kanji": "花衣",
+   "reading": "かい",
+   "code": "U"
+  },
+  {
+   "kanji": "晃禎",
+   "reading": "あきさだ",
+   "code": "E"
+  },
+  {
+   "kanji": "海市",
+   "reading": "かいし",
+   "code": "U"
+  },
+  {
+   "kanji": "愛深里",
+   "reading": "えみり",
+   "code": "U"
+  },
+  {
+   "kanji": "奏緒",
+   "reading": "かなお",
+   "code": "E"
+  },
+  {
+   "kanji": "恵里子",
+   "reading": "えりこ",
+   "code": "E"
+  },
+  {
+   "kanji": "悠紀斗",
+   "reading": "ゆきと",
+   "code": "B"
+  },
+  {
+   "kanji": "直満",
+   "reading": "なおみつ",
+   "code": "E"
+  },
+  {
+   "kanji": "凜太郎",
+   "reading": "りんたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "夕映",
+   "reading": "ゆえ",
+   "code": "E"
+  },
+  {
+   "kanji": "静香",
+   "reading": "せいか",
+   "code": "E"
+  },
+  {
+   "kanji": "扶由子",
+   "reading": "ふゆこ",
+   "code": "E"
+  },
+  {
+   "kanji": "能克",
+   "reading": "のぶかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "音衣真",
+   "reading": "ねいま",
+   "code": "U"
+  },
+  {
+   "kanji": "真耶",
+   "reading": "しんや",
+   "code": "S"
+  },
+  {
+   "kanji": "克奈",
+   "reading": "かつな",
+   "code": "U"
+  },
+  {
+   "kanji": "銀河",
+   "reading": "ぎんが",
+   "code": "M"
+  },
+  {
+   "kanji": "多榮子",
+   "reading": "たえこ",
+   "code": "E"
+  },
+  {
+   "kanji": "律月",
+   "reading": "りつき",
+   "code": "E"
+  },
+  {
+   "kanji": "愛巳",
+   "reading": "あいみ",
+   "code": "E"
+  },
+  {
+   "kanji": "倉太郎",
+   "reading": "くらたろう",
+   "code": "U"
+  },
+  {
+   "kanji": "武和",
+   "reading": "たけかず",
+   "code": "S"
+  },
+  {
+   "kanji": "顕弥",
+   "reading": "けんや",
+   "code": "S"
+  },
+  {
+   "kanji": "地望",
+   "reading": "ちぼう",
+   "code": "U"
+  },
+  {
+   "kanji": "早和野",
+   "reading": "さわの",
+   "code": "E"
+  },
+  {
+   "kanji": "紗弥",
+   "reading": "さや",
+   "code": "E"
+  },
+  {
+   "kanji": "加夢意",
+   "reading": "かむい",
+   "code": "U"
+  },
+  {
+   "kanji": "剛生",
+   "reading": "てつお",
+   "code": "X"
+  },
+  {
+   "kanji": "星之介",
+   "reading": "ほしのすけ",
+   "code": "U"
+  },
+  {
+   "kanji": "友次郎",
+   "reading": "ともじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "七生史",
+   "reading": "なおし",
+   "code": "U"
+  },
+  {
+   "kanji": "英純",
+   "reading": "ひですみ",
+   "code": "E"
+  },
+  {
+   "kanji": "藤恵",
+   "reading": "ふじえ",
+   "code": "E"
+  },
+  {
+   "kanji": "貴世友",
+   "reading": "きよとも",
+   "code": "E"
+  },
+  {
+   "kanji": "宇宙",
+   "reading": "ひろ",
+   "code": "X"
+  },
+  {
+   "kanji": "匡玄",
+   "reading": "ただつね",
+   "code": "X"
+  },
+  {
+   "kanji": "葉都奈",
+   "reading": "はづな",
+   "code": "B"
+  },
+  {
+   "kanji": "利根子",
+   "reading": "とねこ",
+   "code": "U"
+  },
+  {
+   "kanji": "省五郎",
+   "reading": "せいごろう",
+   "code": "S"
+  },
+  {
+   "kanji": "有歩",
+   "reading": "あるほ",
+   "code": "U"
+  },
+  {
+   "kanji": "岳郎",
+   "reading": "がくろう",
+   "code": "S"
+  },
+  {
+   "kanji": "眞亜子",
+   "reading": "まあこ",
+   "code": "E"
+  },
+  {
+   "kanji": "亜杏沙",
+   "reading": "あづさ",
+   "code": "U"
+  },
+  {
+   "kanji": "賛代加",
+   "reading": "さよか",
+   "code": "U"
+  },
+  {
+   "kanji": "鼓月",
+   "reading": "こづき",
+   "code": "M"
+  },
+  {
+   "kanji": "栄剛",
+   "reading": "えいごう",
+   "code": "S"
+  },
+  {
+   "kanji": "弥三次",
+   "reading": "やそじ",
+   "code": "X"
+  },
+  {
+   "kanji": "智剛",
+   "reading": "ともたけ",
+   "code": "S"
+  },
+  {
+   "kanji": "輝",
+   "reading": "てる",
+   "code": "S"
+  },
+  {
+   "kanji": "銀之助",
+   "reading": "ぎんのすけ",
+   "code": "S"
+  },
+  {
+   "kanji": "瀬利子",
+   "reading": "せりこ",
+   "code": "E"
+  },
+  {
+   "kanji": "香乃恵",
+   "reading": "かのえ",
+   "code": "E"
+  },
+  {
+   "kanji": "育夢",
+   "reading": "いくむ",
+   "code": "U"
+  },
+  {
+   "kanji": "銀一",
+   "reading": "ぎんいち",
+   "code": "S"
+  },
+  {
+   "kanji": "光四郎",
+   "reading": "みつしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "朝尚",
+   "reading": "あさなお",
+   "code": "E"
+  },
+  {
+   "kanji": "伊寧子",
+   "reading": "いねこ",
+   "code": "U"
+  },
+  {
+   "kanji": "愛蔵",
+   "reading": "あいぞう",
+   "code": "U"
+  },
+  {
+   "kanji": "奈世美",
+   "reading": "なよみ",
+   "code": "E"
+  },
+  {
+   "kanji": "遥真",
+   "reading": "はるま",
+   "code": "B"
+  },
+  {
+   "kanji": "長陽",
+   "reading": "ながはる",
+   "code": "E"
+  },
+  {
+   "kanji": "佑次郎",
+   "reading": "ゆうじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "亜留波",
+   "reading": "あるは",
+   "code": "U"
+  },
+  {
+   "kanji": "生紗",
+   "reading": "ありさ",
+   "code": "X"
+  },
+  {
+   "kanji": "江礼奈",
+   "reading": "えれな",
+   "code": "B"
+  },
+  {
+   "kanji": "朝光",
+   "reading": "ともてる",
+   "code": "E"
+  },
+  {
+   "kanji": "隼世",
+   "reading": "はやせ",
+   "code": "S"
+  },
+  {
+   "kanji": "雅臣",
+   "reading": "まさおみ",
+   "code": "E"
+  },
+  {
+   "kanji": "拓誠",
+   "reading": "たくまさ",
+   "code": "S"
+  },
+  {
+   "kanji": "智由子",
+   "reading": "ちゆこ",
+   "code": "E"
+  },
+  {
+   "kanji": "宙三",
+   "reading": "ちゅうぞう",
+   "code": "U"
+  },
+  {
+   "kanji": "紫",
+   "reading": "むらさき",
+   "code": "M"
+  },
+  {
+   "kanji": "玄摩",
+   "reading": "はるま",
+   "code": "X"
+  },
+  {
+   "kanji": "愛介",
+   "reading": "あいすけ",
+   "code": "U"
+  },
+  {
+   "kanji": "利佐子",
+   "reading": "りさこ",
+   "code": "E"
+  },
+  {
+   "kanji": "和保里",
+   "reading": "かほり",
+   "code": "E"
+  },
+  {
+   "kanji": "海道",
+   "reading": "かいどう",
+   "code": "U"
+  },
+  {
+   "kanji": "美小夜",
+   "reading": "みさよ",
+   "code": "E"
+  },
+  {
+   "kanji": "樹蘭",
+   "reading": "じゅら",
+   "code": "U"
+  },
+  {
+   "kanji": "玄成",
+   "reading": "げんせい",
+   "code": "M"
+  },
+  {
+   "kanji": "蒼",
+   "reading": "あおい",
+   "code": "E"
+  },
+  {
+   "kanji": "充太郎",
+   "reading": "みつたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "委志子",
+   "reading": "いしこ",
+   "code": "U"
+  },
+  {
+   "kanji": "尚英",
+   "reading": "なおひで",
+   "code": "E"
+  },
+  {
+   "kanji": "沢希",
+   "reading": "さわき",
+   "code": "E"
+  },
+  {
+   "kanji": "竜三",
+   "reading": "たつぞう",
+   "code": "S"
+  },
+  {
+   "kanji": "英",
+   "reading": "ひで",
+   "code": "E"
+  },
+  {
+   "kanji": "蒼生",
+   "reading": "そうせい",
+   "code": "M"
+  },
+  {
+   "kanji": "晴音",
+   "reading": "はるね",
+   "code": "B"
+  },
+  {
+   "kanji": "亜朝",
+   "reading": "つぐとも",
+   "code": "X"
+  },
+  {
+   "kanji": "志津帆",
+   "reading": "しづほ",
+   "code": "E"
+  },
+  {
+   "kanji": "朝吉",
+   "reading": "あさきち",
+   "code": "S"
+  },
+  {
+   "kanji": "陣吾",
+   "reading": "じんご",
+   "code": "S"
+  },
+  {
+   "kanji": "冬陽",
+   "reading": "ふゆひ",
+   "code": "M"
+  },
+  {
+   "kanji": "郁",
+   "reading": "かおり",
+   "code": "E"
+  },
+  {
+   "kanji": "貴誠",
+   "reading": "あつなり",
+   "code": "E"
+  },
+  {
+   "kanji": "輝智",
+   "reading": "てるとも",
+   "code": "E"
+  },
+  {
+   "kanji": "星恵",
+   "reading": "ほしえ",
+   "code": "M"
+  },
+  {
+   "kanji": "直享",
+   "reading": "なおゆき",
+   "code": "E"
+  },
+  {
+   "kanji": "恵礼",
+   "reading": "えれい",
+   "code": "U"
+  },
+  {
+   "kanji": "乙葉",
+   "reading": "おとは",
+   "code": "B"
+  },
+  {
+   "kanji": "駿馬",
+   "reading": "しゅんま",
+   "code": "S"
+  },
+  {
+   "kanji": "廣晴",
+   "reading": "ひろはる",
+   "code": "E"
+  },
+  {
+   "kanji": "豊恵",
+   "reading": "とよえ",
+   "code": "E"
+  },
+  {
+   "kanji": "伊豆美",
+   "reading": "いずみ",
+   "code": "E"
+  },
+  {
+   "kanji": "夜絵華",
+   "reading": "やえか",
+   "code": "U"
+  },
+  {
+   "kanji": "久寿美",
+   "reading": "くすみ",
+   "code": "E"
+  },
+  {
+   "kanji": "兼次郎",
+   "reading": "かねじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "玄道",
+   "reading": "げんどう",
+   "code": "M"
+  },
+  {
+   "kanji": "亜佐乃",
+   "reading": "あさの",
+   "code": "E"
+  },
+  {
+   "kanji": "千登美",
+   "reading": "ちとみ",
+   "code": "E"
+  },
+  {
+   "kanji": "勇平",
+   "reading": "ゆうへい",
+   "code": "S"
+  },
+  {
+   "kanji": "晴道",
+   "reading": "はるみち",
+   "code": "E"
+  },
+  {
+   "kanji": "琴香",
+   "reading": "ことか",
+   "code": "E"
+  },
+  {
+   "kanji": "泉葉",
+   "reading": "いずは",
+   "code": "E"
+  },
+  {
+   "kanji": "萌里乃",
+   "reading": "もりの",
+   "code": "U"
+  },
+  {
+   "kanji": "信龍",
+   "reading": "のぶたつ",
+   "code": "S"
+  },
+  {
+   "kanji": "虎治",
+   "reading": "とらじ",
+   "code": "S"
+  },
+  {
+   "kanji": "明加",
+   "reading": "あけか",
+   "code": "U"
+  },
+  {
+   "kanji": "阜月",
+   "reading": "ふづき",
+   "code": "U"
+  },
+  {
+   "kanji": "有天",
+   "reading": "あるて",
+   "code": "U"
+  },
+  {
+   "kanji": "直羽",
+   "reading": "なおは",
+   "code": "E"
+  },
+  {
+   "kanji": "咲乃",
+   "reading": "さきの",
+   "code": "B"
+  },
+  {
+   "kanji": "扶美世",
+   "reading": "ふみよ",
+   "code": "E"
+  },
+  {
+   "kanji": "冬気也",
+   "reading": "ときや",
+   "code": "U"
+  },
+  {
+   "kanji": "郁彦",
+   "reading": "いくひこ",
+   "code": "E"
+  },
+  {
+   "kanji": "百夏",
+   "reading": "ももか",
+   "code": "B"
+  },
+  {
+   "kanji": "愛夢",
+   "reading": "あいむ",
+   "code": "U"
+  },
+  {
+   "kanji": "直知",
+   "reading": "なおとも",
+   "code": "E"
+  },
+  {
+   "kanji": "鹿太郎",
+   "reading": "しかたろう",
+   "code": "U"
+  },
+  {
+   "kanji": "都己子",
+   "reading": "ときこ",
+   "code": "E"
+  },
+  {
+   "kanji": "希吏登",
+   "reading": "きりと",
+   "code": "U"
+  },
+  {
+   "kanji": "星映",
+   "reading": "ほしえ",
+   "code": "M"
+  },
+  {
+   "kanji": "千鶴恵",
+   "reading": "ちづえ",
+   "code": "E"
+  },
+  {
+   "kanji": "羽良々",
+   "reading": "うらら",
+   "code": "U"
+  },
+  {
+   "kanji": "徹郎",
+   "reading": "てつろう",
+   "code": "S"
+  },
+  {
+   "kanji": "亜見子",
+   "reading": "あみこ",
+   "code": "B"
+  },
+  {
+   "kanji": "忠誠",
+   "reading": "ただなり",
+   "code": "S"
+  },
+  {
+   "kanji": "真郎",
+   "reading": "しんろう",
+   "code": "S"
+  },
+  {
+   "kanji": "大治郎",
+   "reading": "だいじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "華冬子",
+   "reading": "かつこ",
+   "code": "X"
+  },
+  {
+   "kanji": "百合代",
+   "reading": "ゆりよ",
+   "code": "E"
+  },
+  {
+   "kanji": "妃美華",
+   "reading": "ひみか",
+   "code": "U"
+  },
+  {
+   "kanji": "龍道",
+   "reading": "たつみち",
+   "code": "S"
+  },
+  {
+   "kanji": "支帆子",
+   "reading": "しほこ",
+   "code": "E"
+  },
+  {
+   "kanji": "龍弥",
+   "reading": "りゅうや",
+   "code": "S"
+  },
+  {
+   "kanji": "紫杜華",
+   "reading": "しずか",
+   "code": "U"
+  },
+  {
+   "kanji": "亜須奈",
+   "reading": "あすな",
+   "code": "B"
+  },
+  {
+   "kanji": "日香里",
+   "reading": "ひかり",
+   "code": "B"
+  },
+  {
+   "kanji": "真矢佳",
+   "reading": "まやか",
+   "code": "B"
+  },
+  {
+   "kanji": "啓剛",
+   "reading": "けいごう",
+   "code": "S"
+  },
+  {
+   "kanji": "益美",
+   "reading": "ますみ",
+   "code": "E"
+  },
+  {
+   "kanji": "亜都佳",
+   "reading": "あどか",
+   "code": "U"
+  },
+  {
+   "kanji": "文之祐",
+   "reading": "ぶんのすけ",
+   "code": "S"
+  },
+  {
+   "kanji": "住安",
+   "reading": "すみやす",
+   "code": "E"
+  },
+  {
+   "kanji": "紅美",
+   "reading": "くれみ",
+   "code": "M"
+  },
+  {
+   "kanji": "羽架音",
+   "reading": "わかね",
+   "code": "U"
+  },
+  {
+   "kanji": "起久世",
+   "reading": "きくよ",
+   "code": "U"
+  },
+  {
+   "kanji": "陸雄",
+   "reading": "りくお",
+   "code": "S"
+  },
+  {
+   "kanji": "真生人",
+   "reading": "まきひと",
+   "code": "E"
+  },
+  {
+   "kanji": "真央",
+   "reading": "まお",
+   "code": "B"
+  },
+  {
+   "kanji": "智詠子",
+   "reading": "ちえこ",
+   "code": "E"
+  },
+  {
+   "kanji": "蒼乃",
+   "reading": "あおの",
+   "code": "E"
+  },
+  {
+   "kanji": "愛助",
+   "reading": "あいすけ",
+   "code": "U"
+  },
+  {
+   "kanji": "葉摘",
+   "reading": "はつみ",
+   "code": "B"
+  },
+  {
+   "kanji": "一誠",
+   "reading": "いっせい",
+   "code": "S"
+  },
+  {
+   "kanji": "深雪",
+   "reading": "みゆき",
+   "code": "E"
+  },
+  {
+   "kanji": "伽夜",
+   "reading": "かぐや",
+   "code": "M"
+  },
+  {
+   "kanji": "晃富",
+   "reading": "あきとみ",
+   "code": "E"
+  },
+  {
+   "kanji": "彩乃子",
+   "reading": "さのこ",
+   "code": "X"
+  },
+  {
+   "kanji": "真喜夫",
+   "reading": "まきお",
+   "code": "E"
+  },
+  {
+   "kanji": "充香",
+   "reading": "あつか",
+   "code": "X"
+  },
+  {
+   "kanji": "喜輪子",
+   "reading": "きわこ",
+   "code": "U"
+  },
+  {
+   "kanji": "苗太郎",
+   "reading": "なえたろう",
+   "code": "U"
+  },
+  {
+   "kanji": "麻理沙",
+   "reading": "まりさ",
+   "code": "B"
+  },
+  {
+   "kanji": "翔加",
+   "reading": "とか",
+   "code": "X"
+  },
+  {
+   "kanji": "景虎",
+   "reading": "かげとら",
+   "code": "S"
+  },
+  {
+   "kanji": "輝人",
+   "reading": "てるひと",
+   "code": "S"
+  },
+  {
+   "kanji": "瑠加",
+   "reading": "るか",
+   "code": "B"
+  },
+  {
+   "kanji": "羅夢",
+   "reading": "らむ",
+   "code": "U"
+  },
+  {
+   "kanji": "椎葉",
+   "reading": "しいは",
+   "code": "M"
+  },
+  {
+   "kanji": "美花",
+   "reading": "みか",
+   "code": "B"
+  },
+  {
+   "kanji": "冨次男",
+   "reading": "ふじお",
+   "code": "U"
+  },
+  {
+   "kanji": "羽月",
+   "reading": "はづき",
+   "code": "E"
+  },
+  {
+   "kanji": "允耶",
+   "reading": "のぶや",
+   "code": "E"
+  },
+  {
+   "kanji": "弥興",
+   "reading": "やおき",
+   "code": "U"
+  },
+  {
+   "kanji": "伊知哉",
+   "reading": "いちや",
+   "code": "U"
+  },
+  {
+   "kanji": "暁",
+   "reading": "あかつ",
+   "code": "X"
+  },
+  {
+   "kanji": "星恋",
+   "reading": "せれん",
+   "code": "M"
+  },
+  {
+   "kanji": "健記",
+   "reading": "けんき",
+   "code": "S"
+  },
+  {
+   "kanji": "克直",
+   "reading": "かつなお",
+   "code": "S"
+  },
+  {
+   "kanji": "天美",
+   "reading": "あまみ",
+   "code": "M"
+  },
+  {
+   "kanji": "栖卯菜",
+   "reading": "すうな",
+   "code": "U"
+  },
+  {
+   "kanji": "公克",
+   "reading": "きみかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "飛雄馬",
+   "reading": "ひゅうま",
+   "code": "S"
+  },
+  {
+   "kanji": "以里恵",
+   "reading": "いりえ",
+   "code": "U"
+  },
+  {
+   "kanji": "考真",
+   "reading": "こうま",
+   "code": "X"
+  },
+  {
+   "kanji": "岩人",
+   "reading": "いわと",
+   "code": "S"
+  },
+  {
+   "kanji": "輝丞",
+   "reading": "あきつぐ",
+   "code": "E"
+  },
+  {
+   "kanji": "海香",
+   "reading": "うみか",
+   "code": "B"
+  },
+  {
+   "kanji": "若加奈",
+   "reading": "わかな",
+   "code": "B"
+  },
+  {
+   "kanji": "美織里",
+   "reading": "みおり",
+   "code": "E"
+  },
+  {
+   "kanji": "昭恵",
+   "reading": "てるえ",
+   "code": "E"
+  },
+  {
+   "kanji": "治江美",
+   "reading": "ちえみ",
+   "code": "E"
+  },
+  {
+   "kanji": "司津恵",
+   "reading": "しづえ",
+   "code": "E"
+  },
+  {
+   "kanji": "愛理沙",
+   "reading": "えりさ",
+   "code": "B"
+  },
+  {
+   "kanji": "潤華",
+   "reading": "じゅんか",
+   "code": "E"
+  },
+  {
+   "kanji": "兎雪",
+   "reading": "とゆき",
+   "code": "M"
+  },
+  {
+   "kanji": "裕加江",
+   "reading": "ゆかえ",
+   "code": "B"
+  },
+  {
+   "kanji": "知亜季",
+   "reading": "ちあき",
+   "code": "B"
+  },
+  {
+   "kanji": "知世乃",
+   "reading": "ちよの",
+   "code": "E"
+  },
+  {
+   "kanji": "登喜枝",
+   "reading": "ときえ",
+   "code": "E"
+  },
+  {
+   "kanji": "果里菜",
+   "reading": "かりな",
+   "code": "B"
+  },
+  {
+   "kanji": "雲平",
+   "reading": "うんぺい",
+   "code": "U"
+  },
+  {
+   "kanji": "克次朗",
+   "reading": "かつじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "東次郎",
+   "reading": "とうじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "延光",
+   "reading": "のぶてる",
+   "code": "E"
+  },
+  {
+   "kanji": "千耶",
+   "reading": "ちや",
+   "code": "E"
+  },
+  {
+   "kanji": "笑帆",
+   "reading": "えみほ",
+   "code": "B"
+  },
+  {
+   "kanji": "維明",
+   "reading": "これあき",
+   "code": "E"
+  },
+  {
+   "kanji": "岳郎",
+   "reading": "たけろう",
+   "code": "S"
+  },
+  {
+   "kanji": "弓月",
+   "reading": "ゆづき",
+   "code": "M"
+  },
+  {
+   "kanji": "鉄五郎",
+   "reading": "てつごろう",
+   "code": "S"
+  },
+  {
+   "kanji": "詩織",
+   "reading": "しをり",
+   "code": "E"
+  },
+  {
+   "kanji": "壽光",
+   "reading": "としみつ",
+   "code": "E"
+  },
+  {
+   "kanji": "專太郎",
+   "reading": "せんたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "光",
+   "reading": "みつ",
+   "code": "E"
+  },
+  {
+   "kanji": "彩衣",
+   "reading": "あやぎ",
+   "code": "X"
+  },
+  {
+   "kanji": "詠太郎",
+   "reading": "えいたろう",
+   "code": "B"
+  },
+  {
+   "kanji": "つき子",
+   "reading": "つきこ",
+   "code": "B"
+  },
+  {
+   "kanji": "玲三",
+   "reading": "れいぞう",
+   "code": "E"
+  },
+  {
+   "kanji": "茉緋",
+   "reading": "まい",
+   "code": "X"
+  },
+  {
+   "kanji": "空音",
+   "reading": "そらね",
+   "code": "M"
+  },
+  {
+   "kanji": "直興",
+   "reading": "ただおき",
+   "code": "E"
+  },
+  {
+   "kanji": "輝吉",
+   "reading": "てるきち",
+   "code": "S"
+  },
+  {
+   "kanji": "兼明",
+   "reading": "かねひろ",
+   "code": "E"
+  },
+  {
+   "kanji": "喜久世",
+   "reading": "きくよ",
+   "code": "E"
+  },
+  {
+   "kanji": "千恵莉",
+   "reading": "ちえり",
+   "code": "B"
+  },
+  {
+   "kanji": "明糸",
+   "reading": "あかし",
+   "code": "U"
+  },
+  {
+   "kanji": "竜次郎",
+   "reading": "りゅうじろう",
+   "code": "S"
+  },
+  {
+   "kanji": "早由良",
+   "reading": "さゆら",
+   "code": "B"
+  },
+  {
+   "kanji": "佐公子",
+   "reading": "さくこ",
+   "code": "U"
+  },
+  {
+   "kanji": "諒太朗",
+   "reading": "りょうたろう",
+   "code": "S"
+  },
+  {
+   "kanji": "零菜",
+   "reading": "れいな",
+   "code": "M"
+  },
+  {
+   "kanji": "佳合",
+   "reading": "かわい",
+   "code": "X"
+  },
+  {
+   "kanji": "蒼",
+   "reading": "あおし",
+   "code": "U"
+  },
+  {
+   "kanji": "以利子",
+   "reading": "いりこ",
+   "code": "U"
+  },
+  {
+   "kanji": "歩女",
+   "reading": "あゆめ",
+   "code": "U"
+  },
+  {
+   "kanji": "須弥子",
+   "reading": "すやこ",
+   "code": "U"
+  },
+  {
+   "kanji": "環緒",
+   "reading": "たまお",
+   "code": "E"
+  },
+  {
+   "kanji": "美留夢",
+   "reading": "みるむ",
+   "code": "U"
+  },
+  {
+   "kanji": "つる代",
+   "reading": "つるよ",
+   "code": "E"
+  },
+  {
+   "kanji": "宗英",
+   "reading": "むねひで",
+   "code": "E"
+  },
+  {
+   "kanji": "亜夢",
+   "reading": "あむ",
+   "code": "U"
+  },
+  {
+   "kanji": "愛夢",
+   "reading": "あむ",
+   "code": "U"
+  },
+  {
+   "kanji": "零",
+   "reading": "れい",
+   "code": "M"
+  },
+  {
+   "kanji": "元葵",
+   "reading": "げんき",
+   "code": "U"
+  },
+  {
+   "kanji": "苑葉",
+   "reading": "そのは",
+   "code": "E"
+  },
+  {
+   "kanji": "弥恵子",
+   "reading": "やえこ",
+   "code": "E"
+  },
+  {
+   "kanji": "朝羽",
+   "reading": "あさは",
+   "code": "B"
+  },
+  {
+   "kanji": "將勝",
+   "reading": "まさかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "湖津恵",
+   "reading": "こづえ",
+   "code": "E"
+  },
+  {
+   "kanji": "健史朗",
+   "reading": "けんしろう",
+   "code": "S"
+  },
+  {
+   "kanji": "一夢",
+   "reading": "かずむ",
+   "code": "U"
+  },
+  {
+   "kanji": "万莉子",
+   "reading": "まりこ",
+   "code": "E"
+  },
+  {
+   "kanji": "早霧",
+   "reading": "さぎり",
+   "code": "M"
+  },
+  {
+   "kanji": "鮎夢",
+   "reading": "あゆむ",
+   "code": "U"
+  },
+  {
+   "kanji": "重真",
+   "reading": "しげただ",
+   "code": "E"
+  },
+  {
+   "kanji": "佳吉",
+   "reading": "かきち",
+   "code": "U"
+  },
+  {
+   "kanji": "以和美",
+   "reading": "いわみ",
+   "code": "E"
+  },
+  {
+   "kanji": "宗克",
+   "reading": "むねかつ",
+   "code": "S"
+  },
+  {
+   "kanji": "望",
+   "reading": "のぞみ",
+   "code": "E"
+  },
+  {
+   "kanji": "紫真子",
+   "reading": "しまこ",
+   "code": "M"
+  },
+  {
+   "kanji": "可依子",
+   "reading": "かよこ",
+   "code": "X"
+  },
+  {
+   "kanji": "路美花",
+   "reading": "ろみか",
+   "code": "U"
+  },
+  {
+   "kanji": "光憲",
+   "reading": "みつのり",
+   "code": "E"
+  },
+  {
+   "kanji": "祐真",
+   "reading": "ゆうしん",
+   "code": "S"
+  },
+  {
+   "kanji": "英一",
+   "reading": "えいいち",
+   "code": "E"
+  },
+  {
+   "kanji": "美雲",
+   "reading": "みくも",
+   "code": "M"
+  },
+  {
+   "kanji": "美香代",
+   "reading": "みかよ",
+   "code": "E"
+  },
+  {
+   "kanji": "豪剛",
+   "reading": "ひでたか",
+   "code": "X"
+  },
+  {
+   "kanji": "武",
+   "reading": "たける",
+   "code": "S"
+  },
+  {
+   "kanji": "米香",
+   "reading": "よねか",
+   "code": "U"
+  },
+  {
+   "kanji": "勝啓",
+   "reading": "かつひら",
+   "code": "X"
+  },
+  {
+   "kanji": "多喜造",
+   "reading": "たきぞう",
+   "code": "S"
+  },
+  {
+   "kanji": "佳人",
+   "reading": "よしと",
+   "code": "E"
+  },
+  {
+   "kanji": "虎幸",
+   "reading": "とらゆき",
+   "code": "S"
+  },
+  {
+   "kanji": "芳徹",
+   "reading": "よしてつ",
+   "code": "S"
+  },
+  {
+   "kanji": "麻実奈",
+   "reading": "まみな",
+   "code": "B"
+  },
+  {
+   "kanji": "寅文",
+   "reading": "ともふみ",
+   "code": "X"
+  },
+  {
+   "kanji": "凛華",
+   "reading": "りんか",
+   "code": "E"
+  },
+  {
+   "kanji": "哲詩",
+   "reading": "てつし",
+   "code": "E"
+  },
+  {
+   "kanji": "合歓子",
+   "reading": "ねむこ",
+   "code": "U"
+  },
+  {
+   "kanji": "紫佐子",
+   "reading": "しさこ",
+   "code": "U"
+  },
+  {
+   "kanji": "安生恵",
+   "reading": "あおえ",
+   "code": "U"
+  },
+  {
+   "kanji": "美紀奈",
+   "reading": "みきな",
+   "code": "B"
+  },
+  {
+   "kanji": "羽凛",
+   "reading": "うりん",
+   "code": "U"
+  },
+  {
+   "kanji": "宇宙",
+   "reading": "うちゅう",
+   "code": "U"
+  },
+  {
+   "kanji": "勇之進",
+   "reading": "ゆうのしん",
+   "code": "S"
+  },
+  {
+   "kanji": "真杏子",
+   "reading": "まあこ",
+   "code": "U"
+  },
+  {
+   "kanji": "将海",
+   "reading": "まさうみ",
+   "code": "S"
+  },
+  {
+   "kanji": "英作",
+   "reading": "ひでさく",
+   "code": "E"
+  },
+  {
+   "kanji": "雄晴",
+   "reading": "たけはる",
+   "code": "S"
+  },
+  {
+   "kanji": "翔一郎",
+   "reading": "しょういちろう",
+   "code": "S"
+  },
+  {
+   "kanji": "亜津司",
+   "reading": "あつし",
+   "code": "S"
+  },
+  {
+   "kanji": "陸則",
+   "reading": "むつのり",
+   "code": "X"
+  },
+  {
+   "kanji": "勝榮",
+   "reading": "かつえい",
+   "code": "S"
+  },
+  {
+   "kanji": "久利人",
+   "reading": "くりひと",
+   "code": "U"
+  },
+  {
+   "kanji": "奈美歩",
+   "reading": "なみほ",
+   "code": "B"
+  },
+  {
+   "kanji": "永久音",
+   "reading": "とわね",
+   "code": "M"
+  },
+  {
+   "kanji": "琴星",
+   "reading": "ことせ",
+   "code": "E"
+  },
+  {
+   "kanji": "久未保",
+   "reading": "くみほ",
+   "code": "E"
+  },
+  {
+   "kanji": "真州美",
+   "reading": "ますみ",
+   "code": "E"
+  },
+  {
+   "kanji": "佳津奈",
+   "reading": "かづな",
+   "code": "E"
+  },
+  {
+   "kanji": "光景",
+   "reading": "みつかげ",
+   "code": "M"
+  },
+  {
+   "kanji": "力",
+   "reading": "いさむ",
+   "code": "S"
+  },
+  {
+   "kanji": "晴盛",
+   "reading": "はるもり",
+   "code": "S"
+  },
+  {
+   "kanji": "美海",
+   "reading": "みみ",
+   "code": "B"
+  },
+  {
+   "kanji": "輝有",
+   "reading": "きゆう",
+   "code": "U"
+  },
+  {
+   "kanji": "奈由己",
+   "reading": "なゆみ",
+   "code": "X"
+  },
+  {
+   "kanji": "零",
+   "reading": "ぜろ",
+   "code": "U"
+  },
+  {
+   "kanji": "澄音",
+   "reading": "すみね",
+   "code": "E"
+  },
+  {
+   "kanji": "果司未",
+   "reading": "かつみ",
+   "code": "U"
+  }
+ ]
+}
