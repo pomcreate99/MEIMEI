@@ -97,6 +97,10 @@ SUPPLEMENT: list[tuple[str, str, str, list[str]]] = [
     ('花音', 'かのん', 'female', ['modern', 'elegant']),
     ('心春', 'こはる', 'female', ['bright', 'modern']),
     # 凛々しい・強い（男女）
+    # 健一郎: 元CSVの誤読行（けんいちろ）だけが間引きで残り、正しい読み
+    # （けんいちろう）の行では上限3件に埋もれて生成されないため補完で収録。
+    # moods は漢字スコア（健=strong）の結果と一致させている。
+    ('健一郎', 'けんいちろう', 'male', ['strong']),
     ('凛', 'りん', 'female', ['strong', 'modern']),
     ('凛久', 'りく', 'male', ['strong', 'modern']),
     ('巴', 'ともえ', 'female', ['strong', 'classic']),
@@ -413,6 +417,10 @@ def apply_joint_review(given: list[dict]) -> list[dict]:
 # ChatGPTに分類させた。結果は scripts/bulk-review-2026-11-21.json に保存。
 # コード: E/B/S/M/U=印象5分類の主分類に付け替え、N=印象タグを外す、
 # X=読みが不自然として生成候補から除外する。
+# 2026-11-21 の v6 で、博士の承認により7件の X 判定を解除して復元した
+# （佳一朗・賢三朗・靖太郎せいたろう・彬太郎・森大郎・梨香＋健一郎）。
+# 健一郎は誤読（けんいちろ）の行を元CSVから削除し、正しい読み
+# （けんいちろう）で SUPPLEMENT に収録した。残る X は126件。
 BULK_REVIEW_PATH = Path(__file__).with_name('bulk-review-2026-11-21.json')
 BULK_CODE_TO_MOOD = {'E': 'elegant', 'B': 'bright', 'S': 'strong', 'M': 'mysterious', 'U': 'unique'}
 
@@ -546,14 +554,14 @@ def main() -> None:
     given.sort(key=lambda r: (r['reading'], r['kanji']))
 
     out = {
-        'version': 5,
+        'version': 6,
         'generatedAt': '2026-11-21',
         'sources': payload.get('sources', {}),
         'surnames': surnames,
         'givenNames': given,
     }
     DATA.write_text(json.dumps(out, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
-    print(f'v5: {len(surnames)} surnames, {len(given)} given names -> {DATA}')
+    print(f'v6: {len(surnames)} surnames, {len(given)} given names -> {DATA}')
 
 
 if __name__ == '__main__':
